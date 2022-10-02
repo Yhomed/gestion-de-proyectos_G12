@@ -21,7 +21,12 @@
 
         Mi nombre es Abril Alvarez Amoedo. Tengo 19 años. Estoy estudiando Licenciatura en Sistemas en la UNPA. Soy de Río Gallegos, Santa Cruz, Argentina. Como hobby me gusta dibujar, cantar y escribir.
 
-        2.3.3
+        2.3.3 Yhomed Andrel Durango Montoya
+
+        Soy ingeniero ambiental fanatico de la vida al aire libre, me gusta practicar deportes de contacto y actualmente soy profesor de taekwondo con cinturon negro 3 dan, tambien me gustan los juegos de estategia y leer novela historica 
+
+
+
 
 
         2.3.4 Liliana Cañas Eastman: 
