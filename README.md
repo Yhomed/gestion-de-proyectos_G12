@@ -17,8 +17,9 @@
         Mi nombre es Fernando Sanchez, tengo 21 años, me dedico a la restauración de motos y autos. Mis hobbies son juntarme los fines de semana con amigos a comer asado, jugar juegos online y andar en moto.
 
 
-        2.3.2
+        2.3.2 Abril Alvarez Amoedo:
 
+        Mi nombre es Abril Alvarez Amoedo. Tengo 19 años. Estoy estudiando Licenciatura en Sistemas en la UNPA. Soy de Río Gallegos, Santa Cruz, Argentina. Como hobby me gusta dibujar, cantar y escribir.
 
         2.3.3
 
