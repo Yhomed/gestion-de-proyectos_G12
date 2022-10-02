@@ -12,7 +12,9 @@
 
     2.3 Integrantes del grupo:
 
-        2.3.1
+        2.3.1 Fernando Javier Sanchez:
+
+        Mi nombre es Fernando Sanchez, tengo 21 años, me dedico a la restauración de motos y autos. Mis hobbies son juntarme los fines de semana con amigos a comer asado, jugar juegos online y andar en moto.
 
 
         2.3.2
