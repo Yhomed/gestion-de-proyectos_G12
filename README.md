@@ -2,7 +2,7 @@
 
 1. URL del repositorio: https://github.com/Yhomed/gestion-de-proyectos_G12.git
 
-2. 
+2. Descripción del sitio:
 
     2.1 Oferta de servicios:
 
