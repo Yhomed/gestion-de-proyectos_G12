@@ -57,3 +57,5 @@
 4. Wireframe
 
 5. Boceto o diseño gráfico del sitio (logo, colores, tipografías, etc)
+
+    https://github.com/Yhomed/gestion-de-proyectos_G12/tree/main/Design
