@@ -35,29 +35,19 @@
 
     3.1 COURSERA (https://www.coursera.org/)
 
-     El mismo ofrece cursos en línea gratuitos procedentes de universidades y empresas lo cual puede considerarse un buen referente a tener en cuenta dado que se relaciona con el objetivo de nuestro e-commerce, que es ofrecerle al público la posibilidad de capacitarse tanta veces como lo necesite en cualquiera de los cursos que vaya a tomar garantizando una mayor cobertura en sus conocimientos.
-
+        El mismo ofrece cursos en línea gratuitos procedentes de universidades y empresas lo cual puede considerarse un buen referente a tener en cuenta dado que se relaciona con el objetivo de nuestro e-commerce, que es ofrecerle al público la posibilidad de capacitarse tanta veces como lo necesite en cualquiera de los cursos que vaya a tomar garantizando una mayor cobertura en sus conocimientos.
 
     3.2 (https://edutin.com/curso-de-excel)
-        es una pagina que nos gustó la estructura, ya que es muy simple y consisa a lo que apunta, que son cursos que empiezan desde un nivel inicial a algo mas avanzado
-
-
-
+        Es una pagina que nos gustó la estructura, ya que es muy simple y consisa a lo que apunta, que son cursos que empiezan desde un nivel inicial a algo mas avanzado
 
     3.3 (https://www.capacitarte.org/curso/curso-de-excel)
-       es una pagina que nos llamó mucho la atención la forma en la que usaron las imágenes y los botones, ya que cada una de estas representan diferentes carreras, con sus diderentes cursos dentro
+       Es una pagina que nos llamó mucho la atención la forma en la que usaron las imágenes y los botones, ya que cada una de estas representan diferentes carreras, con sus diderentes cursos dentro
         
-
-
-
     3.4 Domestica (https://www.domestika.org/) 
-    
-        Es una pagina que es amigable con el usuario ademas los servicios ofrecidos son cursos de formacion continua para un publico amplio 
+       Es una pagina que es amigable con el usuario ademas los servicios ofrecidos son cursos de formacion continua para un publico amplio 
 
     3.5 (https://alaimolabs.com/es/scrum-master-curso-gratis?gclid=CjwKCAjw7eSZBhB8EiwA60kCW-7Ie7J0By2zXShvpr_68IgPWMk26Mg1RY0YvNitxmfpWS_4HzZGpxoCzoEQAvD_BwE)
-
         La elección de esta página se debe al atractivo de su diseño, a la funcionalidad y al servicio que la misma brinda. Este sitio web ofrece cursos con objetivos claves para aquellos interesados en introducirse al tema que la misma provee mediante esta plataforma llamada 'alaimo labs'.
-
 
 
 4. Wireframe
