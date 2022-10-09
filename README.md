@@ -36,10 +36,14 @@
 
 
     3.2 (https://edutin.com/curso-de-excel)
+        es una pagina que nos gustó la estructura, ya que es muy simple y consisa a lo que apunta, que son cursos que empiezan desde un nivel inicial a algo mas avanzado
+
 
 
 
     3.3 (https://www.capacitarte.org/curso/curso-de-excel)
+       es una pagina que nos llamó mucho la atención la forma en la que usaron las imágenes y los botones, ya que cada una de estas representan diferentes carreras, con sus diderentes cursos dentro
+        
 
 
 
