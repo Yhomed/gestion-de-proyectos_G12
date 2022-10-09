@@ -6,9 +6,11 @@
 
     2.1 Oferta de servicios:
 
+    Ofrecemos una ruta de aprendizaje que facilitará su trabajo, mejorará la gestión y los resultados de sus proyectos ágiles y prescriptivos con la aplicación de herramientas avanzadas del mejor programa de cálculo: Microsoft Excel.
 
     2.2 Público objetivo:
 
+    Profesionales en ingeniería o afines, que trabajen en proyectos y deseen utilizar herramientas avanzadas para mejorar la gestión de sus proyectos ágiles y prescriptivos.
 
     2.3 Integrantes del grupo:
 
