@@ -6,7 +6,7 @@
 
     2.1 Oferta de servicios:
 
-    Ofrecemos una ruta de aprendizaje que facilitará su trabajo, mejorará la gestión y los resultados de sus proyectos ágiles y prescriptivos con la aplicación de herramientas avanzadas del mejor programa de cálculo: Microsoft Excel.
+    Ofrecemos cursos parte de una ruta de aprendizaje que facilitará su trabajo, mejorará la gestión y los resultados de sus proyectos ágiles y prescriptivos con la aplicación de herramientas avanzadas del mejor programa de cálculo: Microsoft Excel.
 
     2.2 Público objetivo:
 
