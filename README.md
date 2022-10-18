@@ -1,5 +1,7 @@
 # grupo-12
 
+SPRINT 1
+
 1. URL del repositorio: https://github.com/Yhomed/gestion-de-proyectos_G12.git
 
 2. Descripción del sitio:
@@ -55,3 +57,7 @@
 5. Boceto o diseño gráfico del sitio (logo, colores, tipografías, etc)
 
     https://github.com/Yhomed/gestion-de-proyectos_G12/tree/main/Design
+
+SPRINT 2
+
+1. Link del tablero del proyecto: https://trello.com/invite/b/bfsxrIQo/ATTIab74c744608a9f0a8575e07e95c329ea6BA6D353/proyecto-integrador-g12
