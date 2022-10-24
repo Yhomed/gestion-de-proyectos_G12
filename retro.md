@@ -33,4 +33,4 @@ While the ideal scenario is to do each topic one by one, you can also open it up
 
     - ADMINISTRACIÓN DEL TIEMPO INDIVIDUAL: La dedicación particular al curso no ha sido la adecuada ya requiere un mayor nivel para que las reuniones sean más eficientes.
 
-    - HERRAMIENTAS DE NOTAS COLABORATIVAS - INTERACTIVAS: Buscar una herramienta para tomar notas y tener los conceptos a la mano para aplicarlos fácil y rápidamente a la hora del desarrollo de las asignaciones.
+    - HERRAMIENTA DE NOTAS COLABORATIVAS - INTERACTIVAS: Buscar una herramienta para tomar notas y tener los conceptos a la mano para aplicarlos fácil y rápidamente a la hora del desarrollo de las asignaciones.
