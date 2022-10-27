@@ -6,6 +6,7 @@
 
 body {
     padding: 10px;
+    font-size: 12px;
 }
 
 /* headeer */
@@ -61,7 +62,7 @@ a {
 }
 
 
-.centrado-MAIN {
+.centrado-gratis-descuento {
 
     display: flex;
     flex-wrap: wrap;
@@ -86,6 +87,12 @@ a {
     
 }
 
+.secciones {
+    display: flex;
+    flex-direction: row;
+
+}
+
 
 
 
@@ -101,6 +108,7 @@ a {
     .burger-menu {
         display:none;
     }
+    
 
 }
 
