@@ -1,0 +1,60 @@
+/*  DETALLE DEL PRODUCTO */
+
+ article div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section article {
+    margin: 10px;
+}
+
+.numero {
+    padding: 20px;
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.titulo {
+    font-size: 25px;
+    align-self: center;
+}
+
+.numero, .titulo {
+    color: #193669;
+}
+
+.botones-del-form {
+    display: flex;
+    justify-content: space-around;
+}
+
+input {
+    color: white;
+    background-color: #193669;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin: 20px;
+}
+
+.descripcion, article p {
+    padding: 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.curso {
+    border-bottom: 1px solid #2E5EAF;
+}
+
+.cursos {
+    align-items: center;
+    padding: 20px;
+}
+
+main section article {
+    position: relative;
+}
+
