@@ -44,6 +44,14 @@ a {
 .icono_centrar {
     text-align: center;
 }
+ul li {
+    justify-content: center;
+    padding: 2vw;
+    font-size: 1.5vw;
+    flex-wrap: nowrap;
+
+
+}
 
 .burger-menu {
     font-size: 16px;
@@ -51,7 +59,7 @@ a {
 }
 
 .banner {
-    width: 100px;
+    width: 100vw;
 }
 
 
@@ -66,7 +74,8 @@ a {
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: row;
     
 }
 .unite-gratis {
@@ -74,7 +83,6 @@ a {
     background-color: blueviolet;
     border-radius: 3px;
     padding: 9px;
-    margin-right: 410px;
 }
 
 .descuentos {
@@ -82,9 +90,15 @@ a {
     background-color:yellow;
     border-radius: 3px;
     padding: 9px;
-    margin-right: 4px;
-   
-    
+}
+
+article {
+    display: flex;
+}
+
+.foto-articulo {
+    width: 100vw;
+
 }
 
 .secciones {
@@ -93,7 +107,10 @@ a {
 
 }
 
-
+footer {
+    display: flex;
+    flex-direction: row;
+}
 
 
 
