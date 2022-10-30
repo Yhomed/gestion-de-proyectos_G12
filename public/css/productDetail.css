@@ -1,7 +1,14 @@
 /*  DETALLE DEL PRODUCTO */
+
 * {
     box-sizing: border-box;
     font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo {
+    margin-left: 15px;
+    margin-top: 5px;
+    width: 850px;
 }
 
 .flex-centrado-rutas {
@@ -85,7 +92,7 @@ input {
 
 .cursos-de-la-ruta {
     width: 70vw;
-    margin: 15vw;
+    margin: 10vw;
     justify-content: center;
 }
 
@@ -104,7 +111,7 @@ h2 {
     color: #193669;
 }
 
-@media(min-width: 361px) {
+@media(min-width: 361px) { 
 
     .descripcion {
         display: flex;
@@ -112,8 +119,35 @@ h2 {
         text-align: center;
     }
 
-    
 }
+
+h2 {
+    text-align: center;
+    margin: 20px;
+    margin-top: 10vw;
+}
+
+.tres-alumnos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.frase-alumno {
+    height: 40vw;
+    margin: 10px;
+    width: 30vw;
+}
+
+.alumnos {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (min-width: 769px){
+
+    .burger-menu {
+        display: none;
+    }
 
 
 
