@@ -1,6 +1,33 @@
 /*  DETALLE DEL PRODUCTO */
+* {
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
 
- article div {
+.flex-centrado-rutas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin: 80px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+article div {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -12,13 +39,13 @@ section article {
 
 .numero {
     padding: 20px;
-    font-size: 40px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
 }
 
 .titulo {
-    font-size: 25px;
+    font-size: 30px;
     align-self: center;
+
 }
 
 .numero, .titulo {
@@ -39,11 +66,13 @@ input {
     margin: 20px;
 }
 
-.descripcion, article p {
+.descripcion, article p, .parrafo-de-la-ruta {
     padding: 1px;
     display: flex;
     flex-wrap: wrap;
+    font-size: 22px;
 }
+
 
 .curso {
     border-bottom: 1px solid #2E5EAF;
@@ -54,7 +83,38 @@ input {
     padding: 20px;
 }
 
-main section article {
-    position: relative;
+.cursos-de-la-ruta {
+    width: 70vw;
+    margin: 15vw;
+    justify-content: center;
 }
+
+.ruta-del-curso {
+    width: 70vw;
+    margin: 15vw;
+    justify-content: center;
+}
+
+h2, h3, main p {
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+    color: #193669;
+}
+
+@media(min-width: 361px) {
+
+    .descripcion {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    
+}
+
+
+
 
