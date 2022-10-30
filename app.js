@@ -55,3 +55,11 @@ app.post("/register", (req,res) => {
 app.post("/contacto", (req,res) => {
     res.redirect("/");
 })
+
+// app.post("/productDetail", (req,res) => {
+//     res.redirect("https://wa.link/6l716l");
+// })
+
+// app.post("/productDetail", (req,res) => {
+//     res.redirect("https://forms.gle/HUYJZJjcnLA97vZ87");
+// })
