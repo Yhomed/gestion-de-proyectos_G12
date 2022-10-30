@@ -7,7 +7,7 @@ const app = express();
 app.use(express.static('public'));
 // app.use(express.static(path.resolve(__dirname, './public'))); ¿Cuál es la diferencia entre usar esta línea o la anterior?
 
-app.listen(process.env.PORT || 3050, () => console.log('Servidor activo.'));
+app.listen(process.env.PORT || 3050, () => console.log('Servidor activo-3050'));
 
 
 
@@ -26,6 +26,12 @@ app.get("/productDetail", (req, res) => {
 app.get("/login", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/login.html"))
 })
+
+app.get("/register", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./views/register.html"))
+})
+
+
 
 app.post("/register", (req,res) => {
     res.redirect("/");

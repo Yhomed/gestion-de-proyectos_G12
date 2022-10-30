@@ -11,23 +11,24 @@
     <script src="https://kit.fontawesome.com/559ec15c26.js" crossorigin="anonymous"></script>
 
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/login_register.css" rel="stylesheet">
 </head>
 
 
 <body>
 
     <header>
-        <div class="logo">
-            <a href='/'><img src="/img/22-06-30 Logo No PMI.png" alt="logo" width="5%"></a>
-        </div>
+                <div class="logo">
+                    <a href='/'><img src="/img/22-06-30 Logo No PMI.png" alt="logo" width="5%"></a>
+                </div>
 
     <nav>
         <ul class="flex-centrado-rutas">
             <li><a href=""> Ruta y Cursos</a></li>
             <li><a href=""> Sobre Mi</a></li>
             <li><a href=""> Contacto </a></li>
-            <li><a href=""><i class="fa-solid fa-user"></i> Crea Tu Cuenta</a></li>
-            <li><a href=""> Ingresa</a></li>
+            <li><a href="/register"><i class="fa-solid fa-user"></i> Crea Tu Cuenta</a></li>
+            <li><a href="/login"> Ingresa</a></li>
             <li><a href=""> Carrito De Compras</a></li>
         </ul>
 
@@ -45,9 +46,94 @@
 
     <main>
 
-        
-    </main>
+        <!-- FORMULARIO DE REGISTRO -->
+        <form action="/register" method="POST">
+            <!-- <form action="/" method="GET"> -->
 
+            <!-- NOMBRE -->
+            <div>
+                <label for="nombre" class="etiqueta">Nombre: </label>
+                <input type = "text" name="nombre" id="nombre" placeholder="Nombre completo" required class="campo-de-texto">
+                <span class="feedback"></span> <!-- para alertar errores -->
+            </div>
+
+             <!-- APELLIDO -->
+             <div>
+                <label for="apellido" class="etiqueta">Apellidos: </label>
+                <input type = "text" name="apellido" id="apellido" placeholder="Apellidos" required class="campo-de-texto">
+                <span class="feedback"></span> <!-- para alertar errores -->
+            </div>
+
+            
+            <!-- FECHA DE NACIMIENTO -->
+            <div>
+                <label for="fecha-nacimiento" class="etiqueta">Fecha de Nacimiento: </label>
+                <input type="date" name="fecha-nacimiento"  id="fecha-nacimiento" value="yyyy-mm-dd" class="campo-de-texto">
+            </div>
+
+            <!-- DOMICILIO -->
+            <div>
+                <label for="domicilio" class="etiqueta">Domicilio: </label>
+                <input type="text" name="domicilio" placeholder="Ej: Cll 10 #43A-12" class="campo-de-texto">
+            </div>
+
+            <!-- PERFIL USUARIO -->
+            <div>    
+                <label for="perfil-usuario" class="etiqueta">Perfil de Usuario:</label>
+                    <label class="radio-button"><input type="radio" name="perfil-usuario" value="Comprador"> Comprador</label>
+                        
+                    <label class="radio-button"><input type="radio" name="perfil-usuario" value="Vendedor"> Vendedor</label> 
+                
+            </div>
+
+            <!-- CATEGORIAS DE INTERES -->
+            <label for="cat-interes" class="etiqueta"><div class="cat-interes">Categorías de Interés:</div>
+                                        
+                <div class="checkboxes">
+                    <label><input type="checkbox" name="cat-interes" value="Electro"> Electro</label>
+                    
+                    <label><input type="checkbox" name="cat-interes" value="Moda"> Moda</label>
+                        
+                    <label><input type="checkbox" name="cat-interes" value="Hogar"> Hogar</label>
+                        
+                    <label><input type="checkbox" name="cat-interes" value="Juguetería"> Juguetería</label>
+                        
+                    <label><input type="checkbox" name="cat-interes" value="Vida sana"> Vida sana</label>
+                </div>
+            </label>
+
+            <!-- FOTO DE USUARIO -->
+            <div>
+                <label class="etiqueta"> Foto: </label>
+                <input type = "file" name = "foto-usuario">
+            </div>
+
+            <!-- CONTRASEÑA -->
+            <div>
+                <label class="etiqueta"> Contraseña: </label>
+                <input type = "password" name = "password" required class="campo-de-texto">
+                <span class="feedback"></span> 
+            </div>
+
+            <!-- CONFIRMAR CONTRASEÑA -->
+            <div>
+                <label class="etiqueta">Confirmar Contraseña: </label>
+                <input type = "password" name = "password" required class="campo-de-texto">
+                <span class="feedback"></span> 
+            </div>
+
+            <!-- BOTON BORRAR -->
+            <button type="reset">Borrar</button>
+
+            <!-- BOTON ENVIAR -->
+            <button type="submit">Enviar</button>
+            
+            <!-- <button type="submit" value="Enviar" name="submit">Enviar</button> -->
+        
+        </form>
+
+
+    </main>
 
     <h1>¿QUÉ DICEN MIS ESTUDIANTES?</h1>
 
