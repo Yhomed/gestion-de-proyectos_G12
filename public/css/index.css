@@ -19,6 +19,7 @@ body {
 
 .flex-centrado-rutas {
     display: flex;
+    display: none;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
@@ -66,7 +67,8 @@ ul li {
 /* MAIN */
 
 .parrafo {
-    margin-right: 50px;
+    margin:10px;
+    text-align: center;
 }
 
 
@@ -100,17 +102,50 @@ article {
     width: 100vw;
 
 }
-
-.secciones {
-    display: flex;
-    flex-direction: row;
-
+.ruta-de-cursos {
+    text-align: center;
 }
 
-footer {
+.cursos {
+    flex-direction: column;
+    align-items: center;
+
+}
+.imgRuta {
+    display: block;
+    padding: 10px;
+    width: 60vw;
+    
+}
+
+.VER-CURSOS{
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+    margin-top: 10vw;
+}
+
+.tres-alumnos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.frase-alumno {
+    height: 40vw;
+    margin: 10px;
+    width: 30vw;
+}
+
+.alumnos {
     display: flex;
     flex-direction: row;
 }
+
 
 
 
@@ -119,17 +154,25 @@ footer {
 /* MEDIA QUIERIES */
 @media (min-width: 415px) {
     .flex-centrado-rutas {
+        display: flex;
         flex-direction:inherit;
+    
     }
 
     .burger-menu {
-        display:none;
+        display: none;
+
     }
+
+
     
 
 }
 
 @media (min-width: 769px){
 
+    .burger-menu {
+        display: none;
+    }
 
 }
