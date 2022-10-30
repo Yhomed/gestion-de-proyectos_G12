@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
@@ -66,6 +67,13 @@ ul li {
 
 /* MAIN */
 
+.aprende-sin-limites {
+    margin:10px;
+    text-align: center;
+    color: #193669;
+
+}
+
 .parrafo {
     margin:10px;
     text-align: center;
@@ -104,6 +112,8 @@ article {
 }
 .ruta-de-cursos {
     text-align: center;
+    color: #193669;
+    ;
 }
 
 .cursos {
@@ -128,6 +138,13 @@ h2 {
     text-align: center;
     margin: 20px;
     margin-top: 10vw;
+    color: #193669;
+
+}
+
+.colaboraciones {
+    text-align: center;
+    margin-bottom: 5vw
 }
 
 .tres-alumnos {
