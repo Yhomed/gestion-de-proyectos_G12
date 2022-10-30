@@ -34,6 +34,10 @@ a {
     text-decoration: none;
 }
 
+body {
+    background-color: #F7F7F7;
+}
+
 article div {
     display: flex;
     flex-direction: row;
@@ -111,6 +115,27 @@ h2 {
     color: #193669;
 }
 
+
+/* armado de transición para los botones */
+
+input:hover {
+    background-color: #b458c7;
+}
+
+input {
+    transition: background-color 450ms;
+}
+
+/**/
+
+.titulo:hover {
+    color: #1b131d;
+}
+
+.titulo {
+    transition: color 450ms;
+}
+
 @media(min-width: 361px) { 
 
     .descripcion {
@@ -142,6 +167,7 @@ h2 {
     display: flex;
     flex-direction: row;
 }
+
 
 @media (min-width: 769px){
 

@@ -8,6 +8,7 @@
 body {
     padding: 10px;
     font-size: 12px;
+    background-color: #FFFFFF;
 }
 
 /* headeer */
@@ -90,14 +91,14 @@ ul li {
 }
 .unite-gratis {
     color: white;
-    background-color: blueviolet;
+    background-color: #193669;
     border-radius: 3px;
     padding: 9px;
 }
 
 .descuentos {
-    color: blueviolet;
-    background-color:yellow;
+    color: white;
+    background-color:#193669;
     border-radius: 3px;
     padding: 9px;
 }
@@ -132,6 +133,10 @@ article {
     flex-wrap: wrap;
     text-align: center;
     padding: 10px;
+    background-color: #193669;
+    color: white;
+    
+    
 }
 
 h2 {
