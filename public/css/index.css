@@ -19,6 +19,7 @@ body {
 
 .flex-centrado-rutas {
     display: flex;
+    display: none;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
@@ -119,17 +120,25 @@ footer {
 /* MEDIA QUIERIES */
 @media (min-width: 415px) {
     .flex-centrado-rutas {
+        display: flex;
         flex-direction:inherit;
+    
     }
 
     .burger-menu {
-        display:none;
+        display: none;
+
     }
+
+
     
 
 }
 
 @media (min-width: 769px){
 
+    .burger-menu {
+        display: none;
+    }
 
 }
