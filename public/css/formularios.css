@@ -1,0 +1,85 @@
+/* REGISTER STYLES */ 
+
+* {
+    box-sizing: border-box;
+}
+
+/* body */
+
+    /* main */
+
+        form {
+            margin: 10px;
+        }
+
+        form div {
+            font-size: 14px;
+            display: block;
+            padding: 5px;
+        }
+
+        .etiqueta {
+            display: block;
+            padding: 5px;
+            margin: 5px;
+            font-weight: bold ;
+        }
+
+        .campo-de-texto {
+            width: 100%;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .radio-button{
+            width: 100%;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .checkboxes {
+            font-weight: lighter;
+        }
+
+        .checkboxes label {
+            /* background-color: gray; */
+            margin: 10px;
+            display: block;
+        }
+
+        /* .cat-interes {
+            background-color: blueviolet;
+        } */
+
+        form button {
+            margin: 12px;
+            background-color: #193669;
+            color: white;
+            border: 0px;
+            padding: 8px;
+            font-size: 14px;
+            border-radius: 3px;
+            transition: all 1s;
+
+        }
+
+        form button:hover {
+            background-color: #2e5eaf;
+            padding: 10px;
+        }
+
+        main {
+            padding: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        h2 {
+            margin: 20px;
+            font-size: 20px;
+        }
+
+
+       
+
+    /* /main */
