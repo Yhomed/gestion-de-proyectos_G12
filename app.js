@@ -31,12 +31,19 @@ app.get("/register", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/register.html"))
 })
 
+app.get("/contacto", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./views/contacto.html"))
+})
 
+
+app.post("/login", (req,res) => {
+    res.redirect("/");
+})
 
 app.post("/register", (req,res) => {
     res.redirect("/");
 })
 
-app.post("/login", (req,res) => {
+app.post("/contacto", (req,res) => {
     res.redirect("/");
 })

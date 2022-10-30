@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/559ec15c26.js" crossorigin="anonymous"></script>
 
     <link href="css/index.css" rel="stylesheet">
-    <link href="css/login_register.css" rel="stylesheet">
+    <link href="css/formularios.css" rel="stylesheet">
 </head>
 
 
@@ -26,7 +26,7 @@
         <ul class="flex-centrado-rutas">
             <li><a href=""> Ruta y Cursos</a></li>
             <li><a href=""> Sobre Mi</a></li>
-            <li><a href=""> Contacto </a></li>
+            <li><a href="/contacto"> Contacto </a></li>
             <li><a href="/register"><i class="fa-solid fa-user"></i> Crea Tu Cuenta</a></li>
             <li><a href="/login"> Ingresa</a></li>
             <li><a href=""> Carrito De Compras</a></li>
@@ -45,6 +45,36 @@
     </header>
 
     <main>
+
+        <!-- FORMULARIO DE LOGIN -->
+        <form action="/login" method="POST">
+            <!-- <form action="/" method="GET"> -->
+
+            <h2>Ingresa</h2>
+
+            <!-- EMAIL -->
+            <div>
+                <label for="email" class="etiqueta">Email: </label>
+                <input type = "email" name="email" id="email" placeholder="usuario@abc.com" required class="campo-de-texto">
+                <span class="feedback"></span> <!-- para alertar errores -->
+            </div>
+
+            <!-- CONTRASEÑA -->
+            <div>
+                <label class="etiqueta"> Contraseña: </label>
+                <input type = "password" name = "password" placeholder="Ingresa tu contraseña" required class="campo-de-texto">
+                <span class="feedback"></span> 
+            </div>
+
+            <!-- BOTON BORRAR -->
+            <button type="reset">Borrar</button>
+
+            <!-- BOTON ENVIAR -->
+            <button type="submit">Enviar</button>
+            
+            <!-- <button type="submit" value="Enviar" name="submit">Enviar</button> -->
+        
+        </form>
 
 
     </main>
