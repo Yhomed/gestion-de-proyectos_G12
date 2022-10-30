@@ -47,13 +47,12 @@ a {
 .icono_centrar {
     text-align: center;
 }
+
 ul li {
     justify-content: center;
     padding: 2vw;
     font-size: 1.5vw;
     flex-wrap: nowrap;
-
-
 }
 
 .burger-menu {

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/559ec15c26.js" crossorigin="anonymous"></script>
     <link href="css/productDetail.css" rel="stylesheet">
 
     <title>Gestión de Proyectos GCM</title>
@@ -22,11 +22,11 @@
         <ul class="flex-centrado-rutas">
             <li><a href="/productDetail"> Ruta y Cursos</a></li>
             <li><a href=""> Sobre Mi</a></li>
-            <li><a href=""> Contacto </a></li>
+            <li><a href="/contacto"> Contacto </a></li>
             <li><a href="/register"><i class="fa-solid fa-user"></i> Crea Tu Cuenta</a></li>
             <li><a href="/login"> Ingresa</a></li>
+            <li><a href="/productCar"> Carrito De Compras</a></li>
         </ul>
-
     </nav>
 
     <div class="icono_centrar">    
@@ -34,7 +34,7 @@
     </div>        
 
     <div class="banner">
-        <img src="/img/Imagen Banner.jpg" alt="banner" width="500%">
+        <img src="/img/Imagen Banner.jpg" alt="banner" width="100%">
     </div>
 
     </header>
@@ -46,27 +46,31 @@
 
         <h2>RUTA DE APRENDIZAJE</h2> <!-- RUTA -->
 
-            <h3>Gestión de Proyectos Ágiles y Prescripctivos, potencializada con Funciones Avanzadas de EXCEL</h3>
+            <h3 class = "h3-de-la-ruta">Gestión de Proyectos Ágiles y Prescripctivos, potencializada con Funciones Avanzadas de EXCEL</h3>
                 <p>Esta Ruta muestra los cursos asociados que te permitirán perfeccionarte en herramientas avanzadas para la gestión de proyectos ágiles</p>
             <section>
                 <article class = "ruta-del-curso">
                     <img src="/img/Ruta.jpg" alt="" width="100%">
+                    <div class = "parrafo-de-la-ruta">
                     <p>Podrás tomar cualquiera de los cursos de la ruta, o, si deseas sacar el mayor provecho, podrás tomarlos en orden. De esta manera, garantizarás una cobertura más amplia en los conocimientos de las herramientas claves para la gestión de proyectos ágiles.</p>
+                    </div>
                 </article>
 
-        <h2>CURSOS DE LA RUTA</h2> <!-- CURSOS QUE OFRECE EL SITIO -->
+            <section class = "contenedor-cursos-de-la-ruta">
 
-            <section>
                 <article class = "cursos-de-la-ruta">
                     <img src="/img/Slide03 (Large).PNG" alt="" width="100%"> <!-- IMAGEN CON LOS CURSOS QUE OFRECE EL SITIO -->
                 </article>
+
             </section>
 
             <section>
 
                 <!-- DESCRIPCIÓN DETALLADA DE LOS CURSOS -->
 
-                <article class = cursos>
+                <h2>CURSOS DE LA RUTA</h2> <!-- CURSOS QUE OFRECE EL SITIO -->
+
+                <div class = cursos>
 
                 <article class = "curso">
                     <div>
@@ -124,9 +128,9 @@
                         <p>Los Dashboards y tableros de control te permitirán visualizar los indicadores claves que están conectados</p>
                         <p>con el mapa estatrégico del proyecto y tomar decisiones acertadas a tiempo para ordenar y controlar la</p>
                         <p>gestión del proyecto.</p>
-                    </div>
+                        </div>
                 </article>
-                </article>
+            </div>
             </section>
 
             <div class = "botones-del-form">
@@ -139,14 +143,14 @@
             </form>
 
             <!-- REDIRIGUE A LLENAR FORMULARIO PARA CONOCIMIENTO DEL EXCEL -->
-            <form action="/" method="POST">
+            <form action="" method="POST">
                 <label for="Quiero saber si estos cursos son para mi">
                     <input type="submit" value="Quiero saber si estos cursos son para mi">
                 </label>
             </form>
 
             <!-- REDIRIGUE A LLENAR FORMULARIO PARA INSCRIBIRSE A LOS CURSOS -->
-            <form action="/" method="POST">
+            <form action="" method="POST">
                 <label for="Inscripción">
                     <input type="submit" value="Inscripción">
                 </label>
@@ -156,13 +160,47 @@
     </main>
     
     <!-- /MAIN -->
-
+    <h1>¿QUÉ DICEN MIS ESTUDIANTES?</h1>
     <footer>
-            <h1>¿QUÉ DICEN MIS ESTUDIANTES?</h1>
-            <p> Fui alumno de Gustavo en el Diplomado de Gestión de proyectos y puedo decir que no solo es un caudal de conocimientos, sino también un hombre realmente inspirador y magistral.  D. Avendaño</p>
-            <p> Fui alumno de Gustavo en el Diplomado de Gestión de proyectos y puedo decir que no solo es un caudal de conocimientos, sino también un hombre realmente inspirador y magistral.  D. Avendaño</p>
-            <p> Fui alumno de Gustavo en el Diplomado de Gestión de proyectos y puedo decir que no solo es un caudal de conocimientos, sino también un hombre realmente inspirador y magistral.  D. Avendaño</p>
-        <p>©2022 por Gustavo Cañas - GCM Gestión de Proyectos</p>
-    </footer>
+
+        <section class="alumnos">
+          
+  
+          <div class="tres-alumno">
+                <p class="frase-alumno"> Fui alumno de Gustavo en el Diplomado de Gestión de proyectos y puedo decir que no solo es un caudal de conocimientos, sino también un hombre realmente inspirador y magistral.
+                </p>
+  
+               <p class="personas"> D. Avendaño</p>
+         </div>
+  
+  
+         <div class="tres-alumno">
+                <p class="frase-alumno"> Su forma catedrática y amena de transmitir la información hacen de Gustavo de los mejores y más valiosos recuerdos de mi formación estudiantil
+               </p>
+         
+  
+          <p class="persona"> C. D. Moreno</p>
+         </div>
+  
+  
+         <div class="tres-alumno">
+              <p class="frase-alumno"> Lo que más gusta de Gustavo es su forma de enseñar, su paciencia y gusto por la Gestión de Proyectos. Más allá de los conocimientos técnicos me llevo aprendizajes que puedo aplicar todos los días de mi vida.
+              </p>
+  
+              <p class="persona"> J. Lopez</p>
+         </div>
+  
+  
+      </section>
+  
+  
+                     <h2>MIS CLIENTES</h2>
+          <p>Algunas de las colaboraciones importantes</p>
+          <div>
+              <img src="/img/Collage.png" alt="empresas img" width="100%">
+              
+          </div>
+  
+      </footer>
 </body>
 </html>
