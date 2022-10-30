@@ -35,6 +35,14 @@ app.get("/contacto", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/contacto.html"))
 })
 
+app.get("/productDetail", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./views/productDetail.html"))
+})
+
+app.get("/productCar", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./views/productCar.html"))
+})
+
 
 app.post("/login", (req,res) => {
     res.redirect("/");
