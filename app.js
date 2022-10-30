@@ -2,7 +2,21 @@ const express = require('express');
 
 const path = require('path');
 
+
+document.addEventListener('DOMContentLoaded', ()=> { fetchData() });
 const app = express();
+const fetchData = async () => {
+    try {
+      const res = await fetch('api.json')
+      const data = awai .json ();
+      console.log(data)
+    } catch (error) {
+        console.log(error)
+    }
+    }
+const pintarProductos = (data) => {
+
+}
 
 app.use(express.static('public'));
 // app.use(express.static(path.resolve(__dirname, './public'))); ¿Cuál es la diferencia entre usar esta línea o la anterior?
@@ -35,6 +49,10 @@ app.get("/contacto", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/contacto.html"))
 })
 
+app.get("/productCart", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./views/productCart.html"))
+})
+
 
 app.post("/login", (req,res) => {
     res.redirect("/");
@@ -47,3 +65,4 @@ app.post("/register", (req,res) => {
 app.post("/contacto", (req,res) => {
     res.redirect("/");
 })
+
