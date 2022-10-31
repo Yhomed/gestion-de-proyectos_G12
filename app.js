@@ -9,8 +9,6 @@ app.use(express.static('public'));
 
 app.listen(process.env.PORT || 3050, () => console.log('Servidor activo-3050'));
 
-
-
 app.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/index.html"))
 })
