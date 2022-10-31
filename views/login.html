@@ -10,6 +10,7 @@
 
     <script src="https://kit.fontawesome.com/559ec15c26.js" crossorigin="anonymous"></script>
 
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link href="css/formularios.css" rel="stylesheet">
 </head>
@@ -18,9 +19,9 @@
 <body>
 
     <header>
-                <div class="logo">
-                    <a href='/'><img src="/img/22-06-30 Logo No PMI.png" alt="logo" width="5%"></a>
-                </div>
+        <div class="logo">
+            <a href='/'><img src="/img/22-06-30 Logo No PMI.png" alt="logo" width="5%"></a>
+        </div>
 
     <nav>
         <ul class="flex-centrado-rutas">
@@ -43,7 +44,7 @@
     </div>
 
     </header>
-
+    
     <main>
 
         <!-- FORMULARIO DE LOGIN -->
@@ -66,6 +67,10 @@
                 <span class="feedback"></span> 
             </div>
 
+            <!-- CHECKBOX RECORDAR MIS DATOS -->
+
+            <label><input type="checkbox" name="recordar-datos" value="recordar-datos"> Recordar mis datos</label>
+            
             <!-- BOTON BORRAR -->
             <button type="reset">Borrar</button>
 
@@ -73,34 +78,59 @@
             <button type="submit">Enviar</button>
             
             <!-- <button type="submit" value="Enviar" name="submit">Enviar</button> -->
+
+
         
         </form>
 
 
     </main>
 
-    <h1>¿QUÉ DICEN MIS ESTUDIANTES?</h1>
-
+    <div class="mis-estudiantes">
+        <h2>¿QUÉ DICEN MIS ESTUDIANTES?</h2>
+    </div>
 
     <footer>
 
+      <section class="alumnos">
+        
 
-        <p> Fui alumno de Gustavo en el Diplomado de Gestión de proyectos y puedo decir que no solo es un caudal de conocimientos, sino también un hombre realmente inspirador y magistral.  D. Avendaño
+        <div class="tres-alumno">
+              <p class="frase-alumno"> Fui alumno de Gustavo en el Diplomado de Gestión de proyectos y puedo decir que no solo es un caudal de conocimientos, sino también un hombre realmente inspirador y magistral.
+              </p>
 
-        </p>
-
-
-
-        <p> Fui alumno de Gustavo en el Diplomado de Gestión de proyectos y puedo decir que no solo es un caudal de conocimientos, sino también un hombre realmente inspirador y magistral.  D. Avendaño
-
-        </p>
-
+             <p class="personas"> D. Avendaño</p>
+       </div>
 
 
-        <p> Fui alumno de Gustavo en el Diplomado de Gestión de proyectos y puedo decir que no solo es un caudal de conocimientos, sino también un hombre realmente inspirador y magistral.  D. Avendaño
+       <div class="tres-alumno">
+              <p class="frase-alumno"> Su forma catedrática y amena de transmitir la información hacen de Gustavo de los mejores y más valiosos recuerdos de mi formación estudiantil
+             </p>
+       
 
-        </p>
+        <p class="persona"> C. D. Moreno</p>
+       </div>
+
+
+       <div class="tres-alumno">
+            <p class="frase-alumno"> Lo que más gusta de Gustavo es su forma de enseñar, su paciencia y gusto por la Gestión de Proyectos. Más allá de los conocimientos técnicos me llevo aprendizajes que puedo aplicar todos los días de mi vida.
+            </p>
+
+            <p class="persona"> J. Lopez</p>
+       </div>
+
+
+    </section>
+
+
+                   <h2>MIS CLIENTES</h2>
+        <p class="colaboraciones">Algunas de las colaboraciones importantes</p>
+        <div>
+            <img src="/img/Collage.png" alt="empresas img" width="100%">
+            
+        </div>
 
     </footer>
 </body>
 </html>
+

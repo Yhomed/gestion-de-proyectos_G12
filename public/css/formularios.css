@@ -79,6 +79,11 @@
             font-size: 20px;
         }
 
+        label {
+            display:block;
+            padding: 10px;
+        }
+
 
        
 
