@@ -2,7 +2,8 @@ const express = require('express');
 
 const path = require('path');
 
-const app = express();
+
+
 
 app.use(express.static('public'));
 // app.use(express.static(path.resolve(__dirname, './public'))); ¿Cuál es la diferencia entre usar esta línea o la anterior?
@@ -35,14 +36,9 @@ app.get("/contacto", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/contacto.html"))
 })
 
-app.get("/productDetail", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/productDetail.html"))
-})
-
 app.get("/productCar", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/productCar.html"))
 })
-
 
 app.post("/login", (req,res) => {
     res.redirect("/");
@@ -55,3 +51,14 @@ app.post("/register", (req,res) => {
 app.post("/contacto", (req,res) => {
     res.redirect("/");
 })
+
+// app.post("/productDetail", (req,res) => {
+//     res.redirect("https://wa.link/6l716l");
+// })
+
+// app.post("/productDetail", (req,res) => {
+//     res.redirect("https://forms.gle/HUYJZJjcnLA97vZ87");
+// })
+
+
+
