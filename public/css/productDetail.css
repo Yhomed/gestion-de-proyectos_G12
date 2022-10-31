@@ -56,7 +56,7 @@ section article {
 
 }
 
-.numero, .titulo {
+.numero, .titulo, h2 {
     color: #193669;
 }
 
@@ -109,7 +109,6 @@ h2, h3, main p {
 
 h2 {
     font-size: 50px;
-    color: #193669;
 }
 
 
@@ -155,17 +154,6 @@ h2 {
     flex-direction: row;
 }
 
-@keyframes alternando-color {
-    0% {
-        color:#193669;
-        font-size: 20px;
-    }
-    100% {
-        color:#2E5EAF;
-        font-size: 40px;
-    }
-}
-
 .carrito {
     font-size: 30px;
     border: 1px solid #193669;
@@ -175,14 +163,9 @@ h2 {
     box-shadow: 2px 2px 2px 1px #191919;
 }
 
-.llevar-al-carrito {
-    animation-name: alternando-color;
-    animation-duration: 1000ms;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
 @media(min-width: 361px) { 
+
+    
 
     .descripcion {
         display: flex;
