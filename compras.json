@@ -1,0 +1,33 @@
+[
+    {
+      "precio": 320000,
+      "id": 1,
+      "title": "CURSO 00 HERRAMIENTAS PARA ANÁLISIS DE DATOS CON EXCEL",
+      "thumbnailUrl": "/img/Ruta.jpg"
+    },
+    {
+      "precio": 320000,
+      "id": 2,
+      "title": "CURSO 01 Herramientas avanzadas de EXCEL para la Elaboración de Cronogramas en Proyectos Ágiles y Prescriptivos",
+      "thumbnailUrl": ""
+    },
+    {
+      "precio": 320000,
+      "id": 3,
+      "title": "CURSO 02 Elaboración y Gestión de Presupuestos con Herramientas Avanzadas de EXCEL",
+      "thumbnailUrl": ""
+    },
+    {
+      "precio": 320000,
+      "id": 4,
+      "title": "CURSO 03 Herramientas para la Priorización y Clasificación de Alternativas y Proyectos",
+      "thumbnailUrl": ""
+    },
+    {
+      "precio": 320000,
+      "id": 5,
+      "title": "CURSO 04 Elaboración de Tableros de Seguimiento Dashboard y Control del Proyecto con POWER BI",
+      "thumbnailUrl": ""
+    }
+    
+  ]
