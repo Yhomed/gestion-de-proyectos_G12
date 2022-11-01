@@ -33,6 +33,13 @@ a {
     text-decoration: none;
 }
 
+article {
+    justify-content: center;
+}
+
+section {
+    justify-content: center;
+}
 
 article div {
     display: flex;
@@ -40,6 +47,14 @@ article div {
     justify-content: center;
 }
 
+<<<<<<< HEAD
+=======
+section article {
+    margin: 10px;
+    justify-content: center;
+}
+
+>>>>>>> 1fc8b3f5a851184ef130b38314ec93da3de8321f
 .numero {
     padding: 20px;
     font-size: 50px;
@@ -88,7 +103,7 @@ input {
 .curso {
     border-bottom: 1px solid #2E5EAF;
     display:block;
-    margin: 15px;
+    margin: 50px;
 }
 
 .cursos {
@@ -104,9 +119,14 @@ input {
     justify-content: center;
 }
 
+<<<<<<< HEAD
 .contenedor-ruta-del-curso {
     flex-direction: column;
     align-items: center;
+=======
+.contenedor-cursos-de-la-ruta {
+    justify-content: center;
+>>>>>>> 1fc8b3f5a851184ef130b38314ec93da3de8321f
 }
 
 .ruta-del-curso {
@@ -185,9 +205,9 @@ h2 {
 */
 
 .frase-alumno {
-    height: 40vw;
+    /* height: 40vw; */
     margin: 10px;
-    width: 30vw;
+    width: 25vw;
     padding: 3vw;
     position: relative;
 }
