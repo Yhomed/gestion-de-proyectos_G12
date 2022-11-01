@@ -40,10 +40,6 @@ article div {
     justify-content: center;
 }
 
-section article {
-    margin: 10px;
-}
-
 .numero {
     padding: 20px;
     font-size: 50px;
@@ -94,6 +90,11 @@ input {
     display: block;
     padding: 10px;
     width: 60vw;
+}
+
+.contenedor-ruta-del-curso {
+    flex-direction: column;
+    align-items: center;
 }
 
 .ruta-del-curso {
@@ -198,17 +199,13 @@ h2 {
 
 @media(min-width: 415px) { 
 
-    .navegacion {
-        align-items: center;
-        font-size: 0.6em;
-        display: flex;
-    }
-
     .descripcion {
         display: flex;
         flex-direction: row;
         text-align: center;
     }
+
+
 }
 
 @media (min-width: 769px){
