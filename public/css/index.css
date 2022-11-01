@@ -8,13 +8,13 @@
 body {
     padding: 10px;
     font-size: 12px;
+    background-color: #FFFFFF;
 }
 
 /* headeer */
 
 .logo {
-    margin-left: 15px;
-    margin-top: 5px;
+    margin: 10px;
     width: 850px;
 }
 
@@ -43,8 +43,13 @@ a {
 }
 
 /* BURGER MENU */
-.icono_centrar {
-    text-align: center;
+.toggle-menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    margin: 10px;
+    cursor: pointer;
+    z-index: 1;
 }
 
 ul li {
@@ -54,9 +59,35 @@ ul li {
     flex-wrap: nowrap;
 }
 
+.header-menu {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightcoral;
+    transform: translateY(-100%);
+
+}
+
+.header-menu-item {
+    padding: 1em;
+}
+
+.header-menu-link {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header-menu--show {
+    transform: translateY(0);
+}
+
 .burger-menu {
     font-size: 16px;
-    
 }
 
 .banner {
@@ -90,16 +121,26 @@ ul li {
 }
 .unite-gratis {
     color: white;
-    background-color: blueviolet;
+    background-color: #193669;
     border-radius: 3px;
     padding: 9px;
+    transition: background-color 450ms;
+}
+
+.unite-gratis:hover {
+    background-color: #b458c7;
 }
 
 .descuentos {
-    color: blueviolet;
-    background-color:yellow;
+    color: white;
+    background-color:#193669;
     border-radius: 3px;
     padding: 9px;
+    transition: background-color 450ms;
+}
+
+.descuentos:hover {
+    background-color: #b458c7;
 }
 
 article {
@@ -121,17 +162,24 @@ article {
     align-items: center;
 
 }
+
 .imgRuta {
     display: block;
     padding: 10px;
     width: 60vw;
-    
 }
 
 .VER-CURSOS{
     flex-wrap: wrap;
     text-align: center;
     padding: 10px;
+    background-color: #193669;
+    color: white;
+    transition: background-color 450ms;  
+}
+
+.VER-CURSOS:hover {
+    background-color: #b458c7;
 }
 
 h2 {
@@ -186,10 +234,12 @@ h2 {
 
 }
 
-@media (min-width: 769px){
-
-    .burger-menu {
-        display: none;
+@media screen and (min-width: 769px){
+    .header-menu {
+        flex-direction: row;
     }
 
-}
+    .toggle-menu {
+        display: none;
+    }
+} 

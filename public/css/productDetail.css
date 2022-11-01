@@ -14,7 +14,6 @@
 .flex-centrado-rutas {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     margin: 80px;
@@ -34,9 +33,6 @@ a {
     text-decoration: none;
 }
 
-body {
-    background-color: #F7F7F7;
-}
 
 article div {
     display: flex;
@@ -59,7 +55,7 @@ section article {
 
 }
 
-.numero, .titulo {
+.numero, .titulo, h2 {
     color: #193669;
 }
 
@@ -95,16 +91,17 @@ input {
 }
 
 .cursos-de-la-ruta {
-    width: 70vw;
-    margin: 10vw;
-    justify-content: center;
+    display: block;
+    padding: 10px;
+    width: 60vw;
 }
 
 .ruta-del-curso {
-    width: 70vw;
-    margin: 15vw;
-    justify-content: center;
+    display: block;
+    padding: 10px;
+    width: 60vw;
 }
+
 
 h2, h3, main p {
     text-align: center;
@@ -112,7 +109,6 @@ h2, h3, main p {
 
 h2 {
     font-size: 50px;
-    color: #193669;
 }
 
 
@@ -136,15 +132,7 @@ input {
     transition: color 450ms;
 }
 
-@media(min-width: 361px) { 
-
-    .descripcion {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-    }
-
-}
+/*
 
 h2 {
     text-align: center;
@@ -155,12 +143,38 @@ h2 {
 .tres-alumnos {
     display: flex;
     justify-content: space-around;
+    padding: 3vw;
+    position: relative;
 }
+*/
+
+/*
+
+@keyframes alternando-color {
+    0% {
+        color:#193669;
+        font-size: 20px;
+    }
+    100% {
+        color:#2E5EAF;
+        font-size: 40px;
+    }
+}
+
+.llevar-al-carrito {
+    animation-name: alternando-color;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+*/
 
 .frase-alumno {
     height: 40vw;
     margin: 10px;
     width: 30vw;
+    padding: 3vw;
+    position: relative;
 }
 
 .alumnos {
@@ -168,6 +182,34 @@ h2 {
     flex-direction: row;
 }
 
+.carrito {
+    font-size: 30px;
+    border: 1px solid #193669;
+    border-style: inset;
+    border-radius: 50%;
+    padding: 9px;
+    box-shadow: 2px 2px 2px 1px #191919;
+}
+
+.encabezado {
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media(min-width: 415px) { 
+
+    .navegacion {
+        align-items: center;
+        font-size: 0.6em;
+        display: flex;
+    }
+
+    .descripcion {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+}
 
 @media (min-width: 769px){
 
@@ -175,6 +217,7 @@ h2 {
         display: none;
     }
 
-
-
-
+    .navegacion {
+        font-size: 15px;
+    }
+}

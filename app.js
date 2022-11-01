@@ -9,8 +9,6 @@ app.use(express.static('public'));
 
 app.listen(process.env.PORT || 3050, () => console.log('Servidor activo-3050'));
 
-
-
 app.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/index.html"))
 })
@@ -55,3 +53,11 @@ app.post("/register", (req,res) => {
 app.post("/contacto", (req,res) => {
     res.redirect("/");
 })
+
+// app.post("/productDetail", (req,res) => {
+//     res.redirect("https://wa.link/6l716l");
+// })
+
+// app.post("/productDetail", (req,res) => {
+//     res.redirect("https://forms.gle/HUYJZJjcnLA97vZ87");
+// })

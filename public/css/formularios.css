@@ -59,13 +59,13 @@
             padding: 8px;
             font-size: 14px;
             border-radius: 3px;
-            transition: all 1s;
+            transition: all 450ms;
 
         }
 
         form button:hover {
-            background-color: #2e5eaf;
-            padding: 10px;
+            background-color: #b458c7;
+
         }
 
         main {
@@ -77,6 +77,11 @@
         h2 {
             margin: 20px;
             font-size: 20px;
+        }
+
+        label {
+            display:block;
+            padding: 10px;
         }
 
 
