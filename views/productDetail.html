@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/559ec15c26.js" crossorigin="anonymous"></script>
+
+    <link href="css/index.css" rel="stylesheet">
     <link href="css/productDetail.css" rel="stylesheet">
 
     <title>Gestión de Proyectos GCM</title>
@@ -14,23 +16,25 @@
 <body>
 
     <header>
-                <div class="logo">
-                    <img src="/img/22-06-30 Logo No PMI.png" alt="logo" width="5%">
-                </div>
 
-    <nav>
-        <ul class="flex-centrado-rutas navegacion">
-            <li><a href="/productDetail"> Ruta y Cursos</a></li>
-            <li><a href=""> Sobre Mi</a></li>
-            <li><a href="/contacto"> Contacto </a></li>
-            <li><a href="/register"><i class="fa-solid fa-user"></i> Crea Tu Cuenta</a></li>
-            <li><a href="/login"> Ingresa</a></li>
-            <li><a href="/productCar"><i class="fa-solid fa-cart-shopping"></i>Carrito De Compras</a></li>
-            <li><a href="/inscription"><i class =""></i>Inscripción</a></li>
+        <div class="encabezado">
+        
+        <a href='/'><img src="/img/22-06-30 Logo No PMI.png" alt="logo" width="100%" class="logo"></a>
+        
+
+    <nav class="header-nav">
+        <ul id="header-menu " class="flex-centrado-rutas">
+            <li class="header-menu-item"><a href="/productDetail" class="header-menu-link"> Ruta y Cursos</a></li>
+            <li class="header-menu-item"><a href="" class="header-menu-link"> Sobre Mi</a></li>
+            <li class="header-menu-item"><a href="/contacto" class="header-menu-link"> Contacto </a></li>
+            <li class="header-menu-item"><a href="/register" class="header-menu-link"><i class="fa-solid fa-user"></i> Crea Tu Cuenta</a></li>
+            <li class="header-menu-item"><a href="/login" class="header-menu-link"> Ingresa</a></li>
+            <li class="header-menu-item"><a href="/productCar" class="header-menu-link"> Carrito De Compras</a></li>
         </ul>
     </nav>
+    </div>
 
-    <div class="icono_centrar">    
+    <div id="toggle-menu" class="toggle-menu">    
         <i class="fas fa-bars burger-menu"></i>
     </div>        
 
@@ -39,6 +43,7 @@
     </div>
 
     </header>
+
 
 
 <!-- MAIN -->
@@ -81,7 +86,7 @@
                 <div class = cursos>
 
                 <article class = "curso">
-                    <div>
+                    <div class="numero-y-titulo">
                         <h3 class = "numero">00</h3> <!-- curso0.html (/curso0) -->
                         <!-- <a href="/curso0"> --><h3 class = "titulo">Herramientas para análisis de Datos con Excel</h3><!-- </a> -->
                     </div>
@@ -93,7 +98,7 @@
                 </article>
 
                 <article class = "curso">
-                    <div>
+                    <div class="numero-y-titulo">
                         <h3 class = "numero">01</h3> <!-- curso1.html (/curso1) -->
                         <h3 class = "titulo">Herramientas avanzadas de EXCEL para la Elaboración de Cronogramas en Proyectos Ágiles y Prescriptivos</h3>
                     </div>
@@ -105,7 +110,7 @@
                 </article>
 
                 <article class = "curso">
-                    <div>
+                    <div class="numero-y-titulo">
                             <h3 class = "numero">02</h3> <!-- curso2.html (/curso2) -->
                             <h3 class = "titulo">Elaboración y Gestión de Presupuestos con Herramientas Avanzadas de EXCEL</h3>
                     </div>
@@ -119,7 +124,7 @@
                 </article>
 
                 <article class = "curso">
-                    <div>
+                    <div class="numero-y-titulo">
                         <h3 class = "numero">03</h3> <!-- curso3.html (/curso3)-->
                         <h3 class = "titulo">Herramientas para la Priorización y Clasificación de Alternativas y Proyectos</h3>
                     </div>
@@ -132,7 +137,7 @@
                     </article>
 
                 <article class = "curso">
-                    <div>
+                    <div class="numero-y-titulo">
                         <h3 class = "numero">04</h3> <!-- curso4.html (/curso4)-->
                         <h3 class = "titulo">Elaboración de Tableros de Seguimiento "Dashboards" y Control del Proyecto con POWER BI</h3>
                     </div>
@@ -211,7 +216,7 @@
   
   
                      <h2>MIS CLIENTES</h2>
-          <p>Algunas de las colaboraciones importantes</p>
+          <p class="colaboraciones">Algunas de las colaboraciones importantes</p>
           <div>
               <img src="/img/Collage.png" alt="empresas img" width="100%">
               

@@ -19,23 +19,25 @@
 <body>
 
     <header>
-        <div class="logo">
-            <a href='/'><img src="/img/22-06-30 Logo No PMI.png" alt="logo" width="5%"></a>
-        </div>
 
-    <nav>
-        <ul class="flex-centrado-rutas">
-            <li><a href="/productDetail"> Ruta y Cursos</a></li>
-            <li><a href=""> Sobre Mi</a></li>
-            <li><a href="/contacto"> Contacto </a></li>
-            <li><a href="/register"><i class="fa-solid fa-user"></i> Crea Tu Cuenta</a></li>
-            <li><a href="/login"> Ingresa</a></li>
-            <li><a href="/productCar"> Carrito De Compras</a></li>
+        <div class="encabezado">
+        
+        <a href='/'><img src="/img/22-06-30 Logo No PMI.png" alt="logo" width="100%" class="logo"></a>
+        
+
+    <nav class="header-nav">
+        <ul id="header-menu " class="flex-centrado-rutas">
+            <li class="header-menu-item"><a href="/productDetail" class="header-menu-link"> Ruta y Cursos</a></li>
+            <li class="header-menu-item"><a href="" class="header-menu-link"> Sobre Mi</a></li>
+            <li class="header-menu-item"><a href="/contacto" class="header-menu-link"> Contacto </a></li>
+            <li class="header-menu-item"><a href="/register" class="header-menu-link"><i class="fa-solid fa-user"></i> Crea Tu Cuenta</a></li>
+            <li class="header-menu-item"><a href="/login" class="header-menu-link"> Ingresa</a></li>
+            <li class="header-menu-item"><a href="/productCar" class="header-menu-link"> Carrito De Compras</a></li>
         </ul>
-
     </nav>
+    </div>
 
-    <div class="icono_centrar">    
+    <div id="toggle-menu" class="toggle-menu">    
         <i class="fas fa-bars burger-menu"></i>
     </div>        
 
@@ -44,6 +46,7 @@
     </div>
 
     </header>
+
 
 
 

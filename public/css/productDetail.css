@@ -8,7 +8,7 @@
 .logo {
     margin-left: 15px;
     margin-top: 5px;
-    width: 850px;
+    /* width: 850px; */
 }
 
 .flex-centrado-rutas {
@@ -16,9 +16,9 @@
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    margin: 80px;
+    /* margin: 80px;
     margin-top: -30px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; */
     justify-content: space-between;
 }
 
@@ -71,25 +71,37 @@ input {
 
 .descripcion, article p, .parrafo-de-la-ruta {
     padding: 1px;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     font-size: 22px;
 }
 
+.numero-y-titulo {
+    display: flex;
+}
+
+.llevar-al-carrito {
+    display: block;
+    text-align: center;
+}
 
 .curso {
     border-bottom: 1px solid #2E5EAF;
+    display:block;
+    margin: 15px;
 }
 
 .cursos {
     align-items: center;
+    justify-content: center;
     padding: 20px;
 }
 
 .cursos-de-la-ruta {
     display: block;
     padding: 10px;
-    width: 60vw;
+    width: 90vw;
+    justify-content: center;
 }
 
 .contenedor-ruta-del-curso {
@@ -100,16 +112,18 @@ input {
 .ruta-del-curso {
     display: block;
     padding: 10px;
-    width: 60vw;
+    width: 90vw;
+    justify-content: center;
 }
 
 
 h2, h3, main p {
     text-align: center;
+    
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 2em;
 }
 
 
