@@ -12,7 +12,7 @@
 }
 
 .flex-centrado-rutas {
-    display: flex;
+    display: none;
     justify-content: center;
     flex-direction: row;
     align-items: center;
@@ -26,6 +26,22 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+nav {
+    font-size: 1rem;
+}
+
+ul li {
+    max-width: max-content;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    flex-wrap: nowrap;
+}
+
+ul li i {
+    margin: 10px;
 }
 
 a {
@@ -47,14 +63,6 @@ article div {
     justify-content: center;
 }
 
-<<<<<<< HEAD
-=======
-section article {
-    margin: 10px;
-    justify-content: center;
-}
-
->>>>>>> 1fc8b3f5a851184ef130b38314ec93da3de8321f
 .numero {
     padding: 20px;
     font-size: 50px;
@@ -119,14 +127,9 @@ input {
     justify-content: center;
 }
 
-<<<<<<< HEAD
 .contenedor-ruta-del-curso {
     flex-direction: column;
     align-items: center;
-=======
-.contenedor-cursos-de-la-ruta {
-    justify-content: center;
->>>>>>> 1fc8b3f5a851184ef130b38314ec93da3de8321f
 }
 
 .ruta-del-curso {
@@ -231,6 +234,29 @@ h2 {
     align-items: center;
 }
 
+.header-menu-item {
+    padding: 0.5em;
+    align-items: center;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-menu-link {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
+.burger-menu {  
+    font-size: 16;
+    color: white;
+    background-color: #1259c3;
+    border-radius: 3px;
+    padding: 9px;
+}
+
 @media(min-width: 415px) { 
 
     .descripcion {
@@ -239,7 +265,19 @@ h2 {
         text-align: center;
     }
 
+    .flex-centrado-rutas {
+        display: none;
+    }
 
+    .burger-menu{
+        display: block;
+        align-items: center;
+    }
+
+    .contenedor-ruta-del-curso {
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 @media (min-width: 769px){
@@ -250,5 +288,10 @@ h2 {
 
     .navegacion {
         font-size: 15px;
+    }
+
+    .flex-centrado-rutas {
+        display: flex;
+        flex-direction: row;
     }
 }
