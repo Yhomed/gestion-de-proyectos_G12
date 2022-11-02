@@ -117,20 +117,6 @@ article div {
     display: flex;
 }
 
-.header-menu {
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: lightcoral;
-    transform: translateY(-100%);
-
-}
-
 
 .burger-menu {  
     font-size: 16;
