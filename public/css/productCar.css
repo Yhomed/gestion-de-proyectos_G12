@@ -5,15 +5,10 @@
     padding: 0px;
 }
 
-body {
-    font-size: 12px;
-    background-color: #FFFFFF;
-}
-
 .logo {
     margin-left: 15px;
     margin-top: 5px;
-    width: 10vw;
+    /*width: 10vw;*/
     
 }
 .flex-centrado-rutas {
@@ -23,7 +18,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     justify-content: space-between;
 }
 ul {
