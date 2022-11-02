@@ -284,6 +284,7 @@ h2 {
 
     .burger-menu {
         display: none;
+        position: sticky;
     }
 
     .navegacion {
@@ -293,5 +294,9 @@ h2 {
     .flex-centrado-rutas {
         display: flex;
         flex-direction: row;
+    }
+
+    .header-nav {
+        display: flex;
     }
 }
