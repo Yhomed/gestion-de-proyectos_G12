@@ -8,7 +8,7 @@
     
 }
 .flex-centrado-rutas {
-    display: none;
+    display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
@@ -81,7 +81,7 @@ article div {
 .burger-menu {  
     font-size: 16;
     color: white;
-    background-color: #030910;
+    background-color: #193669;
     border-radius: 3px;
     padding: 9px;
 }
