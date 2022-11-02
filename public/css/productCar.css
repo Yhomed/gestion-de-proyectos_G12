@@ -1,7 +1,15 @@
 * {
     box-sizing: border-box;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
 }
+
+body {
+    font-size: 12px;
+    background-color: #FFFFFF;
+}
+
 .logo {
     margin-left: 15px;
     margin-top: 5px;
@@ -10,15 +18,25 @@
 }
 .flex-centrado-rutas {
     display: flex;
+    display: none;
     justify-content: center;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    margin-top: 20px;
     justify-content: space-between;
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+i{
+    margin: 10px;
+    justify-content: center;
+    font-size: 30px;
+    align-self: center;
 }
 
 p{
@@ -101,7 +119,7 @@ article div {
         text-align: center;
     }
 
-    .flex-centrado-rutas {
+    flex-centrado-rutas {
         display: none;
     }
 
@@ -129,5 +147,9 @@ article div {
     .flex-centrado-rutas {
         display: flex;
         flex-direction: row;
+     }
+
+    .header-nav {
+        display: flex;
     }
 }
