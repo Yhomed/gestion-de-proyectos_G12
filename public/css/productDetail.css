@@ -247,15 +247,13 @@ h2 {
     text-decoration: none;
 }
 
-
-
-.burger-menu {  
+/*.burger-menu {  
     font-size: 16;
     color: white;
     background-color: #1259c3;
     border-radius: 3px;
     padding: 9px;
-}
+}*/
 
 @media(min-width: 415px) { 
 
