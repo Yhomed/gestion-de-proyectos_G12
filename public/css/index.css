@@ -14,7 +14,7 @@ body {
 /* headeer */
 
 .logo {
-    margin: 15px;
+    margin: 10px;
     width: 10vw;
 }
 
@@ -28,8 +28,12 @@ body {
     /* margin: 80px;
     margin-top: -30px;
     margin-bottom: 30px; */
-    margin: 10px;
+    margin-top: 20px;
     justify-content: space-between;
+}
+
+nav {
+    font-size: 1rem;
 }
 
 ul {
@@ -54,12 +58,14 @@ a {
 }
 
 ul li {
+    align-items: center;
+    text-align: center;
     justify-content: center;
-    padding: 2vw;
-    font-size: 1.5vw;
+    padding: 1vw;
+    font-size: 1.1vw;
     flex-wrap: nowrap;
-    margin: 10px;
 }
+
 
 .encabezado {
     display: flex;
@@ -80,7 +86,8 @@ ul li {
 }
 
 .header-menu-item {
-    padding: 1em;
+    margin-top: 10px;
+
 }
 
 .header-menu-link {
@@ -258,4 +265,6 @@ h2 {
     .toggle-menu {
         display: none;
     }
+
+
 } 
