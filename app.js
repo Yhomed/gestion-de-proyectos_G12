@@ -33,6 +33,10 @@ app.get("/contacto", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/contacto.html"))
 })
 
+app.get("/inscripcion", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./views/inscripcion.html"))
+})
+
 app.get("/productDetail", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/productDetail.html"))
 })
