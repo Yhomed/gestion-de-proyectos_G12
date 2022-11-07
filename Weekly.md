@@ -21,7 +21,7 @@ REGISTRO DE WEEKLY
         8. Página edición productos y sus estilos:            PENDIENTE
 
 
-    1.1 ¿QUÉ SE HIZO ESTA SEMANA?
+    1. ¿QUÉ SE HIZO ESTA SEMANA?
 
         ABRIL:
 
@@ -31,7 +31,7 @@ REGISTRO DE WEEKLY
 
         LILI:
 
-    1.2 ¿IMPEDIMENTOS?
+    2.  ¿IMPEDIMENTOS?
 
         ABRIL:
 
@@ -41,7 +41,7 @@ REGISTRO DE WEEKLY
 
         LILI:
 
-    1.3 ¿QUÉ SE HARÁ ESTA SEMANA?
+    3. ¿QUÉ SE HARÁ ESTA SEMANA?
 
         ABRIL:
 
