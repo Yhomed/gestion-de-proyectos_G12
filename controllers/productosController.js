@@ -1,6 +1,6 @@
 const productosController = {
 
-    listaDeProductos: (req, res) => res.send('Indez de productos'),
+    listaDeProductos: (req, res) => res.send('Index de productos'),
 
     crearProducto: function() {},
     detalleDeProducto: function() {},

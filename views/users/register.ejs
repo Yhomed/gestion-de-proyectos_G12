@@ -1,0 +1,86 @@
+<!-- FORMULARIO DE REGISTRO -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <%- include('../partials/head.ejs') %>
+
+    <link href="css/formularios.css" rel="stylesheet">
+    
+</head>
+
+
+<body>
+
+    <header>
+
+        <%- include('../partials/header.ejs') %>
+
+    </header>
+
+
+
+    <main>
+
+        <!-- FORMULARIO DE REGISTRO -->
+        <form action="/register" method="POST">
+            <!-- <form action="/" method="GET"> -->
+
+            <h2>Crea tu cuenta</h2>
+
+            <!-- NOMBRE -->
+            <div>
+                <label for="nombre" class="etiqueta">Nombre: </label>
+                <input type = "text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required class="campo-de-texto">
+                <span class="feedback"></span> <!-- para alertar errores -->
+            </div>
+
+             <!-- APELLIDOS -->
+             <div>
+                <label for="apellido" class="etiqueta">Apellidos: </label>
+                <input type = "text" name="apellido" id="apellido" placeholder="Ingresa tus apellidos" required class="campo-de-texto">
+                <span class="feedback"></span> <!-- para alertar errores -->
+            </div>
+
+            <!-- EMAIL -->
+            <div>
+                <label for="email" class="etiqueta">Email: </label>
+                <input type = "email" name="email" id="email" placeholder="usuario@abc.com" required class="campo-de-texto">
+                <span class="feedback"></span> <!-- para alertar errores -->
+            </div>
+
+            <!-- CONTRASEÑA -->
+            <div>
+                <label class="etiqueta"> Contraseña: </label>
+                <input type = "password" name = "password" placeholder="Ingresa tu contraseña" required class="campo-de-texto">
+                <span class="feedback"></span> 
+            </div>
+
+            <!-- CONFIRMAR CONTRASEÑA -->
+            <div>
+                <label class="etiqueta">Confirmar Contraseña: </label>
+                <input type = "password" name = "password" placeholder="Confirma tu contraseña" required class="campo-de-texto">
+                <span class="feedback"></span> 
+            </div>
+
+            <!-- BOTON BORRAR -->
+            <button type="reset">Borrar</button>
+
+            <!-- BOTON ENVIAR -->
+            <button type="submit">Enviar</button>
+            
+            <!-- <button type="submit" value="Enviar" name="submit">Enviar</button> -->
+        
+        </form>
+
+    </main>
+
+    <footer>
+
+        <%- include('../partials/footer.ejs') %>     
+   
+    </footer>
+</body>
+</html>
+

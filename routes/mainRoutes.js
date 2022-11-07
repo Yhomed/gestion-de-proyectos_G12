@@ -30,6 +30,10 @@ router.get('/curso4', mainController.curso4);
 
 router.get('/sobreMi', mainController.sobreMi);
 
+router.get('/createProducts', mainController.createProducts);
+
+router.get('/editProducts', mainController.editProducts);
+
 
 module.exports= router;
 

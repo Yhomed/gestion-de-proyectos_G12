@@ -3,17 +3,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion De Proyectos</title>
 
-    <script src="https://kit.fontawesome.com/559ec15c26.js" crossorigin="anonymous"></script>
+    <%- include('./partials/head.ejs') %>
 
-    <script src="js/app.js"></script>  <!-- Esto no se está ejecutando -->
-
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
 </head>
 
 
@@ -21,31 +13,7 @@
 
     <header>
 
-        <div class="encabezado">
-        
-        <a href='/'><img src="/img/22-06-30 Logo No PMI.png" alt="logo" width="100%" class="logo"></a>
-        
-
-    <nav class="header-nav">
-        <ul id="header-menu " class="flex-centrado-rutas">
-            <li class="header-menu-item"><a href="/productDetail" class="header-menu-link"><i class="fa-solid fa-route"></i> Ruta y Cursos</a></li>
-            <li class="header-menu-item"><a href="" class="header-menu-link"><i class="fa-solid fa-book"></i> Sobre Mi</a></li>
-            <li class="header-menu-item"><a href="/contacto" class="header-menu-link"><i class="fa-solid fa-phone-volume"></i> Contacto </a></li>
-            <li class="header-menu-item"><a href="/inscripcion" class="header-menu-link"><i class="fa-solid fa-pencil"></i> inscripción</a></li>
-            <li class="header-menu-item"><a href="/register" class="header-menu-link"><i class="fa-solid fa-user"></i> Crea Tu Cuenta</a></li>
-            <li class="header-menu-item"><a href="/login" class="header-menu-link"><i class="fa-solid fa-arrow-right-to-bracket"></i> Ingresa</a></li>
-            <li class="header-menu-item"><a href="/productCar" class="header-menu-link"><i class="fa-solid fa-basket-shopping"></i> Mis Compras</a></li>
-        </ul>
-    </nav>
-    </div>
-
-    <div id="toggle-menu" class="toggle-menu">    
-        <i class="fas fa-bars burger-menu"></i>
-    </div>        
-
-    <div class="banner">
-        <img src="/img/Imagen Banner.jpg" alt="banner" width="100%">
-    </div>
+        <%- include('./partials/header.ejs') %>
 
     </header>
 
@@ -96,49 +64,9 @@
 
     </main>
 
-    <div class="mis-estudiantes">
-        <h2>¿QUÉ DICEN MIS ESTUDIANTES?</h2>
-    </div>
-
     <footer>
 
-      <section class="alumnos">
-        
-
-        <div class="tres-alumno">
-              <p class="frase-alumno"> Fui alumno de Gustavo en el Diplomado de Gestión de proyectos y puedo decir que no solo es un caudal de conocimientos, sino también un hombre realmente inspirador y magistral.
-              </p>
-
-             <p class="personas"> D. Avendaño</p>
-       </div>
-
-
-       <div class="tres-alumno">
-              <p class="frase-alumno"> Su forma catedrática y amena de transmitir la información hacen de Gustavo de los mejores y más valiosos recuerdos de mi formación estudiantil
-             </p>
-       
-
-        <p class="persona"> C. D. Moreno</p>
-       </div>
-
-
-       <div class="tres-alumno">
-            <p class="frase-alumno"> Lo que más gusta de Gustavo es su forma de enseñar, su paciencia y gusto por la Gestión de Proyectos. Más allá de los conocimientos técnicos me llevo aprendizajes que puedo aplicar todos los días de mi vida.
-            </p>
-
-            <p class="persona"> J. Lopez</p>
-       </div>
-
-
-    </section>
-
-
-                   <h2>MIS CLIENTES</h2>
-        <p class="colaboraciones">Algunas de las colaboraciones importantes</p>
-        <div>
-            <img src="/img/Collage.png" alt="empresas img" width="100%">
-            
-        </div>
+        <%- include('./partials/footer.ejs') %>
 
     </footer>
 </body>
