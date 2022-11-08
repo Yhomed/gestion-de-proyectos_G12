@@ -14,19 +14,47 @@
 
     <header>
 
-      <%- include('../partials/header.ejs') %>
+      <!-- atomización de la vista del header -->
+
+      <%- include('../partials/header.ejs') %> <!-- recibe la ruta del archivo a incluir -->
 
     </header>
 
     <main>
 
       <h2>Crear productos</h2>
+
+      <!-- FORMULARIO DEL CREATE PRODUCTS -->
+
+      <form action="/" method="POST" enctype="multipart/form-data">
+
+        <label>Nombre del producto:</label>
+        <input type = "text" name="name">
+
+        <label>Descripcion:</label>
+        <input type="text" name="description">
+
+        <label>Imagen:</label>
+        <input type="file" name="image">
+
+        <label>Categoria:</label>
+        <input type="text" name="category">
+
+        <label>Colores:</label>
+        <input type="text" name="color">
+
+        <label>Precio:</label>
+        <input type="text" name="price">
+
+      </form>
    
     </main>
 
   <footer>
 
-    <%- include('../partials/footer.ejs') %>
+     <!-- atomización de la vista del footer -->
+
+    <%- include('../partials/footer.ejs') %> <!-- recibe la ruta del archivo a incluir -->
     
   </footer>
 </body>
