@@ -31,23 +31,26 @@ RETROALIMENTACIÓN "Starfish"
 
         - Por ahora no hemos identificado una actividad o comportamiento que nos aparte de los objetivos o que no nos aporte valor como equipo.
 
-    5. START DOING – a new idea, or  something you have seen working before that you would like to bring to the table. It might be something simple or just to keep things dynamic and fun.
-While the ideal scenario is to do each topic one by one, you can also open it up so that people can add ideas under any of the sections when they are ready. You can then discuss them in the above order.
+    5. START DOING – a new idea, or  something you have seen working before that you would like to bring to the table. It might be something simple or just to keep things dynamic and fun. While the ideal scenario is to do each topic one by one, you can also open it up so that people can add ideas under any of the sections when they are ready. You can then discuss them in the above order.
 
-    - ADMINISTRACIÓN DEL TIEMPO INDIVIDUAL: La dedicación particular al curso no ha sido la adecuada ya requiere un mayor nivel para que las reuniones sean más eficientes.
+        - ADMINISTRACIÓN DEL TIEMPO INDIVIDUAL: La dedicación particular al curso no ha sido la adecuada ya requiere un mayor nivel para que las reuniones sean más eficientes.
 
-    - HERRAMIENTA DE NOTAS COLABORATIVAS - INTERACTIVAS: Buscar una herramienta para tomar notas y tener los conceptos a la mano para aplicarlos fácil y rápidamente a la hora del desarrollo de las asignaciones.
+        - HERRAMIENTA DE NOTAS COLABORATIVAS - INTERACTIVAS: Buscar una herramienta para tomar notas y tener los conceptos a la mano para aplicarlos fácil y rápidamente a la hora del desarrollo de las asignaciones.
 
 
 2022/10/23 RETRO SPRINT 2:
 
     1. KEEP DOING:
 
+        - Consolidación 
+
 
     2. LESS OF:
 
 
     3. MORE OF:
+
+        - Adecuado manejo del tiempo.
 
 
     4. STOP DOING:
