@@ -56,7 +56,7 @@ RETROALIMENTACIÓN "Starfish"
     3. MORE OF:
 
         - Adecuado manejo del tiempo.
-        - Estud
+        - Estudiar mas y tener los conceptos mas claros
 
 
     4. STOP DOING:
