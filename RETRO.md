@@ -42,15 +42,21 @@ RETROALIMENTACIÓN "Starfish"
 
     1. KEEP DOING:
 
-        - Consolidación 
+        - Trabajo en equipo
+        - Practicidad para realizar el trabajo
+        - Comunicacion constante
+        - Buen ambiente en el equipo
 
 
     2. LESS OF:
+
+        - 
 
 
     3. MORE OF:
 
         - Adecuado manejo del tiempo.
+        - Estud
 
 
     4. STOP DOING:
