@@ -46,6 +46,7 @@ RETROALIMENTACIÓN "Starfish"
         - Practicidad para realizar el trabajo
         - Comunicacion constante
         - Buen ambiente en el equipo
+        - Compartir las trabas que tengamos y ayudarnos
 
 
     2. LESS OF:
