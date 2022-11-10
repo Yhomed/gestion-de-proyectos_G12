@@ -23,7 +23,7 @@ REGISTRO DE WEEKLY
 
     1. ¿QUÉ SE HIZO ESTA SEMANA?
 
-        ABRIL:
+        ABRIL: se realizó el formulario para createProducts.ejs y editProducts.ejs con el contenido que se especificaba en el sprint
 
         FER: se hizo el home.html, tambien se realizo cambios en las rutas,controlers y app para su correcto funcionamiento
 
@@ -33,7 +33,7 @@ REGISTRO DE WEEKLY
 
     2.  ¿IMPEDIMENTOS?
 
-        ABRIL:
+        ABRIL: no se detectaron
 
         FER: En que las rutas estaban mal referenciadas, y que no tomaba los estilos del css
 
@@ -43,7 +43,7 @@ REGISTRO DE WEEKLY
 
     3. ¿QUÉ SE HARÁ ESTA SEMANA?
 
-        ABRIL:
+        ABRIL: realizar los cambios mencionados en Trello para el productDetail en su correspondiente hoja de estilos
 
         FER:
 
