@@ -25,7 +25,7 @@ REGISTRO DE WEEKLY
 
         ABRIL:
 
-        FER:
+        FER: se hizo el home.html, tambien se realizo cambios en las rutas,controlers y app para su correcto funcionamiento
 
         YHOMED: Se dio seguimiento al proyecto integrador para su posterior entrega 
 
@@ -35,7 +35,7 @@ REGISTRO DE WEEKLY
 
         ABRIL:
 
-        FER:
+        FER: En que las rutas estaban mal referenciadas, y que no tomaba los estilos del css
 
         YHOMED: tiempo para desarrollar actividades
 
