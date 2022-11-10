@@ -27,7 +27,7 @@ REGISTRO DE WEEKLY
 
         FER:
 
-        YHOMED:
+        YHOMED: Se dio seguimiento al proyecto integrador para su posterior entrega 
 
         LILI:
 
@@ -37,7 +37,7 @@ REGISTRO DE WEEKLY
 
         FER:
 
-        YHOMED:
+        YHOMED: tiempo para desarrollar actividades
 
         LILI:
 
@@ -47,7 +47,7 @@ REGISTRO DE WEEKLY
 
         FER:
 
-        YHOMED:
+       YHOMED: realizar las correcciones pertienentes que se determinen en equipo para dar finalidad al proyecto integrador 
 
         LILI:
 

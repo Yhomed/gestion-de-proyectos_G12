@@ -46,7 +46,7 @@ RETROALIMENTACIÓN "Starfish"
         - Practicidad para realizar el trabajo
         - Comunicacion constante
         - Buen ambiente en el equipo
-        - Compartir las trabas que tengamos y ayudarnos
+        - Compartir las dificultades que tengamos y ayudarnos a dar pronta solución
 
 
     2. LESS OF:
@@ -58,9 +58,15 @@ RETROALIMENTACIÓN "Starfish"
 
         - Adecuado manejo del tiempo.
         - Estudiar mas y tener los conceptos mas claros
+        - 
 
 
     4. STOP DOING:
-
+        - Por ahora no hemos identificado una actividad o comportamiento que nos aparte de los objetivos o que no nos aporte valor como equipo.
 
     5. START DOING:
+        - ADMINISTRACIÓN DEL TIEMPO INDIVIDUAL: La dedicación particular al curso no ha sido la adecuada ya requiere un mayor nivel para que las reuniones sean más eficientes.
+
+        - HERRAMIENTA DE NOTAS COLABORATIVAS - INTERACTIVAS: Buscar una herramienta para tomar notas y tener los conceptos a la mano para aplicarlos fácil y rápidamente a la hora del desarrollo de las asignaciones.
+
+        
