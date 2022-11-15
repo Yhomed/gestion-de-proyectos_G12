@@ -14,6 +14,8 @@ router.get('/login', mainController.login);
 
 router.get('/productDetail', mainController.productDetail);
 
+router.post('/productDetail', mainController.productDetail);
+
 router.get('/contacto', mainController.contacto);
 
 router.get('/inscripcion', mainController.inscripcion);
@@ -34,7 +36,11 @@ router.get('/sobreMi', mainController.sobreMi);
 
 router.get('/createProducts', mainController.createProducts);
 
+router.post('/createProducts', mainController.createProducts);
+
 router.get('/editProducts', mainController.editProducts);
+
+router.post('/editProducts', mainController.editProducts);
 
 
 module.exports= router;
