@@ -29,7 +29,7 @@ REGISTRO DE WEEKLY
 
         YHOMED: Se dio seguimiento al proyecto integrador para su posterior entrega 
 
-        LILI:
+        LILI: Reorganizar las rutas, Modularizar y Crear Controladores
 
     2.  ¿IMPEDIMENTOS?
 
@@ -39,17 +39,17 @@ REGISTRO DE WEEKLY
 
         YHOMED: tiempo para desarrollar actividades
 
-        LILI:
+        LILI: ninguno
 
     3. ¿QUÉ SE HARÁ ESTA SEMANA?
 
-        ABRIL: realizar los cambios mencionados en Trello para el productDetail en su correspondiente hoja de estilos
+        ABRIL: realizar los cambios mencionados en Trello para el productDetail en su correspondiente hoja de estilos y agregar configuracion para utilizacion de metodos no soportados
 
-        FER:
+        FER: estudiar el sprint para incluir metodos put y delete
 
        YHOMED: realizar las correcciones pertienentes que se determinen en equipo para dar finalidad al proyecto integrador 
 
-        LILI:
+        LILI: revisar el sprint para continuar la planificacion
 
 
 
