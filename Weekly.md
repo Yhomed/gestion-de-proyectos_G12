@@ -11,14 +11,14 @@ REGISTRO DE WEEKLY
     - Vamos en el 3er sprint. 
     - Fecha de entrega 3er sprint: 2022/11/08 - 10
     - Entregables:
-        1. Retro                                              PENDIENTE
-        2. Tablero Trello                                     PENDIENTE
+        1. Retro                                              LISTO
+        2. Tablero Trello                                     LISTO
         3. Registro weeklys:                                  LISTO
         4. Implementar EJS (template engine):                 LISTO
         5. Separar vistas en carpetas:                        LISTO
         6. Separar componentes repetidos en vistas parciales: LISTO
-        7. Página creación productos y sus estilos:           PENDIENTE
-        8. Página edición productos y sus estilos:            PENDIENTE
+        7. Página creación productos y sus estilos:           LISTO
+        8. Página edición productos y sus estilos:            LISTO
 
 
     1. ¿QUÉ SE HIZO ESTA SEMANA?
