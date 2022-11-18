@@ -101,11 +101,11 @@ REGISTRO DE WEEKLY
         9. Rutas para el CRUD de productos:
             - /products (GET) - Listado de productos 
             - /products/create (GET) - Formulario de creación de productos 
-            - /products/:Id (GET) - Detalle de un producto en particular 
+            - /products/:id (GET) - Detalle de un producto en particular 
             - /products (POST) - Acción de creación de productos donde se enviará el formulario 
-            - /products/:Id/edit (GET) - Formulario de edición de productos  
-            - /products/:Id (PUT) - Acción de edición de productos donde se enviará el formulario 
-            - /products/:Id (DELETE) - Acción de borrado de productos
+            - /products/:id/edit (GET) - Formulario de edición de productos  
+            - /products/:id (PUT) - Acción de edición de productos donde se enviará el formulario 
+            - /products/:id (DELETE) - Acción de borrado de productos
 
 
 
