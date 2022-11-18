@@ -89,7 +89,7 @@ REGISTRO DE WEEKLY
             - Categoría
             - Precio
         6. Construir una carpeta data con la información solicitada: Archivo de productos (product.JSON) y Archivo de usuarios (users.JSON)
-        7. Genarar archivo JSON detallando los usuarios 
+        7. Generar archivo JSON detallando los usuarios 
         8. Definir los campos asignados a cada usuario 
             - Id
             - Nombres
@@ -98,14 +98,14 @@ REGISTRO DE WEEKLY
             - Número de contacto
             - Contraseña
             - Foto (Opcional para el usuario)
-        9. Rutas para el crud de productos:
-            - /Products (GET) - Listado de productos 
-            - /Products/create (GET) - Formulario de creación de productos 
-            - /Products/:Id (GET) - Detalle de un producto en particular 
-            - /Products (POST) - Acción de creación de productos donde se enviará el formulario 
-            - /Products/:Id/edit (GET) - Formulario de edición de productos  
-            - /Products/:Id (PUT) - Acción de edición de productos donde se enviará el formulario 
-            - /Products/:Id (DELETE) - Acción de borrado de productos
+        9. Rutas para el CRUD de productos:
+            - /products (GET) - Listado de productos 
+            - /products/create (GET) - Formulario de creación de productos 
+            - /products/:Id (GET) - Detalle de un producto en particular 
+            - /products (POST) - Acción de creación de productos donde se enviará el formulario 
+            - /products/:Id/edit (GET) - Formulario de edición de productos  
+            - /products/:Id (PUT) - Acción de edición de productos donde se enviará el formulario 
+            - /products/:Id (DELETE) - Acción de borrado de productos
 
 
 
