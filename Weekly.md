@@ -47,7 +47,7 @@ REGISTRO DE WEEKLY
 
         FER: estudiar el sprint para incluir metodos put y delete
 
-       YHOMED: realizar las correcciones pertienentes que se determinen en equipo para dar finalidad al proyecto integrador 
+        YHOMED: realizar las correcciones pertienentes que se determinen en equipo para dar finalidad al proyecto integrador 
 
         LILI: revisar el sprint para continuar la planificacion
 
@@ -74,7 +74,7 @@ REGISTRO DE WEEKLY
     2.  ¿IMPEDIMENTOS?
 
     3. ¿QUÉ SE HARÁ ESTA SEMANA?
-    
+
 
 
 
