@@ -58,9 +58,9 @@ REGISTRO DE WEEKLY
     - Vamos en el 4to sprint. 
     - Fecha de entrega 3er sprint: Martes 2022/11/29
     - Entregables:
-        1. Retro                                                                      ok
-        2. Actualización Tablero Trello                                               fu fu fu mi apa 
-        3. Registro weeklys                                                           la buena 
+        1. Retro                                                                      LISTO
+        2. Actualización Tablero Trello                                               LISTO 
+        3. Registro weeklys                                                           LISTO 
         4. Definir los campos necesarios para los productos y generar archivo JSON:   PENDIENTE
         5. Definir los campos necesarios para los usuarios y generar archivo JSON:    PENDIENTE
         6. CRUD de productos (Crear productos):                                       PENDIENTE
@@ -74,24 +74,36 @@ REGISTRO DE WEEKLY
     2.  ¿IMPEDIMENTOS?
 
     3. ¿QUÉ SE HARÁ ESTA SEMANA?
-    * Plantear estrategias que permitan dar una solución a las dificultades que se generan en el momento de desarrollar el proyecto integrador 
-    * Consultar fuentes externas que ayuden a interiorizar los conceptos
-    * Dar continuidad al desarrollo de las actividades segun la programación 
-    * Crear archivo Json con detalle de productos 
-    * Definir los campos necesarios aplicables a cada producto en curso 
-    * Identificador , nombre del producto, descripción, Imagen, Categoria, Costos y Presupuestos, Grado de dificultad 
-    * Construir una carpeta data con la indformacion solicitada " archivo de productos " Y " Archivo de usuarios"
-    * Genarar archivo Json detallando los usuarios 
-    * Definir los campos asignados a cada usuario 
-    * ID, Nombres, Apellidos, Email, Numero de contacto, Contraseña, Foto (Opcional )
-    * Rutas para el crud de productos:
-    - Products ( listado de productos 
-    - Products/create formulario de creacion de productos 
-    - Products/:ID detalle de un producto en particular 
-    - /Products (post) acción de creación de productos donde se enviara el formulario 
-    - /products/:ID/edit  formulario de edición de productos  
-    - productos/:ID (put) Acción de edición de productos donde se enviara el formulario 
-    - productos/:ID (delete) Acción de borrado de productos. 
+
+        1. Plantear estrategias que permitan dar una solución a las dificultades que se generan en el momento de desarrollar el proyecto integrador 
+        2. Consultar fuentes externas que ayuden a interiorizar los conceptos
+        3. Dar continuidad al desarrollo de las actividades según la programación 
+        4. Crear archivo JSON con detalle de productos 
+        5. Definir los campos necesarios aplicables a cada producto en curso 
+            - Identificador
+            - Nombre del producto
+            - Descripción
+            - Imagen
+            - Categoría
+            - Precio
+        6. Construir una carpeta data con la información solicitada: Archivo de productos (product.JSON) y Archivo de usuarios (users.JSON)
+        7. Genarar archivo JSON detallando los usuarios 
+        8. Definir los campos asignados a cada usuario 
+            - Id
+            - Nombres
+            - Apellidos
+            - Email
+            - Número de contacto
+            - Contraseña
+            - Foto (Opcional para el usuario)
+        9. Rutas para el crud de productos:
+            - /Products (GET) - Listado de productos 
+            - /Products/create (GET) - Formulario de creación de productos 
+            - /Products/:Id (GET) - Detalle de un producto en particular 
+            - /Products (POST) - Acción de creación de productos donde se enviará el formulario 
+            - /Products/:Id/edit (GET) - Formulario de edición de productos  
+            - /Products/:Id (PUT) - Acción de edición de productos donde se enviará el formulario 
+            - /Products/:Id (DELETE) - Acción de borrado de productos
 
 
 
