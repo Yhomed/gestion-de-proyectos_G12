@@ -61,13 +61,15 @@ REGISTRO DE WEEKLY
         1. Retro                                                                      LISTO
         2. Actualización Tablero Trello                                               LISTO 
         3. Registro weeklys                                                           LISTO 
-        4. Definir los campos necesarios para los productos y generar archivo JSON:   PENDIENTE
-        5. Definir los campos necesarios para los usuarios y generar archivo JSON:    PENDIENTE
-        6. CRUD de productos (Crear productos):                                       PENDIENTE
-        7. CRUD de productos (Listado de productos):                                  PENDIENTE
-        8. CRUD de productos (Detalle de productos):                                  PENDIENTE
-        9. CRUD de productos (Editar productos):                                      PENDIENTE
-        10. CRUD de productos (Borrar productos):                                     PENDIENTE
+        4. Definir los campos necesarios para los productos                           LISTO
+        5. Generar archivo JSON de productos                                          PENDIENTE
+        6. Definir los campos necesarios para los usuarios                            LISTO
+        7. Generar archivo JSON de usuarios                                           PENDIENTE
+        8. CRUD de productos (Crear productos):                                       PENDIENTE
+        9. CRUD de productos (Listado de productos):                                  PENDIENTE
+        10. CRUD de productos (Detalle de productos):                                 PENDIENTE
+        11. CRUD de productos (Editar productos):                                     PENDIENTE
+        12. CRUD de productos (Borrar productos):                                     PENDIENTE
 
     1. ¿QUÉ SE HIZO ESTA SEMANA?
 
