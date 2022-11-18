@@ -91,7 +91,7 @@ REGISTRO DE WEEKLY
     - /Products (post) acción de creación de productos donde se enviara el formulario 
     - /products/:ID/edit  formulario de edición de productos  
     - productos/:ID (put) Acción de edición de productos donde se enviara el formulario 
-    - productos/:ID (delete) Acción de borrado de productos 
+    - productos/:ID (delete) Acción de borrado de productos. 
 
 
 
