@@ -51,6 +51,32 @@ REGISTRO DE WEEKLY
 
         LILI: revisar el sprint para continuar la planificacion
 
+2. 2022/11/17 SEGUNDO REGISTRO WEEKLY:
+
+    CONSIDERACIONES:
+
+    - Vamos en el 4to sprint. 
+    - Fecha de entrega 3er sprint: Martes 2022/11/29
+    - Entregables:
+        1. Retro                                                                      PENDIENTE
+        2. Actualización Tablero Trello                                               PENDIENTE
+        3. Registro weeklys                                                           PENDIENTE
+        4. Definir los campos necesarios para los productos y generar archivo JSON:   PENDIENTE
+        5. Definir los campos necesarios para los usuarios y generar archivo JSON:    PENDIENTE
+        6. CRUD de productos (Crear productos):                                       PENDIENTE
+        7. CRUD de productos (Listado de productos):                                  PENDIENTE
+        8. CRUD de productos (Detalle de productos):                                  PENDIENTE
+        9. CRUD de productos (Editar productos):                                      PENDIENTE
+        10. CRUD de productos (Borrar productos):                                     PENDIENTE
+
+    1. ¿QUÉ SE HIZO ESTA SEMANA?
+
+    2.  ¿IMPEDIMENTOS?
+
+    3. ¿QUÉ SE HARÁ ESTA SEMANA?
+    
+
+
 
 
 
