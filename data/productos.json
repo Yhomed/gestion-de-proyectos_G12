@@ -1,0 +1,39 @@
+[
+    {
+      "precio": 320000,
+      "id": 1,
+      "title": "HERRAMIENTAS PARA ANÁLISIS DE DATOS CON EXCEL",
+      "number": "00",
+      "thumbnailUrl": "/img/Ruta.jpg"
+
+    },
+    {
+      "precio": 320000,
+      "id": 2,
+      "title": "Herramientas avanzadas de EXCEL para la Elaboración de Cronogramas en Proyectos Ágiles y Prescriptivos",
+      "number": "01",
+      "thumbnailUrl": ""
+    },
+    {
+      "precio": 320000,
+      "id": 3,
+      "title": "Elaboración y Gestión de Presupuestos con Herramientas Avanzadas de EXCEL",
+      "number": "02",
+      "thumbnailUrl": ""
+    },
+    {
+      "precio": 320000,
+      "id": 4,
+      "title": "Herramientas para la Priorización y Clasificación de Alternativas y Proyectos",
+      "number": "03",
+      "thumbnailUrl": ""
+    },
+    {
+      "precio": 320000,
+      "id": 5,
+      "title": "Elaboración de Tableros de Seguimiento Dashboard y Control del Proyecto con POWER BI",
+      "number": "04",
+      "thumbnailUrl": ""
+    }
+    
+  ]

@@ -6,13 +6,16 @@ const app = express();
 
 const mainRoutes = require('./routes/mainRoutes');
 const userRoutes = require('./routes/userRoutes');
+
+const productsRoutes = require('./routes/products')
 app.set('view engine', 'ejs');
 
 //app.use(express.static('public'));
 app.use(express.static(path.join(__dirname, './public'))); //¿Cuál es la diferencia entre usar esta línea o la anterior?
 
-app.use('/', mainRoutes);
+app.use('/', mainRoutes)
 app.use('/user',userRoutes)
+app.use('/products',productsRoutes)
 
 
 app.listen(process.env.PORT || 3050, () => console.log('Servidor activo-3050'));

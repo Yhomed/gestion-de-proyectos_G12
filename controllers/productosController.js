@@ -1,11 +1,28 @@
-const mainController = {
+const path = require('path');
+const fs = require('fs');
+const { receiveMessageOnPort } = require('worker_threads');
+let products = fs.readFileSync(path.join(__dirname, '../data/productos.json'), 'utf8');
+products = JSON.parse(products);
 
 
-productDetail: (req, res) => res.render('./products/productDetail'),
+const productosController =   {
 
-    createProducts: (req, res) => res.render('./products/createProducts'),
 
-    editProducts: (req, res) => res.render('./products/editProducts'),
+    productDetail: (req, res) => {
+
+        let product = products.filter(p => p.id==req.params.id)
+
+        res.render('../views/products/productDetail', {
+            productDetail: product
+        })
+
+    },
+
+    createProducts: (req, res) => res.render('./products/create'),
+
+    editProducts: (req, res) => res.render('./products/:id/edit'),
+
+
 
     productCar: (req, res) => res.render('./products/productCar'),
 
@@ -13,5 +30,4 @@ productDetail: (req, res) => res.render('./products/productDetail'),
 
 }
 
-
-module.exports = mainController;
+module.exports = productosController
