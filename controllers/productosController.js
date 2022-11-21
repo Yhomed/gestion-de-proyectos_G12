@@ -12,13 +12,19 @@ const productosController =   {
 
         let product = products.filter(p => p.id==req.params.id)
 
-        res.render('../views/products/productDetail', {
-            productDetail: product
+        res.render('../views/products/productDetail.ejs', {
+            title: product[0].title,
+            number: product[0].number,
+            parrafo: product[0].parrafo
         })
 
     },
 
+
+
     createProducts: (req, res) => res.render('./products/create'),
+
+    
 
     editProducts: (req, res) => res.render('./products/:id/edit'),
 
@@ -29,5 +35,8 @@ const productosController =   {
 
 
 }
+
+
+
 
 module.exports = productosController
