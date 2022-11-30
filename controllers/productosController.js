@@ -39,7 +39,7 @@ const productosController =   {
     editProducts: (req, res) => res.render('./products/edit'),
 
     //acción de creación (post)
-    createNewProduct: (req, res) => res.render('./products/createProducts'),
+    createNewProduct: (req, res) => res.render(''),
 
     //acción de edición (put)
     editNewProduct: (req, res) => res.render('./'),
