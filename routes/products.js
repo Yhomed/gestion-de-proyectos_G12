@@ -6,8 +6,14 @@ const multer = require('multer');
 
 const productosController = require('../controllers/productosController');
 
-router.get('/:id',productosController.productDetail)
+//ruta 1
+router.get('/', productosController.productList);
 
+//ruta 3
+router.get('/:id',productosController.productDetail);
+
+//ruta 5
+router.get(':id/edit', productosController.productDetail);
 
 // editProductos
 

@@ -20,7 +20,12 @@ const productosController =   {
 
     },
 
+    //metodo
+    productList: (req, res) => {
 
+        res.render('productList', {products}); //renderiza vista con el listado de productos
+
+    }
 
     createProducts: (req, res) => res.render('./products/create'),
 
