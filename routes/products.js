@@ -8,6 +8,7 @@ const productosController = require('../controllers/productosController');
 
 router.get('/:id',productosController.productDetail)
 
+
 // editProductos
 
 // createProducts
