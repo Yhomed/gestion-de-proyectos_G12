@@ -14,9 +14,9 @@ router.get('/login', userController.login); // Login
 
 router.get('/inscripcion', userController.inscripcion); // Inscripción
 
-router.get('/sobreMi', mainController.sobreMi); // Sobre Mí (Descripción GCM)
+//router.get('/sobreMi', mainController.sobreMi); // Sobre Mí (Descripción GCM)
 
-router.get('/contacto', mainController.contacto); // FOrmulario de contacto Usuarios - Empresa
+//router.get('/contacto', mainController.contacto); // FOrmulario de contacto Usuarios - Empresa
 
     // editUsuarios
 
