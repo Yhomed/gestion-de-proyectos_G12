@@ -40,7 +40,6 @@ const productosController =   {
     //acción de creación (post)
     createNewProduct: (req, res) => res.render(''),
 
-<<<<<<< HEAD
     createProducts: (req, res) => res.render('./products/create'),
 
 
@@ -53,10 +52,6 @@ const productosController =   {
 
     productCar: (req, res) => res.render('./products/productCar'),
 
-=======
-    //acción de edición (put)
-    editNewProduct: (req, res) => res.render(''),
->>>>>>> 2b0061459c95ae8395d4ff5af92853f416e69fe7
 
     //acción de borrado (delete)
     deleteProduct: (req, res) => res.render(''),
