@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [{"id":1,
 "firstName":"neque aenean",
 "lastName":"et",
@@ -42,4 +43,24 @@
 "type":"Admin",
 "avatar":"/images/avatars/tostada.jpg"
 }
+=======
+[
+    {
+      "nombre": "Liliana",
+      "apellido": "Cañas",
+      "docId": 123,
+      "id": 1,
+      "email": "lcanase@gmail.com",
+      "foto": "./img/Eafit.png"
+    },
+    {
+        "nombre": "Abril",
+        "apellido": "Amoed0",
+        "docId": 234,
+        "id": 2,
+        "email": "abril@gmail.com",
+        "foto": "./img/Glasst.png"
+    }
+
+>>>>>>> 2b0061459c95ae8395d4ff5af92853f416e69fe7
 ]
