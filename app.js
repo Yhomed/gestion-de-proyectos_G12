@@ -11,7 +11,7 @@ const productsRoutes = require('./routes/products')
 app.set('view engine', 'ejs');
 
 //app.use(express.static('public'));
-app.use(express.static(path.join(__dirname, './public'))); //¿Cuál es la diferencia entre usar esta línea o la anterior?
+app.use(express.static(path.join(__dirname, './public'))); // Ruta absoluta
 
 app.use('/', mainRoutes)
 app.use('/user',userRoutes)
