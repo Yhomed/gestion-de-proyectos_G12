@@ -24,6 +24,8 @@ const productosController =   {
 
     createProducts: (req, res) => res.render('./products/create'),
 
+
+
     
 
     editProducts: (req, res) => res.render('./products/:id/edit'),
