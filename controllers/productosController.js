@@ -13,7 +13,8 @@ const productosController =   {
     //listado
     productList: (req, res) => {
 
-        res.render('productList', {products}); //a la variable se la pasa como objeto literal
+        res.render('../views/products/productList.ejs', 
+        {products});
 
     },
 
@@ -38,13 +39,13 @@ const productosController =   {
     editProducts: (req, res) => res.render('./products/edit'),
 
     //acción de creación (post)
-    createNewProduct: (req, res) => res.render(''),
+    createNewProduct: (req, res) => res.render('./products/createProducts'),
 
     //acción de edición (put)
-    editNewProduct: (req, res) => res.render(''),
+    editNewProduct: (req, res) => res.render('./'),
 
     //acción de borrado (delete)
-    deleteProduct: (req, res) => res.render(''),
+    deleteProduct: (req, res) => res.render('./'),
 
 }
 
