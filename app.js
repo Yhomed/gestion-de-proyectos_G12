@@ -4,6 +4,8 @@ const path = require('path');
 
 const app = express();
 
+const methodOverride = require('method-override');
+
 const mainRoutes = require('./routes/mainRoutes');
 const userRoutes = require('./routes/userRoutes');
 
@@ -12,11 +14,11 @@ app.set('view engine', 'ejs');
 
 //app.use(express.static('public'));
 app.use(express.static(path.join(__dirname, './public'))); // Ruta absoluta
+app.use(methodOverride('_method'));
 
 app.use('/', mainRoutes)
 app.use('/user',userRoutes)
 app.use('/products',productsRoutes)
-
 
 app.listen(process.env.PORT || 3050, () => console.log('Servidor activo-3050'));
 
