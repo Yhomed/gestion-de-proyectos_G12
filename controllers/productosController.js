@@ -6,7 +6,7 @@ const productsFilePath = path.join(__dirname, '..data/productos.json');
 
 //variable que recupera los datos de productos.json 
 
-let products = fs.readFileSync(path.join(productsFilePath, 'utf8');
+let products = fs.readFileSync(path.join(productsFilePath, 'utf8'));
 products = JSON.parse(products);
 
 
