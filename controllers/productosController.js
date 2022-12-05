@@ -87,7 +87,6 @@ const productosController =   {
         
 
     //acción de borrado (delete)
-    //acción de borrado (delete)
     deleteProduct: (req, res) => {
         let id = req.params.id;
         let finalProducts = products.filter((product) => product.id != id);
