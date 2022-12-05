@@ -65,9 +65,26 @@ const productosController =   {
             res.redirect('./products/createProducts');
         },
     
-
     //acción de edición (put)
-    editNewProduct: (req, res) => res.render('./products/editProducts'),
+    editNewProduct: (req, res) => {
+        let id = req.params.id;
+            let productToEdit = products.find((product) => product.id == id);
+            productToEdit = {
+                id: productToEdit.id,
+                ...req.body,
+                image: productToEdit.image,
+            };
+
+        let newProducts = products.map((product) => {
+            if (product.id == productToEdit.id) {
+                return product = {...productToEdit}
+            } else {
+                return product;
+            };
+        });
+    },
+         
+        
 
     //acción de borrado (delete)
     deleteProduct: (req, res) => res.render('./products/delete'),
