@@ -13,7 +13,8 @@ const productosController =   {
     //listado
     productList: (req, res) => {
 
-        res.render('productList', {products}); //a la variable se la pasa como objeto literal
+        res.render('../views/products/productList.ejs', 
+        {products});
 
     },
 
@@ -54,7 +55,7 @@ const productosController =   {
 
 
     //acción de borrado (delete)
-    deleteProduct: (req, res) => res.render(''),
+    deleteProduct: (req, res) => res.render('./'),
 
 }
 

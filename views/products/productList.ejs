@@ -25,7 +25,18 @@
 
         <!--recorrer el product con forEach()-->
         <% for (let i=0; i<4; i++){ %>
-            products
+
+            <article class = "curso">
+                <div class="numero-y-titulo">
+                    <h3 class = "numero"><%= number[i] %></h3> <!-- curso0.html (/curso0) -->
+                    <!-- <a href="/curso0"> --><h3 class = "titulo"><%= title[i] %></h3><!-- </a> -->
+                </div>
+                <div class = "llevar-al-carrito"><a href="/productCar"><i class="fa-solid fa-cart-shopping carrito"></i></a></div>
+                <div class = "descripcion">
+                    <p><%= parrafo %></p> 
+                </div>
+            </article>
+
         <% } %>
           
     </main>
