@@ -87,8 +87,17 @@ const productosController =   {
         
 
     //acción de borrado (delete)
-    deleteProduct: (req, res) => res.render('./products/delete'),
-
+    //acción de borrado (delete)
+    deleteProduct: (req, res) => {
+        let id = req.params.id;
+        let finalProducts = products.filter((product) => product.id != id);
+        fs.writeFileSync(
+            productsFilePath,
+            JSON.stringify(finalProducts, null, " ")
+    );
+    res.redirect('./products/delete');
+    }
+    
 }
 
 module.exports = productosController
