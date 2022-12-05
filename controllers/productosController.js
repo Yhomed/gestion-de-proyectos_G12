@@ -55,9 +55,16 @@ const productosController =   {
 
     //acción de creación (post)
     createNewProduct: (req, res) => {
-
-        res.redirect('./products/createProducts');
-    },
+        let newProduct = {
+            id: products[products.length-1].id-1,
+            ...req.body,
+            image:"default-image.png"
+    };
+    products.push(newProduct)
+    fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
+            res.redirect('./products/createProducts');
+        },
+    
 
     //acción de edición (put)
     editNewProduct: (req, res) => res.render('./products/editProducts'),
