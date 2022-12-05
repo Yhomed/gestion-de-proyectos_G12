@@ -61,7 +61,7 @@ const productosController =   {
             image:"default-image.png"
     };
     products.push(newProduct)
-    fs.writeFileSync(productsFilePath, JSON.stringify(products, null, “”));
+    fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
             res.redirect('./products/createProducts');
         },
     
