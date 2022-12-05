@@ -2,9 +2,11 @@ const path = require('path');
 const fs = require('fs');
 const { receiveMessageOnPort } = require('worker_threads');
 
+const productsFilePath = path.join(__dirname, '..data/productos.json');
+
 //variable que recupera los datos de productos.json 
 
-let products = fs.readFileSync(path.join(__dirname, '../data/productos.json'), 'utf8');
+let products = fs.readFileSync(path.join(productsFilePath, 'utf8'));
 products = JSON.parse(products);
 
 
@@ -13,8 +15,7 @@ const productosController =   {
     //listado
     productList: (req, res) => {
 
-        res.render('../views/products/productList.ejs', 
-        {products});
+        res.render('../views/products/productList.ejs', {products});
 
     },
 
@@ -30,36 +31,40 @@ const productosController =   {
         {
             title: product[0].title,
             number: product[0].number,
-            parrafo: product[0].parrafo
+            parrafo: product[0].parrafo,
+            price: product[0].price,
+            image: product[0].image,
         })
 
     },
 
     //formulario de edición
-    editProducts: (req, res) => res.render('./products/edit'),
+    editProducts: (req, res) => {
+
+        let product = products.filter(p => p.id==req.params.id)
+
+        res.render('../views/products/editProducts.ejs', 
+        {
+            title: product[0].title,
+            number: product[0].number,
+            parrafo: product[0].parrafo,
+            price: product[0].price,
+
+        })
+    },
 
     //acción de creación (post)
-    createNewProduct: (req, res) => res.render(''),
+    createNewProduct: (req, res) => {
 
-    createProducts: (req, res) => res.render('./products/create'),
+        res.redirect('./products/createProducts');
+    },
 
-
-
-    
-
-    editProducts: (req, res) => res.render('./products/:id/edit'),
-
-
-
-    productCar: (req, res) => res.render('./products/productCar'),
-
+    //acción de edición (put)
+    editNewProduct: (req, res) => res.render('./products/editProducts'),
 
     //acción de borrado (delete)
-    deleteProduct: (req, res) => res.render('./'),
+    deleteProduct: (req, res) => res.render('./products/delete'),
 
 }
-
-
-
 
 module.exports = productosController

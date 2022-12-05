@@ -24,27 +24,22 @@
 
       <!-- FORMULARIO DEL EDIT PRODUCTS -->
 
-      <form action="/productDetail" method="POST" >
-
-  
-        
-        <label>Nombre del producto:</label>
-        <input type = "text" name="name">
+      <form action="/:id/edit?_method=PUT" method="POST" enctype="multipart/form-data">
+ 
+        <label>Nombre del curso:</label>
+        <textarea type = "text" name="name" > <%= title %> </textarea>
 
         <label>Descripcion:</label>
-        <input type="text" name="description">
+        <textarea type="text" name="description"> <%= parrafo %> </textarea>
+        
+          <!--<label>Imagen:</label>
+              <input type="file" name="image" value= -->
 
-        <label>Imagen:</label>
-        <input type="file" name="image">
-
-        <label>Categoria:</label>
-        <input type="text" name="category">
-
-        <label>Colores:</label>
-        <input type="text" name="color">
+        <label>Numero:</label>
+        <input type="number" name="number" value=<%= number %>>
 
         <label>Precio:</label>
-        <input type="text" name="price">
+        <input type="number" name="price" value=<%= price %>>
 
         <button type="submit">Guardar</button>
 
