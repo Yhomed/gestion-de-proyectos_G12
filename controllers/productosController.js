@@ -1,16 +1,16 @@
+//const express = require('express');
 const path = require('path');
 const fs = require('fs');
-const { receiveMessageOnPort } = require('worker_threads');
+//const { receiveMessageOnPort } = require('worker_threads');
 
 const productsFilePath = path.join(__dirname, '..data/productos.json');
 
 //variable que recupera los datos de productos.json 
 
-let products = fs.readFileSync(path.join(productsFilePath, 'utf8'));
-products = JSON.parse(products);
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 
-const productosController =   {
+const productosController =  {
 
     //listado
     productList: (req, res) => {

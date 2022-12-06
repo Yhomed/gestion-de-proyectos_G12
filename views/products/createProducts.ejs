@@ -28,23 +28,20 @@
 
       <form action="/productDetail" method="POST">
 
-        <label>Nombre del producto:</label>
-        <input type = "text" name="name">
+        <label>Nombre del curso:</label>
+        <input type = "text" name="name" value="<%= title %>">
 
         <label>Descripcion:</label>
-        <input type="text" name="description">
+        <input type="text" name="parrafo" value="<%= parrafo %>">
 
         <label>Imagen:</label>
-        <input type="file" name="image">
+        <input type="file" name="image" value="<%= image %>">
 
-        <label>Categoria:</label>
-        <input type="text" name="category">
+        <label>Numero:</label>
+        <input type="text" name="number" value="<%= number %>">
 
-        <label>Colores:</label>
-        <input type="text" name="color">
-
-        <label>Precio:</label>
-        <input type="text" name="price">
+        <label>:Precio</label>
+        <input type="text" name="price" value="<%= precio %>">
 
         <button type="submit">Crear Curso</button>
 
