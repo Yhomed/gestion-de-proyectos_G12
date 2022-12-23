@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 //const { receiveMessageOnPort } = require('worker_threads');
 
-const productsFilePath = path.join(__dirname, '..data/productos.json');
+const productsFilePath = path.join(__dirname, '../data/productos.json');
 
 //variable que recupera los datos de productos.json 
 
