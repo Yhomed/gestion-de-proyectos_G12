@@ -7,7 +7,7 @@ const productsFilePath = path.join(__dirname, '../data/productos.json');
 
 //variable que recupera los datos de productos.json 
 
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8')); //se pasa a objeto literal
 
 
 const productosController =  {
@@ -20,7 +20,11 @@ const productosController =  {
     },
 
     //formulario de creación
-    createProducts: (req, res) => res.render('./products/create'), 
+    createProducts: (req, res) => {
+        
+        res.render('./products/create', {products});
+
+    },
 
     //detalle de un producto
     productDetail: (req, res) => {
@@ -43,7 +47,7 @@ const productosController =  {
 
         let product = products.filter(p => p.id==req.params.id)
 
-        res.render('../views/products/editProducts.ejs', 
+        res.render('../views/products/edit.ejs', 
         {
             title: product[0].title,
             number: product[0].number,
@@ -62,7 +66,7 @@ const productosController =  {
     };
     products.push(newProduct)
     fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
-            res.redirect('./products/createProducts');
+            res.redirect('./products/create');
         },
     
     //acción de edición (put)
@@ -78,14 +82,11 @@ const productosController =  {
         let newProducts = products.map((product) => {
             if (product.id == productToEdit.id) {
                 return product = {...productToEdit}
-            } else {
-                return product;
-            };
+            }
+        return product; 
         });
     },
          
-        
-
     //acción de borrado (delete)
     deleteProduct: (req, res) => {
         let id = req.params.id;
@@ -94,7 +95,7 @@ const productosController =  {
             productsFilePath,
             JSON.stringify(finalProducts, null, " ")
     );
-    res.redirect('./products/delete');
+    res.redirect('./products/edit');
     }
     
 }

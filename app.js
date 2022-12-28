@@ -4,17 +4,15 @@ const path = require('path');
 
 const app = express();
 
+//app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, './public'))); // Ruta absoluta
 const methodOverride = require('method-override');
+app.set('view engine', 'ejs');
+app.use(methodOverride('_method'));
 
 const mainRoutes = require('./routes/mainRoutes');
 const userRoutes = require('./routes/userRoutes');
-
-const productsRoutes = require('./routes/products')
-app.set('view engine', 'ejs');
-
-//app.use(express.static('public'));
-app.use(express.static(path.join(__dirname, './public'))); // Ruta absoluta
-app.use(methodOverride('_method'));
+const productsRoutes = require('./routes/products');
 
 app.use('/', mainRoutes)
 app.use('/user',userRoutes)
