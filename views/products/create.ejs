@@ -24,25 +24,24 @@
 
       <h2>Crear productos</h2>
 
-      <!-- FORMULARIO DEL CREATE PRODUCTS -->
+      <!-- FORMULARIO DEL CREATE -->
 
-
-      <form action="/productDetail" method="POST">
+      <form action="/products/" method="POST">
 
         <label>Nombre del curso:</label>
-        <input type = "text" name="title" value="<%= title %>">
+        <input type = "text" name="title">
 
         <label>Descripcion:</label>
-        <input type="text" name="parrafo" value="<%= parrafo %>">
+        <input type="text" name="parrafo">
 
         <label>Imagen:</label>
-        <input type="file" name="image" value="<%= image %>">
+        <input type="file" name="image">
 
         <label>Numero:</label>
-        <input type="text" name="number" value="<%= number %>">
+        <input type="text" name="number">
 
-        <label>:Precio</label>
-        <input type="text" name="price" value="<%= precio %>">
+        <label>Precio:</label>
+        <input type="text" name="price">
 
         <button type="submit">Crear</button>
 

@@ -1,18 +1,20 @@
 const express = require('express');
-
 const path = require('path');
+const methodOverride = require('method-override');
+
+const mainRoutes = require('./routes/mainRoutes');
+const userRoutes = require('./routes/userRoutes');
+const productsRoutes = require('./routes/products');
 
 const app = express();
 
 //app.use(express.static('public'));
 app.use(express.static(path.join(__dirname, './public'))); // Ruta absoluta
-const methodOverride = require('method-override');
 app.set('view engine', 'ejs');
 app.use(methodOverride('_method'));
 
-const mainRoutes = require('./routes/mainRoutes');
-const userRoutes = require('./routes/userRoutes');
-const productsRoutes = require('./routes/products');
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
 
 app.use('/', mainRoutes)
 app.use('/user',userRoutes)
@@ -70,9 +72,9 @@ app.post("/contacto", (req,res) => {
     res.redirect("/");
 })
 
-app.post("/createProducts", (req,res) => {
-    res.redirect("/productDetail");
-})
+// app.post("/createProducts", (req,res) => {
+//    res.redirect("/productDetail");
+// })
 
 // app.post("/productDetail", (req,res) => {
 //     res.redirect("https://wa.link/6l716l");

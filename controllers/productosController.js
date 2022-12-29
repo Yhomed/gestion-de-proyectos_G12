@@ -22,7 +22,7 @@ const productosController =  {
     //formulario de creación
     createProducts: (req, res) => {
         
-        res.render('./products/create', {products});
+        res.render('../views/products/create');
 
     },
 
@@ -49,6 +49,7 @@ const productosController =  {
 
         res.render('../views/products/edit.ejs', 
         {
+            id: product[0].id,
             title: product[0].title,
             number: product[0].number,
             parrafo: product[0].parrafo,
@@ -60,13 +61,13 @@ const productosController =  {
     //acción de creación (post)
     createNewProduct: (req, res) => {
         let newProduct = {
-            id: products[products.length-1].id-1,
+            id: products[products.length-1].id+1,
             ...req.body,
             image:"default-image.png"
     };
     products.push(newProduct)
     fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
-            res.redirect('./products/create');
+            res.redirect('/products/'+ newProduct.id);
         },
     
     //acción de edición (put)
@@ -83,7 +84,7 @@ const productosController =  {
             if (product.id == productToEdit.id) {
                 return product = {...productToEdit}
             }
-        return product; 
+        res.redirect('/products/'); 
         });
     },
          

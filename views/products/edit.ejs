@@ -22,9 +22,9 @@
 
       <h2>Editar productos</h2>
 
-      <!-- FORMULARIO DEL EDIT PRODUCTS -->
+      <!-- FORMULARIO DEL EDIT -->
 
-      <form action="/:id/edit?_method=PUT" method="POST" enctype="multipart/form-data">
+      <form action="/products/<%= id %>?_method=PUT" method="POST" enctype="multipart/form-data">
  
         <label>Nombre del curso:</label>
         <textarea type = "text" name="name" > <%= title %> </textarea>
