@@ -1,44 +1,58 @@
 [
-    {
-      "precio": 320000,
-      "id": 1,
-      "title": "HERRAMIENTAS PARA ANÁLISIS DE DATOS CON EXCEL",
-      "number": "00",
-      "parrafo": "Obtendrá los conocimientos básicos de las principales herramientas de análisis de datos, necesarios para \n continuar con la Ruta de Gestión de Proyectos potencializada con herramientas avanzadas de Excel.",
-      "image": "./img/Ruta.jpg"
-
-    },
-    {
-      "precio": 320000,
-      "id": 2,
-      "title": "Herramientas avanzadas de EXCEL para la Elaboración de Cronogramas en Proyectos Ágiles y Prescriptivos",
-      "number": "01",
-      "parrafo": "Obtendrá los conocimientos básicos de las principales herramientas de análisis de datos, necesarios para \n continuar con la Ruta de Gestión de Proyectos potencializada con herramientas avanzadas de Excel.",
-      "image": "./img/Ruta.jpg"
-    },
-    {
-      "precio": 320000,
-      "id": 3,
-      "title": "Elaboración y Gestión de Presupuestos con Herramientas Avanzadas de EXCEL",
-      "number": "02",
-      "parrafo": "Obtendrá los conocimientos básicos de las principales herramientas de análisis de datos, necesarios para \n continuar con la Ruta de Gestión de Proyectos potencializada con herramientas avanzadas de Excel.",
-      "image": "./img/Ruta.jpg"
-    },
-    {
-      "precio": 320000,
-      "id": 4,
-      "title": "Herramientas para la Priorización y Clasificación de Alternativas y Proyectos",
-      "number": "03",
-      "parrafo": "Obtendrá los conocimientos básicos de las principales herramientas de análisis de datos, necesarios para \n continuar con la Ruta de Gestión de Proyectos potencializada con herramientas avanzadas de Excel.",
-      "image": "./img/Ruta.jpg"
-    },
-    {
-      "precio": 320000,
-      "id": 5,
-      "title": "Elaboración de Tableros de Seguimiento Dashboard y Control del Proyecto con POWER BI",
-      "number": "04",
-      "parrafo": "Obtendrá los conocimientos básicos de las principales herramientas de análisis de datos, necesarios para \n continuar con la Ruta de Gestión de Proyectos potencializada con herramientas avanzadas de Excel.",
-      "image": "./img/Ruta.jpg"
-    }
-    
-  ]
+ {
+  "precio": 320000,
+  "id": 1,
+  "title": "HERRAMIENTAS PARA ANÁLISIS DE DATOS CON EXCEL",
+  "number": "00",
+  "parrafo": "Obtendrá los conocimientos básicos de las principales herramientas de análisis de datos, necesarios para \n continuar con la Ruta de Gestión de Proyectos potencializada con herramientas avanzadas de Excel.",
+  "image": "./img/Ruta.jpg"
+ },
+ {
+  "precio": 320000,
+  "id": 2,
+  "title": "Herramientas avanzadas de EXCEL para la Elaboración de Cronogramas en Proyectos Ágiles y Prescriptivos",
+  "number": "01",
+  "parrafo": "Obtendrá los conocimientos básicos de las principales herramientas de análisis de datos, necesarios para \n continuar con la Ruta de Gestión de Proyectos potencializada con herramientas avanzadas de Excel.",
+  "image": "./img/Ruta.jpg"
+ },
+ {
+  "precio": 320000,
+  "id": 3,
+  "title": "Elaboración y Gestión de Presupuestos con Herramientas Avanzadas de EXCEL",
+  "number": "02",
+  "parrafo": "Obtendrá los conocimientos básicos de las principales herramientas de análisis de datos, necesarios para \n continuar con la Ruta de Gestión de Proyectos potencializada con herramientas avanzadas de Excel.",
+  "image": "./img/Ruta.jpg"
+ },
+ {
+  "precio": 320000,
+  "id": 4,
+  "title": "Herramientas para la Priorización y Clasificación de Alternativas y Proyectos",
+  "number": "03",
+  "parrafo": "Obtendrá los conocimientos básicos de las principales herramientas de análisis de datos, necesarios para \n continuar con la Ruta de Gestión de Proyectos potencializada con herramientas avanzadas de Excel.",
+  "image": "./img/Ruta.jpg"
+ },
+ {
+  "precio": 320000,
+  "id": 5,
+  "title": "Elaboración de Tableros de Seguimiento Dashboard y Control del Proyecto con POWER BI",
+  "number": "04",
+  "parrafo": "Obtendrá los conocimientos básicos de las principales herramientas de análisis de datos, necesarios para \n continuar con la Ruta de Gestión de Proyectos potencializada con herramientas avanzadas de Excel.",
+  "image": "./img/Ruta.jpg"
+ },
+ {
+  "id": 6,
+  "title": "abril",
+  "parrafo": "lalala",
+  "image": "default-image.png",
+  "number": "2",
+  "price": "20000"
+ },
+ {
+  "id": 7,
+  "title": "abril",
+  "parrafo": "lalala",
+  "image": "default-image.png",
+  "number": "2",
+  "price": "30000"
+ }
+]
