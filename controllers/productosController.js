@@ -81,14 +81,18 @@ const productosController =  {
                 image: productToEdit.image,
             };
 
-        let newProducts = products.map((product) => {
+        let newProduct = products.filter((product) => {
             if (product.id == productToEdit.id) {
                 return product = {...productToEdit}
             }
-        res.redirect('/products/'); 
+            
         });
     },
          
+ //res.redirect('/products/'); //
+//fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, " "));//
+
+
     //acción de borrado (delete)
     deleteProduct: (req, res) => {
         let id = req.params.id;

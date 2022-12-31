@@ -24,46 +24,26 @@
 
       <!-- FORMULARIO DEL EDIT -->
 
-      <form action="/products/<%= id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+      <form action="/products/<%= id %>?_method=put" enctype="multipart/form-data" method="POST">
  
         <label>Nombre del curso:</label>
-        <textarea type = "text" name="name" > <%= title %> </textarea>
+        <input type="text" name="title" value="<%= title %>"> 
 
         <label>Descripcion:</label>
-        <textarea type="text" name="description"> <%= parrafo %> </textarea>
+        <input type="text" name="parrafo" value="<%= parrafo %>">
         
           <!--<label>Imagen:</label>
               <input type="file" name="image" value= -->
 
         <label>Precio:</label>
-        <textarea type="text" name="price" ><%= price %></textarea>
+        <input type="text" name="price" value="<%= price %>">
 
         <button type="submit">Editar</button>
           
       </form>
 
-      <h2>Borrar curso</h2>
 
-      <!-- FORMULARIO DEL DELETE -->
-
-      <form action="/:id/edit?_method=DELETE" method="POST" enctype="multipart/form-data">
- 
-        <label>Nombre del curso:</label>
-        <textarea type = "text" name="name" > <%= title %> </textarea>
-
-        <label>Descripcion:</label>
-        <textarea type="text" name="description"> <%= parrafo %> </textarea>
-        
-          <!--<label>Imagen:</label>
-              <input type="file" name="image" value= -->
-
-        <label>Precio:</label>
-        <input type="number" name="price" value=<%= price %>>
-
-        <button type="submit">Eliminar</button>
-        
-      </form>
-   
+      
     </main>
 
   <footer>
