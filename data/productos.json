@@ -1,6 +1,6 @@
 [
  {
-  "precio": 320000,
+  "price": 320000,
   "id": 1,
   "title": "HERRAMIENTAS PARA ANÁLISIS DE DATOS CON EXCEL",
   "number": "00",
@@ -8,7 +8,7 @@
   "image": "./img/Ruta.jpg"
  },
  {
-  "precio": 320000,
+  "price": 320000,
   "id": 2,
   "title": "Herramientas avanzadas de EXCEL para la Elaboración de Cronogramas en Proyectos Ágiles y Prescriptivos",
   "number": "01",
@@ -16,7 +16,7 @@
   "image": "./img/Ruta.jpg"
  },
  {
-  "precio": 320000,
+  "price": 320000,
   "id": 3,
   "title": "Elaboración y Gestión de Presupuestos con Herramientas Avanzadas de EXCEL",
   "number": "02",
@@ -24,7 +24,7 @@
   "image": "./img/Ruta.jpg"
  },
  {
-  "precio": 320000,
+  "price": 320000,
   "id": 4,
   "title": "Herramientas para la Priorización y Clasificación de Alternativas y Proyectos",
   "number": "03",
@@ -32,7 +32,7 @@
   "image": "./img/Ruta.jpg"
  },
  {
-  "precio": 320000,
+  "price": 320000,
   "id": 5,
   "title": "Elaboración de Tableros de Seguimiento Dashboard y Control del Proyecto con POWER BI",
   "number": "04",
@@ -54,5 +54,37 @@
   "image": "default-image.png",
   "number": "2",
   "price": "30000"
+ },
+ {
+  "id": 8,
+  "title": "TP NÚMERO 2 RPyA",
+  "parrafo": "lalalaaksk",
+  "image": "default-image.png",
+  "price": "30001",
+  "number": "08"
+ },
+ {
+  "id": 9,
+  "title": "ajajajajajjjckkk",
+  "parrafo": "lalalaaksk",
+  "image": "default-image.png",
+  "price": "12000",
+  "number": "09"
+ },
+ {
+  "id": 10,
+  "title": "ajajajajajjjaldkldfd",
+  "parrafo": "lalalaakskxklc",
+  "image": "default-image.png",
+  "price": "120000",
+  "number": "10"
+ },
+ {
+  "id": 11,
+  "title": "llalalla",
+  "parrafo": "ñeñeñeñe",
+  "image": "default-image.png",
+  "price": "40000",
+  "number": "11"
  }
 ]

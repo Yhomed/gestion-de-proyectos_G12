@@ -63,7 +63,8 @@ const productosController =  {
         let newProduct = {
             id: products[products.length-1].id+1,
             ...req.body,
-            image:"default-image.png"
+            image:"default-image.png",
+            number: products[products.length-1].id < 9 ? "0" + (products[products.length-1].id+1).toString() : (products[products.length-1].id+1).toString()
     };
     products.push(newProduct)
     fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
