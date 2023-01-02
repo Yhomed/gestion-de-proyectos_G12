@@ -73,20 +73,18 @@ const productosController =  {
     
     //acción de edición (put)
     editNewProduct: (req, res) => {
-        let id = req.params.id;
-            let productToEdit = products.find((product) => product.id == id);
-            productToEdit = {
-                id: productToEdit.id,
-                ...req.body,
-                image: productToEdit.image,
-            };
+        req.body.id = req.params.id;
+        //req.body.imagen ?  req.file ? req.file.filename : req.body.oldImagen;
 
         let newProducts = products.map((product) => {
-            if (product.id == productToEdit.id) {
-                return product = {...productToEdit}
+            if (product.id == req.body.id) {
+                return product = req.body;
             }
-        res.redirect('/products/'); 
+            return product;
         });
+        let updatedProduct = JSON.stringify(newProducts, null, " ");
+        fs.writeFileSync(path.resolve(productsFilePath, updatedProduct));
+        res.redirect('/products/');
     },
          
     //acción de borrado (delete)
