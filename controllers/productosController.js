@@ -3,19 +3,19 @@ const path = require('path');
 const fs = require('fs');
 //const { receiveMessageOnPort } = require('worker_threads');
 
-const productsFilePath = path.join(__dirname, '../data/productos.json');
+const productsFilePath = path.resolve(__dirname, '../data/productos.json');
 
 //variable que recupera los datos de productos.json 
 
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8')); //se pasa a objeto literal
+ //se pasa a objeto literal
 
 
 const productosController =  {
 
     //listado
     productList: (req, res) => {
-
-        res.render('../views/products/productList.ejs', {products});
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        res.render('../views/products/productList.ejs', {products, longitud: products.length});
 
     },
 
@@ -28,7 +28,7 @@ const productosController =  {
 
     //detalle de un producto
     productDetail: (req, res) => {
-
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         let product = products.filter(p => p.id==req.params.id)
 
         res.render('../views/products/productDetail.ejs', 
@@ -44,7 +44,7 @@ const productosController =  {
 
     //formulario de edición
     editProducts: (req, res) => {
-
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         let product = products.filter(p => p.id==req.params.id)
         //console.log(product);
         res.render('../views/products/edit.ejs', 
@@ -60,6 +60,7 @@ const productosController =  {
 
     //acción de creación (post)
     createNewProduct: (req, res) => {
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         console.log('¿qué tiene el req.originalUrl en el create?: '+ req.originalUrl);
         let newProduct = {
             id: products[products.length-1].id+1,
@@ -74,7 +75,7 @@ const productosController =  {
     
     //acción de edición (put)
     editProduct: (req, res) => {
-
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         req.body.id = Number(req.params.id);
         //req.body.imagen ? req.file ? req.file.filename : req.body.oldImagen;
 
@@ -94,14 +95,29 @@ const productosController =  {
          
     //acción de borrado (delete)
     deleteProduct: (req, res) => {
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         let productId = req.params.id;
         //trae todos los registros distintos al productId
         let finalProducts = products.filter((product) => product.id != productId);
-        let productsToSave = JSON.stringify(finalProducts, null, " ");
-        fs.writeFileSync(productsFilePath, productsToSave);
-    res.redirect('/products/delete');
+        let productsToSave = JSON.stringify(finalProducts, null, 2);
+        fs.writeFileSync(path.resolve(__dirname, '../data/productos.json'), productsToSave);
+    res.redirect('/products/');
     },
-    
+
+    //formulario del delete
+    deleteProducts: (req, res) => {
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        let product = products.filter(p => p.id==req.params.id)
+        //console.log(product);
+        res.render('../views/products/delete.ejs', 
+        {
+            id: product[0].id,
+            title: product[0].title,
+            number: product[0].number,
+            parrafo: product[0].parrafo,
+            price: product[0].price,
+        })
+    }
 }
 
-module.exports = productosController
+module.exports = productosController;

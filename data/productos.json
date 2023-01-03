@@ -1,28 +1,5 @@
 [
   {
-    "title": "aguante el dibu",
-    "parrafo": "somos campeones",
-    "price": "92",
-    "id": 1,
-    "number": "00"
-  },
-  {
-    "price": 320000,
-    "id": 2,
-    "title": "Herramientas avanzadas de EXCEL para la Elaboración de Cronogramas en Proyectos Ágiles y Prescriptivos",
-    "number": "01",
-    "parrafo": "Obtendrá los conocimientos básicos de las principales herramientas de análisis de datos, necesarios para \n continuar con la Ruta de Gestión de Proyectos potencializada con herramientas avanzadas de Excel.",
-    "image": "./img/Ruta.jpg"
-  },
-  {
-    "price": 320000,
-    "id": 3,
-    "title": "Elaboración y Gestión de Presupuestos con Herramientas Avanzadas de EXCEL",
-    "number": "02",
-    "parrafo": "Obtendrá los conocimientos básicos de las principales herramientas de análisis de datos, necesarios para \n continuar con la Ruta de Gestión de Proyectos potencializada con herramientas avanzadas de Excel.",
-    "image": "./img/Ruta.jpg"
-  },
-  {
     "price": 320000,
     "id": 4,
     "title": "Herramientas para la Priorización y Clasificación de Alternativas y Proyectos",

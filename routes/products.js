@@ -29,6 +29,9 @@ router.put('/:id', productosController.editProduct);
 //ruta 7 para la acción de borrado (DELETE) --> baja
 router.delete('/:id', productosController.deleteProduct);
 
+//ruta 8 para el formulario de delete
+router.get('/:id/delete', productosController.deleteProducts);
+
 // productCar
 
 module.exports = router;

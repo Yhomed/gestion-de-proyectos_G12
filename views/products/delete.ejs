@@ -20,11 +20,11 @@
 
     <main>
 
-      <h2>Editar curso</h2>
+      <h2>Borrar curso</h2>
 
       <!-- FORMULARIO DEL DELETE -->
 
-      <form action="/products/<%= id %>?_method=DELETE" enctype="multipart/form-data" method="POST">
+      <form action="/products/<%= id %>?_method=DELETE" method="POST">
  
         <label>Nombre del curso:</label>
         <input type="text" name="title" value="<%= title %>"> 
@@ -38,7 +38,7 @@
         <label>Precio:</label>
         <input type="text" name="price" value="<%= price %>">
 
-        <button type="submit">Editar</button>
+        <button type="submit">Borrar</button>
           
       </form>
 
