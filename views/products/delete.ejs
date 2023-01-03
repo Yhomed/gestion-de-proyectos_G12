@@ -1,4 +1,4 @@
-<!-- EDITAR PRODUCTOS -->
+<!-- ELIMINAR PRODUCTOS -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,9 +22,9 @@
 
       <h2>Editar curso</h2>
 
-      <!-- FORMULARIO DEL EDIT -->
+      <!-- FORMULARIO DEL DELETE -->
 
-      <form action="/products/<%= id %>?_method=PUT" method="POST"> <!-- quitar enctype-->
+      <form action="/products/<%= id %>?_method=DELETE" enctype="multipart/form-data" method="POST">
  
         <label>Nombre del curso:</label>
         <input type="text" name="title" value="<%= title %>"> 
@@ -41,6 +41,8 @@
         <button type="submit">Editar</button>
           
       </form>
+
+
       
     </main>
 
@@ -50,6 +52,4 @@
     
   </footer>
 </body>
-</html>
-        
-        
+</html>-->

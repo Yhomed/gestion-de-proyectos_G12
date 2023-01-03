@@ -46,7 +46,7 @@ const productosController =  {
     editProducts: (req, res) => {
 
         let product = products.filter(p => p.id==req.params.id)
-
+        //console.log(product);
         res.render('../views/products/edit.ejs', 
         {
             id: product[0].id,
@@ -60,6 +60,7 @@ const productosController =  {
 
     //acción de creación (post)
     createNewProduct: (req, res) => {
+        console.log('¿qué tiene el req.originalUrl en el create?: '+ req.originalUrl);
         let newProduct = {
             id: products[products.length-1].id+1,
             ...req.body,
@@ -72,31 +73,34 @@ const productosController =  {
         },
     
     //acción de edición (put)
-    editNewProduct: (req, res) => {
-        req.body.id = req.params.id;
-        //req.body.imagen ?  req.file ? req.file.filename : req.body.oldImagen;
+    editProduct: (req, res) => {
+
+        req.body.id = Number(req.params.id);
+        //req.body.imagen ? req.file ? req.file.filename : req.body.oldImagen;
 
         let newProducts = products.map((product) => {
             if (product.id == req.body.id) {
-                return product = req.body;
+                let temp = req.body;
+                temp['number'] = product.number;
+                product = temp;
+                return product;
             }
             return product;
         });
-        let updatedProduct = JSON.stringify(newProducts, null, " ");
-        fs.writeFileSync(path.resolve(productsFilePath, updatedProduct));
+        let updatedProduct = JSON.stringify(newProducts, null, 2);
+        fs.writeFileSync(path.resolve(__dirname, '../data/productos.json'), updatedProduct);
         res.redirect('/products/');
     },
          
     //acción de borrado (delete)
     deleteProduct: (req, res) => {
-        let id = req.params.id;
-        let finalProducts = products.filter((product) => product.id != id);
-        fs.writeFileSync(
-            productsFilePath,
-            JSON.stringify(finalProducts, null, " ")
-    );
-    res.redirect('./products/edit');
-    }
+        let productId = req.params.id;
+        //trae todos los registros distintos al productId
+        let finalProducts = products.filter((product) => product.id != productId);
+        let productsToSave = JSON.stringify(finalProducts, null, " ");
+        fs.writeFileSync(productsFilePath, productsToSave);
+    res.redirect('/products/delete');
+    },
     
 }
 

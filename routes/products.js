@@ -24,15 +24,11 @@ router.post('/', productosController.createNewProduct);
 router.get('/:id/edit', productosController.editProducts);
 
 //ruta 6 para la acción de edición (PUT) --> modificación
-router.put('/:id', productosController.editNewProduct);
+router.put('/:id', productosController.editProduct);
 
 //ruta 7 para la acción de borrado (DELETE) --> baja
 router.delete('/:id', productosController.deleteProduct);
 
-// editProductos
-
-// createProducts
-
 // productCar
 
-module.exports= router;
+module.exports = router;
