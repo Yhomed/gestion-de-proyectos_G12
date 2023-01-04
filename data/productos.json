@@ -1,18 +1,18 @@
 [
   {
-    "price": 320000,
-    "id": 4,
-    "title": "Herramientas para la Priorización y Clasificación de Alternativas y Proyectos",
-    "number": "03",
-    "parrafo": "Obtendrá los conocimientos básicos de las principales herramientas de análisis de datos, necesarios para \n continuar con la Ruta de Gestión de Proyectos potencializada con herramientas avanzadas de Excel.",
-    "image": "./img/Ruta.jpg"
+    "title": "Elaboración de Tableros de Seguimiento Dashboard y Control del Proyecto con POWER BI",
+    "parrafo": "Obtendrá los conocimientos básicos de las principales herramientas de análisis de datos, necesarios para  continuar con la Ruta de Gestión de Proyectos potencializada con herramientas avanzadas de Excel.",
+    "price": "321111",
+    "id": 5,
+    "number": "04",
+    "image": "curso1672796668743.PNG"
   },
   {
-    "price": 320000,
-    "id": 5,
-    "title": "Elaboración de Tableros de Seguimiento Dashboard y Control del Proyecto con POWER BI",
-    "number": "04",
-    "parrafo": "Obtendrá los conocimientos básicos de las principales herramientas de análisis de datos, necesarios para \n continuar con la Ruta de Gestión de Proyectos potencializada con herramientas avanzadas de Excel.",
-    "image": "./img/Ruta.jpg"
+    "id": 6,
+    "title": "lalala",
+    "parrafo": "aguante dibuuuuu",
+    "image": "default-image.png",
+    "price": "122222",
+    "number": "06"
   }
 ]

@@ -5,11 +5,6 @@ const fs = require('fs');
 
 const productsFilePath = path.resolve(__dirname, '../data/productos.json');
 
-//variable que recupera los datos de productos.json 
-
- //se pasa a objeto literal
-
-
 const productosController =  {
 
     //listado
@@ -54,6 +49,7 @@ const productosController =  {
             number: product[0].number,
             parrafo: product[0].parrafo,
             price: product[0].price,
+            image: product[0].image,
 
         })
     },
@@ -77,13 +73,13 @@ const productosController =  {
     editProduct: (req, res) => {
         let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         req.body.id = Number(req.params.id);
-        //req.body.imagen ? req.file ? req.file.filename : req.body.oldImagen;
 
         let newProducts = products.map((product) => {
             if (product.id == req.body.id) {
                 let temp = req.body;
                 temp['number'] = product.number;
                 product = temp;
+                product.image = req.file ? req.file.filename : product.image;
                 return product;
             }
             return product;
