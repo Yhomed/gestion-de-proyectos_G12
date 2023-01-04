@@ -114,6 +114,7 @@ RETROALIMENTACIÓN "Starfish"
     - Tolerancia a la frustración.
     - Disposición de tiempo para realizar las tareas.
     - Compromiso para ver el material audiovisual teórico-práctico que brinda el playground.
+    - trabajar mas en equipo, para poder avanzar lo mas posible y con menos conflictos en el transcurso del sprint
 
 4. STOP DOING:
 
@@ -123,3 +124,5 @@ RETROALIMENTACIÓN "Starfish"
 
     - Investigaciones más profundas acerca de los impedimentos que se nos presentan en el código. Buscar en youtube o stackoverflow personas que hayan tenido dificultades similares a las nuestras para poder avanzar más rápido.
     - Realizar más consultas a los profesores del curso sobre como dar salución a estos obstáculos.
+    - Empezar a trabajar mas en equipo, para que al momento de realizar las consignas podamos aportar todos y asi poder avanzar.
+    
