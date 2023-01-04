@@ -57,11 +57,10 @@ const productosController =  {
     //acción de creación (post)
     createNewProduct: (req, res) => {
         let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-        console.log('¿qué tiene el req.originalUrl en el create?: '+ req.originalUrl);
         let newProduct = {
             id: products[products.length-1].id+1,
             ...req.body,
-            image:"default-image.png",
+            image: req.file ? req.file.filename : products.image,
             number: products[products.length-1].id < 9 ? "0" + (products[products.length-1].id+1).toString() : (products[products.length-1].id+1).toString()
     };
     products.push(newProduct)
