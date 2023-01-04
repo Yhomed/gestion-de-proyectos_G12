@@ -96,3 +96,30 @@ RETROALIMENTACIÓN "Starfish"
 5. START DOING:
 
     - Buscar otras fuentes de apoyo para solución de dudas, ya que el playground no está siendo suficiente para captar realmente todos los conceptos y comandos necesarios para desarrollar los ejercicios de clase y del proyecto integrador.
+
+2023/1/4 RETRO SPRINT 4:
+
+1. KEEP DOING:
+
+    - Apoyo entre los miembros del equipo.
+    - Trabajo en equipo.
+    - Reuniones periódicas para revisión del avance del trabajo.
+
+2. LESS OF:
+
+    - Frustración por no avanzar tan rápido como antes.
+
+3. MORE OF:
+
+    - Tolerancia a la frustración.
+    - Disposición de tiempo para realizar las tareas.
+    - Compromiso para ver el material audiovisual teórico-práctico que brinda el playground.
+
+4. STOP DOING:
+
+    - Atrasarnos con entregas o realizar entregas a medias. Tratar de volver a encontrar el ritmo de trabajo de antes con el fin de que el mismo sea productivo y entregado en el tiempo pactado y de forma correcta.
+
+5. START DOING:
+
+    - Investigaciones más profundas acerca de los impedimentos que se nos presentan en el código. Buscar en youtube o stackoverflow personas que hayan tenido dificultades similares a las nuestras para poder avanzar más rápido.
+    - Realizar más consultas a los profesores del curso sobre como dar salución a estos obstáculos.
