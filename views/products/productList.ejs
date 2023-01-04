@@ -23,17 +23,23 @@
 
         <h2>RUTA DE APRENDIZAJE</h2> <!-- RUTA -->
 
-        <!--recorrer el product con forEach()-->
+        <!--recorre el producto con for(){}-->
         <% for (let i=0; i<longitud; i++){ %>
 
             <article class = "curso">
                 <div class="numero-y-titulo">
-                    <h3 class = "numero"><%= products[i].number %></h3> <!-- curso0.html (/curso0) -->
-                    <!-- <a href="/curso0"> --><h3 class = "titulo"><%= products[i].title %></h3><!-- </a> -->
+                    <h3 class = "numero"><%= products[i].number %></h3> 
+                    <h3 class = "titulo"><%= products[i].title %></h3>
                 </div>
                 <div class = "llevar-al-carrito"><a href="/productCar"><i class="fa-solid fa-cart-shopping carrito"></i></a></div>
                 <div class = "descripcion">
                     <p><%= products[i].parrafo %></p> 
+                </div>
+                <div class = "imagen-cursos">
+                    <%= products[i].image %>
+                </div>
+                <div class = "precio">
+                    <p> $ <%= products[i].price %></p> 
                 </div>
             </article>
 

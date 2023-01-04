@@ -17,8 +17,8 @@ app.use(methodOverride('_method'));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-app.use('/', mainRoutes)
-app.use('/user',userRoutes)
-app.use('/products',productsRoutes)
+app.use('/', mainRoutes);
+app.use('/user',userRoutes);
+app.use('/products',productsRoutes);
 
 app.listen(process.env.PORT || 3050, () => console.log('Servidor activo-3050'));
