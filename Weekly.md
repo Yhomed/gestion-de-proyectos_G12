@@ -62,14 +62,14 @@ REGISTRO DE WEEKLY
         2. Actualización Tablero Trello                                               LISTO 
         3. Registro weeklys                                                           LISTO 
         4. Definir los campos necesarios para los productos                           LISTO
-        5. Generar archivo JSON de productos                                          PENDIENTE
+        5. Generar archivo JSON de productos                                          LISTO
         6. Definir los campos necesarios para los usuarios                            LISTO
-        7. Generar archivo JSON de usuarios                                           PENDIENTE
-        8. CRUD de productos (Crear productos):                                       PENDIENTE
-        9. CRUD de productos (Listado de productos):                                  PENDIENTE
-        10. CRUD de productos (Detalle de productos):                                 PENDIENTE
-        11. CRUD de productos (Editar productos):                                     PENDIENTE
-        12. CRUD de productos (Borrar productos):                                     PENDIENTE
+        7. Generar archivo JSON de usuarios                                           LISTO
+        8. CRUD de productos (Crear productos):                                       LISTO
+        9. CRUD de productos (Listado de productos):                                  LISTO
+        10. CRUD de productos (Detalle de productos):                                 LISTO
+        11. CRUD de productos (Editar productos):                                     LISTO
+        12. CRUD de productos (Borrar productos):                                     LISTO
 
     1. ¿QUÉ SE HIZO ESTA SEMANA?
 
@@ -86,7 +86,6 @@ REGISTRO DE WEEKLY
             - Nombre del producto
             - Descripción
             - Imagen
-            - Categoría
             - Precio
         6. Construir una carpeta data con la información solicitada: Archivo de productos (product.JSON) y Archivo de usuarios (users.JSON)
         7. Generar archivo JSON detallando los usuarios 
@@ -102,9 +101,9 @@ REGISTRO DE WEEKLY
             - /products (GET) - Listado de productos 
             - /products/create (GET) - Formulario de creación de productos 
             - /products/:id (GET) - Detalle de un producto en particular 
-            - /products (POST) - Acción de creación de productos donde se enviará el formulario 
+            - /products (POST) - Acción de creación de productos  
             - /products/:id/edit (GET) - Formulario de edición de productos  
-            - /products/:id (PUT) - Acción de edición de productos donde se enviará el formulario 
+            - /products/:id (PUT) - Acción de edición de productos 
             - /products/:id (DELETE) - Acción de borrado de productos
 
 

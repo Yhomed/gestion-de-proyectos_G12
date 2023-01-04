@@ -38,13 +38,5 @@
   "image": "default-image.png",
   "price": "30000",
   "number": "04"
- },
- {
-  "id": 6,
-  "title": "Curso de  prueba",
-  "parrafo": "descrip de prueba",
-  "price": "3200",
-  "image": "curso1672856749521.png",
-  "number": "06"
  }
 ]
