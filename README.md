@@ -67,13 +67,22 @@ SPRINT 2
 
     1. Link del tablero del proyecto: https://trello.com/invite/b/bfsxrIQo/ATTIab74c744608a9f0a8575e07e95c329ea6BA6D353/proyecto-integrador-g12
 
-    2. Retroalimentación Starfish: https://github.com/Yhomed/gestion-de-proyectos_G12/blob/main/RETRO.md
+    2. Retro Starfish sprint 2: https://github.com/Yhomed/gestion-de-proyectos_G12/blob/main/RETRO.md
 
 
 SPRINT 3
 
     1. Link tablero actualizado del proyecto: https://trello.com/invite/b/bfsxrIQo/ATTIab74c744608a9f0a8575e07e95c329ea6BA6D353/proyecto-integrador-g12
 
-    2. Link Retro sprint 2:  https://github.com/Yhomed/gestion-de-proyectos_G12/blob/main/RETRO.md
+    2. Retro Starfish sprint 3:  https://github.com/Yhomed/gestion-de-proyectos_G12/blob/main/RETRO.md
 
-    3. Link registro weeklys: 
+    3. Registro weeklys: https://github.com/Yhomed/gestion-de-proyectos_G12/blob/main/Weekly.md
+
+
+SPRINT 4
+
+    1. Link tablero actualizado: https://trello.com/invite/b/bfsxrIQo/ATTIab74c744608a9f0a8575e07e95c329ea6BA6D353/proyecto-integrador-g12
+
+    2. Retro starfish sprint 4:  https://github.com/Yhomed/gestion-de-proyectos_G12/blob/main/RETRO.md
+
+    3. Registro weeklys: https://github.com/Yhomed/gestion-de-proyectos_G12/blob/main/Weekly.md
