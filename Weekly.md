@@ -56,7 +56,7 @@ REGISTRO DE WEEKLY
     CONSIDERACIONES:
 
     - Vamos en el 4to sprint. 
-    - Fecha de entrega 3er sprint: Martes 2022/11/29
+    - Fecha de entrega 4to sprint: Martes 2022/11/29
     - Entregables:
         1. Retro                                                                      LISTO
         2. Actualización Tablero Trello                                               LISTO 
@@ -106,7 +106,37 @@ REGISTRO DE WEEKLY
             - /products/:id (PUT) - Acción de edición de productos 
             - /products/:id (DELETE) - Acción de borrado de productos
 
+3. 2023/1/6 REGISTRO WEEKLY:
 
+    CONSIDERACIONES:
+
+    - Vamos en el 5to sprint.                                                   
+    - Fecha de entrega 5to Sprint:                      
+    - Entregables:
+        1. Retro                                                                PENDIENTE
+        2. Actualización tablero trello                                         PENDIENTE
+        3. Registro weeklys                                                     PENDIENTE
+        4. Formulario de registro                                               PENDIENTE
+            a. Campos mínimos mencionados
+            b. Subida de una imagen de perfil
+            c. Guardado en JSON con encriptación de contraseña
+        5. Formulario de login                                                  PENDIENTE
+            a. Campos de email y password
+            b. Función de recordar al usuario (opcional)
+        6. Rutas de huéspedes y usuarios                                        PENDIENTE
+            a. Huéspedes: redireccionan al perfil si el usuario está logueado
+            b. Usuarios: redireccionan al login si el usuario no está logueado
+
+        Rutas:
+            /routes/users.js
+        Controlador:
+            /controllers/userController.js
+        Vistas:
+            /views/users/
+        Directorio:
+            /public/img/users/
+        Coleccion:
+            /data/users.json
 
 
 

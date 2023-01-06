@@ -19,7 +19,7 @@ const storage = multer.diskStorage({
   
   const uploadFile = multer({ storage })
 
-/* 7 RUTAS */
+/* 8 RUTAS */
 
 //ruta 1 para el listado de productos 
 router.get('/', productosController.productList); //listo

@@ -126,3 +126,14 @@ RETROALIMENTACIÓN "Starfish"
     - Realizar más consultas a los profesores del curso sobre como dar salución a estos obstáculos.
     - Empezar a trabajar mas en equipo, para que al momento de realizar las consignas podamos aportar todos y asi poder avanzar.
     
+2023/1/6 RETRO SPRINT 5:
+
+1. KEEP GOING:
+
+2. LESS OF:
+
+3. MORE OF:
+
+4. STOP DOING:
+
+5. START DOING:
