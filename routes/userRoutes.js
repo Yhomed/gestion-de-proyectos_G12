@@ -21,13 +21,22 @@ const userController = require('../controllers/userController');
 
 router.get('/', userController.list); // listado
 
+router.get('/:id', userController.detail); //detalle
+
 router.get('/register', userController.register); // Registro
 
 router.get('/login', userController.login); // Login
 
 router.get('/inscripcion', userController.inscripcion); // Inscripción
 
-router.get('/create',uploadFile.single("image"), userController.createUsuario);    // createUsuarios
+router.post('/', uploadFile.single("image"), userController.createUsuario); //createUsuarios
 
+router.get('/:id/edit', userController.editUsers);
+
+router.put('/:id', uploadFile.single('image'), userController.editUser); 
+
+router.delete('/:id', userController.deleteUser); 
+
+router.get('/:id/delete', userController.deleteUsers); 
 
 module.exports= router;

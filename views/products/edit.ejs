@@ -5,6 +5,7 @@
 <head>
 
   <%- include('../partials/head.ejs') %>
+
   <link href="css/formularios.css" rel="stylesheet">
 
 </head>
@@ -27,16 +28,16 @@
       <form action="/products/<%= id %>?_method=PUT" method="POST" enctype="multipart/form-data">
  
         <label>Nombre del curso:</label>
-        <input type="text" name="title" value="<%= title %>"> 
+        <input type="text" name="title" value="<%= title %>" required> 
 
         <label>Descripcion:</label>
-        <input type="text" name="parrafo" value="<%= parrafo %>">
+        <input type="text" name="parrafo" value="<%= parrafo %>" required>
         
         <label>Imagen:</label>
         <input type="file" name="image">
 
         <label>Precio:</label>
-        <input type="text" name="price" value="<%= price %>">
+        <input type="text" name="price" value="<%= price %>" required>
 
         <button type="submit">Editar</button>
           

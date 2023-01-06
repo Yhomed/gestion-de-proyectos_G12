@@ -1,25 +1,31 @@
-[{"id":1,
-"nombre":"fernando",
-"apellido":"sanchez",
-"email":"hmeasom0@blinklist.com",
-"password":"12345",
-"image":"/public/img/jala.jpg"
-},
-
-{"id":2,
-"nombre":"abril",
-"apellido":"alvarez",
-"email":"kwitherop1@statcounter.com",
-"password":"54321",
-"image":"/public/img/kipa.jpg"
-},
-
-{"id":3,
-"nombre":"yhomed",
-"apellido":"durango",
-"email":"amackimmie2@mashable.com",
-"password":"12345",
-"image":"/public/img/pretzel.jpg"
-}
-
+[
+ {
+  "id": 1,
+  "nombre": "fernando",
+  "apellido": "sanchez",
+  "email": "fer@gmail.com",
+  "password": "10299",
+  "image": "usuarios-img.png"
+ },
+ {
+  "id": 2,
+  "nombre": "abril",
+  "apellido": "alvarez",
+  "email": "abril@gmail.com",
+  "password": "34766",
+  "image": "usuarios-img.png"
+ },
+ {
+  "id": 3,
+  "nombre": "yhomed",
+  "apellido": "durango",
+  "email": "yhomed@gmail.com",
+  "password": "23679",
+  "image": "usuarios-img.png"
+ },
+ {
+  "id": 4,
+  "email": "abriinahir1@gmail.com",
+  "password": "lalalala"
+ }
 ]
