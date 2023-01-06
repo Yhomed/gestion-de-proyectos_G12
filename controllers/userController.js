@@ -1,6 +1,10 @@
 const path = require ('path');
 const fs = require('fs');
 
+const bcrypt = require('bcrypt')
+ 
+
+
 const userFilePath = path.resolve(__dirname, '../data/usuarios.json');
 
 const userController = {
@@ -8,7 +12,7 @@ const userController = {
     list: (req, res) => {
     
             let user = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
-            res.render('../views/users/userList.ejs', {user, longitud: user.length});
+            res.render('./users/userList.ejs', {user, longitud: user.length});
     },
 
     register: (req, res) => res.render('./users/register'),
