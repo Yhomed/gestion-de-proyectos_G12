@@ -1,0 +1,63 @@
+<!-- DETALLE DEL USUARIO -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <%- include('../partials/head.ejs') %>
+
+    <!-- <link href="../css/productDetail.css" rel="stylesheet"> -->
+
+</head>
+<body>
+
+    <header>
+
+        <%- include('../partials/header.ejs') %>
+    
+    </header>
+
+
+<!-- MAIN -->
+
+    <main>
+
+        <h2>RUTA DE APRENDIZAJE</h2> <!-- RUTA -->
+
+        <!--recorre el usuario con for(){}-->
+        <% for (let i=0; i<longitud; i++){ %>
+
+            <article class = "">
+                <div class="">
+                    <h3 class = ""><%= user[i].nombre %></h3>
+                </div>
+                
+                <div class = "">
+                    <p> <%= user[i].apellido %></p> 
+                </div>
+
+                <div class="">
+                    <h3 class = ""><%= user[i].email %></h3>
+                </div>
+
+                <div class="">
+                    <h3 class = ""><%= user[i].password%></h3>
+                </div>
+
+                <div class = "imagen-cursos">
+                    <img src="/img/users/<%= user[i].image %>" alt="usuarios-img" width="50%">
+                </div>
+            </article>
+
+        <% } %>
+          
+    </main>
+    
+    <!-- /MAIN -->
+    
+    <footer>
+
+        <%- include('../partials/footer.ejs') %>
+    
+    </footer>
+</body>
+</html>

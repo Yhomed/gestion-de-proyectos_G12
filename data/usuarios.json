@@ -1,45 +1,25 @@
 [{"id":1,
-"firstName":"neque aenean",
-"lastName":"et",
+"nombre":"fernando",
+"apellido":"sanchez",
 "email":"hmeasom0@blinklist.com",
-"password":"AGJhH6Lpuq",
-"type":"Customer",
-"avatar":"/images/avatars/jala.jpg"
+"password":"12345",
+"image":"/public/img/jala.jpg"
 },
 
 {"id":2,
-"firstName":"justo morbi",
-"lastName":"nulla nisl",
+"nombre":"abril",
+"apellido":"alvarez",
 "email":"kwitherop1@statcounter.com",
-"password":"ywZHpLNgL",
-"type":"Customer",
-"avatar":"/images/avatars/kipa.jpg"
+"password":"54321",
+"image":"/public/img/kipa.jpg"
 },
 
 {"id":3,
-"firstName":"facilisi cras",
-"lastName":"ornare",
+"nombre":"yhomed",
+"apellido":"durango",
 "email":"amackimmie2@mashable.com",
-"password":"tI7Ughwm0F",
-"type":"Customer",
-"avatar":"/images/avatars/pretzel.jpg"
-},
-
-{"id":4,
-"firstName":"viverra diam",
-"lastName":"eget",
-"email":"izienkiewicz3@issuu.com",
-"password":"SuoPigH34Z",
-"type":"Customer",
-"avatar":"/images/avatars/polloCorazon.jpg"
-},
-
-{"id":5,
-"firstName":"ultricies eu",
-"lastName":"ante vestibulum",
-"email":"liannazzi4@indiatimes.com",
-"password":"y5odFJb",
-"type":"Admin",
-"avatar":"/images/avatars/tostada.jpg"
+"password":"12345",
+"image":"/public/img/pretzel.jpg"
 }
+
 ]
