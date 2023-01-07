@@ -86,3 +86,13 @@ SPRINT 4
     2. Retro starfish sprint 4:  https://github.com/Yhomed/gestion-de-proyectos_G12/blob/main/RETRO.md
 
     3. Registro weeklys: https://github.com/Yhomed/gestion-de-proyectos_G12/blob/main/Weekly.md
+
+
+SPRINT 5
+
+    1. Link tablero actualizado: https://trello.com/invite/b/bfsxrIQo/ATTIab74c744608a9f0a8575e07e95c329ea6BA6D353/proyecto-integrador-g12
+
+    2. Retro starfish sprint 5:  https://github.com/Yhomed/gestion-de-proyectos_G12/blob/main/RETRO.md
+
+    3. Registro weeklys: https://github.com/Yhomed/gestion-de-proyectos_G12/blob/main/Weekly.md
+    
