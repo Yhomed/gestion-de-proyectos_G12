@@ -141,7 +141,7 @@ REGISTRO DE WEEKLY
         Rutas para el CRUD de usuarios:
         - /users (GET) - Listado de usuarios
             - /user/register (GET) - Formulario de registro (creación de usuarios) 
-            - /users/login (GET) - Formulario de login
+            - /user/login (GET) - Formulario de login
             - /user/:id (GET) - Detalle de un usuario en particular 
             - /user (POST) - Acción de creación de usuarios  
             - /user/:id/edit (GET) - Formulario de edición de usuarios 

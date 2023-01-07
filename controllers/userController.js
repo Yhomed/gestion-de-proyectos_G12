@@ -16,9 +16,10 @@ const userController = {
     },
     
     //REGISTER FORM
-    register: (req, res) =>
-        res.render('./users/register'),
-    
+    register: (req, res) =>{
+        console.log(req.body);
+        res.render('./users/register')
+    },
     //USER DETAIL
     detail: (req, res) => {
 
@@ -36,12 +37,15 @@ const userController = {
     },
 
     //LOGIN FORM
-    login: (req, res) => res.render('./users/login'),
-
+    login: (req, res) => {
+        res.render('./users/login')
+    },
+    
     inscripcion: (req, res) => res.render('./users/inscripcion'),
 
     //ACCIÓN DE CREACIÓN (POST)
     createUsuario: (req, res) => {
+        console.log(req.body);
         let users = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'))
         let newUser = {
             id: users[users.length-1].id+1,
