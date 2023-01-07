@@ -128,12 +128,27 @@ RETROALIMENTACIÓN "Starfish"
     
 2023/1/6 RETRO SPRINT 5:
 
-1. KEEP GOING:
+1. KEEP DOING:
+
+- Retro alimentacion constante en equipo 
+- Reuniones para planteart soliciones a los diferentes retos presentados en el proyecto integrador 
+- investigaciones paralelas que aporten a el adecuado desarrollo del proyecto 
+
+
 
 2. LESS OF:
 
+- Frustracion al no poder realizar las actividades en el tiempo propuesto 
+
 3. MORE OF:
-
+    - Tolerancia a la frustración.
+    - Disposición de tiempo para realizar las tareas.
+    - Compromiso para ver el material audiovisual teórico-práctico que brinda el playground.
+    - trabajar mas en equipo, para poder avanzar lo mas posible y con menos conflictos en el transcurso del sprint
 4. STOP DOING:
-
+    
+    - Permitir que se nos acomulen las actividades y  entorpezca la realizacion del proyecto integrador 
+    
 5. START DOING:
+    -  Meet del equipo en horarios mas flexibles que permitan un mejor desarrollo de las actividades 
+    

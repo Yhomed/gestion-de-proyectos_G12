@@ -113,7 +113,7 @@ REGISTRO DE WEEKLY
     - Vamos en el 5to sprint.                                                   
     - Fecha de entrega 5to Sprint:                      
     - Entregables:
-        1. Retro                                                                PENDIENTE
+        1. Retro                                                                LISTO
         2. Actualización tablero trello                                         PENDIENTE
         3. Registro weeklys                                                     PENDIENTE
         4. Formulario de registro                                               PENDIENTE
