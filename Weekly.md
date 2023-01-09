@@ -142,7 +142,7 @@ REGISTRO DE WEEKLY
         - /users (GET) - Listado de usuarios
             - /user/register (GET) - Formulario de registro (creación de usuarios) 
             - /user/login (GET) - Formulario de login
-            - /user/:id (GET) - Detalle de un usuario en particular 
+            - /user/detail/:id (GET) - Detalle de un usuario en particular 
             - /user (POST) - Acción de creación de usuarios  
             - /user/:id/edit (GET) - Formulario de edición de usuarios 
             - /user/:id (PUT) - Acción de edición de usuarios
