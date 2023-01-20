@@ -1,8 +1,7 @@
 const path = require ('path');
 const fs = require('fs');
 
-//const bcrypt = require('bcrypt');
-
+const bcrypt = require('bcryptjs');
 
 const userFilePath = path.resolve(__dirname, '../data/usuarios.json');
 
@@ -45,17 +44,18 @@ const userController = {
 
     //ACCIÓN DE CREACIÓN (POST)
     createUsuario: (req, res) => {
-        console.log(req.body);
-        let users = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'))
+        let users = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
+        const salt = bcrypt.genSaltSync(10);
+        console.log(salt);
         let newUser = {
             id: users[users.length-1].id+1,
             ...req.body,
+            password: bcrypt.hashSync((req.body.password).toString(), salt),
             image: req.file ? req.file.filename : users.image,
         }
             users.push(newUser);
             fs.writeFileSync(userFilePath, JSON.stringify(users, null, " "));
             res.redirect('/user/'+ newUser.id);
-    
         },
     
     //EDIT FORM

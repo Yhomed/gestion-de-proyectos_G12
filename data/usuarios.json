@@ -25,7 +25,10 @@
  },
  {
   "id": 4,
+  "nombre": "Abril",
+  "apellido": "Alvarez",
   "email": "abriinahir1@gmail.com",
-  "password": "lalalala"
+  "password": "$2a$10$6X5b./RbNE5w8U4NhYSCm.D2EGcPOb8LqpuGXMC7YuEnrYEnveS.W",
+  "image": "user1674246697795.jpg"
  }
 ]
