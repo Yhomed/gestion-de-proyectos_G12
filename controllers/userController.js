@@ -16,7 +16,6 @@ const userController = {
     
     //REGISTER FORM
     register: (req, res) =>{
-        console.log(req.body);
         res.render('./users/register')
     },
     //USER DETAIL
@@ -55,7 +54,7 @@ const userController = {
         }
             users.push(newUser);
             fs.writeFileSync(userFilePath, JSON.stringify(users, null, " "));
-            res.redirect('/user/'+ newUser.id);
+            res.redirect('/user/detail/'+ newUser.id);
         },
     
     //EDIT FORM

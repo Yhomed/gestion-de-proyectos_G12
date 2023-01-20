@@ -31,14 +31,14 @@ router.get('/login', userController.login); // Login
 
 router.get('/inscripcion', userController.inscripcion); // Inscripción
 
-router.post('/', uploadFile.single("image"), userController.createUsuario); //createUsuarios
+router.post('/', uploadFile.single("image"), userController.createUsuario); //createUsuario
 
-router.get('/:id/edit', userController.editUsers);
+router.get('/:id/edit', userController.editUsers); //editUsers (form)
 
-router.put('/:id', uploadFile.single('image'), userController.editUser); 
+router.put('/:id', uploadFile.single('image'), userController.editUser); //editUser
 
-router.delete('/:id', userController.deleteUser); 
+router.delete('/:id', userController.deleteUser); //deleteUser
 
-router.get('/:id/delete', userController.deleteUsers); 
+router.get('/:id/delete', userController.deleteUsers); //deleteUsers (form)
 
 module.exports= router;
