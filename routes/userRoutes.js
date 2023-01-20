@@ -19,7 +19,7 @@ const storage = multer.diskStorage({
 
 const userController = require('../controllers/userController');
 
-// RUTAS
+// 11 RUTAS
 
 router.get('/', userController.list); // listado
 
@@ -31,7 +31,9 @@ router.get('/login', userController.login); // Login
 
 router.get('/inscripcion', userController.inscripcion); // Inscripción
 
-router.post('/', uploadFile.single("image"), userController.createUsuario); //createUsuario
+router.post('/', uploadFile.single("image"), userController.registerProcess); //registerProcess
+
+router.post('/profile', userController.loginProcess); //loginProcess
 
 router.get('/:id/edit', userController.editUsers); //editUsers (form)
 

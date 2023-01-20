@@ -41,8 +41,8 @@ const userController = {
     
     inscripcion: (req, res) => res.render('./users/inscripcion'),
 
-    //ACCIÓN DE CREACIÓN (POST)
-    createUsuario: (req, res) => {
+    //PROCESO DE REGISTRO (POST)
+    registerProcess: (req, res) => {
         let users = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
         const salt = bcrypt.genSaltSync(10);
         console.log(salt);
@@ -56,6 +56,11 @@ const userController = {
             fs.writeFileSync(userFilePath, JSON.stringify(users, null, " "));
             res.redirect('/user/detail/'+ newUser.id);
         },
+    
+    //PROCESO DE LOGIN (POST)
+    loginProcess: (req, res) => {
+    
+    },
     
     //EDIT FORM
     editUsers: (req, res) => {
