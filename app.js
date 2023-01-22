@@ -5,6 +5,7 @@ const methodOverride = require('method-override');
 const mainRoutes = require('./routes/mainRoutes');
 const userRoutes = require('./routes/userRoutes');
 const productsRoutes = require('./routes/products');
+const session = require('express-session');
 
 const app = express();
 const publicDirectory = path.resolve(__dirname, './public');

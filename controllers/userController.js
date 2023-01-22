@@ -44,12 +44,11 @@ const userController = {
     //PROCESO DE REGISTRO (POST)
     registerProcess: (req, res) => {
         let users = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
-        const salt = bcrypt.genSaltSync(10);
-        console.log(salt);
+        
         let newUser = {
             id: users[users.length-1].id+1,
             ...req.body,
-            password: bcrypt.hashSync((req.body.password).toString(), salt),
+            password: bcrypt.hashSync(req.body.password.toString(), bcrypt.genSaltSync(5), null),
             image: req.file ? req.file.filename : users.image,
         }
             users.push(newUser);
@@ -58,7 +57,38 @@ const userController = {
         },
     
     //PROCESO DE LOGIN (POST)
+
     loginProcess: (req, res) => {
+        
+
+        let users = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
+        let email = req.body.email
+        let password = req.body.password
+        
+        
+        let userToLogin = users.filter(u=>{
+            let passwordToVerified = u.password
+            let emailToVerified = u.email
+
+            return emailToVerified==email && bcrypt.compareSync(password,passwordToVerified)
+        })[0]
+
+        if (userToLogin == undefined ){
+            res.render("./users/login")
+        }else{
+            res.render("./users/detail",
+        {
+            nombre: userToLogin.nombre,
+            apellido: userToLogin.apellido,
+            email: userToLogin.email,
+            image: userToLogin.image
+        })
+        }
+
+        
+    
+    
+        console.log(req.body)
     
     },
     

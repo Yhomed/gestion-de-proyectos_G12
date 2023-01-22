@@ -1,34 +1,26 @@
 [
  {
   "id": 1,
-  "nombre": "fernando",
-  "apellido": "sanchez",
-  "email": "fer@gmail.com",
-  "password": "10299",
-  "image": "usuarios-img.png"
+  "nombre": "Fernando",
+  "apellido": "Sanchez",
+  "email": "alala@gmail.com",
+  "password": "$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS",
+  "image": "user1674353485630.jpg"
  },
  {
   "id": 2,
-  "nombre": "abril",
-  "apellido": "alvarez",
-  "email": "abril@gmail.com",
-  "password": "34766",
-  "image": "usuarios-img.png"
+  "nombre": "Fernando",
+  "apellido": "Sanchez",
+  "email": "rere@gmail.com",
+  "password": "$2a$10$bWncDMmq7StIk7oXh1Qgy.dZWESfDXyftXHg1R2XsACGG94oe9F/e",
+  "image": "user1674355784139.jpg"
  },
  {
   "id": 3,
-  "nombre": "yhomed",
-  "apellido": "durango",
-  "email": "yhomed@gmail.com",
-  "password": "23679",
-  "image": "usuarios-img.png"
- },
- {
-  "id": 4,
-  "nombre": "Abril",
-  "apellido": "Alvarez",
-  "email": "abriinahir1@gmail.com",
-  "password": "$2a$10$6X5b./RbNE5w8U4NhYSCm.D2EGcPOb8LqpuGXMC7YuEnrYEnveS.W",
-  "image": "user1674246697795.jpg"
+  "nombre": "Fernando",
+  "apellido": "Sanchez",
+  "email": "1234@gmail.com",
+  "password": "$2a$05$lohArGjpEB8ICEZnLG/PzO4U5G6BuP1XZ/.MgyH5WWRoviGlTsH2i",
+  "image": "user1674357643565.jpg"
  }
 ]
