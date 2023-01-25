@@ -44,11 +44,13 @@ const userController = {
     //PROCESO DE REGISTRO (POST)
     registerProcess: (req, res) => {
         let users = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
-        
+        console.log(req.body.password);
+        console.log(req.body);
+
         let newUser = {
             id: users[users.length-1].id+1,
             ...req.body,
-            password: bcrypt.hashSync(req.body.password.toString(), bcrypt.genSaltSync(5), null),
+            password: bcrypt.hashSync(req.body.password, 10),
             image: req.file ? req.file.filename : users.image,
         }
             users.push(newUser);
@@ -57,38 +59,32 @@ const userController = {
         },
     
     //PROCESO DE LOGIN (POST)
-
     loginProcess: (req, res) => {
         
-
         let users = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
         let email = req.body.email
         let password = req.body.password
         
-        
-        let userToLogin = users.filter(u=>{
-            let passwordToVerified = u.password
-            let emailToVerified = u.email
-
-            return emailToVerified==email && bcrypt.compareSync(password,passwordToVerified)
-        })[0]
-
-        if (userToLogin == undefined ){
-            res.render("./users/login")
-        }else{
-            res.render("./users/detail",
-        {
-            nombre: userToLogin.nombre,
-            apellido: userToLogin.apellido,
-            email: userToLogin.email,
-            image: userToLogin.image
+        let userToLogin = users.find(user => {
+            return user.email == email;
         })
+        console.log(email);
+        console.log(userToLogin);
+        console.log(bcrypt.compareSync(password, userToLogin.password))
+
+        let passwordIsCorrect = false;
+        if(userToLogin) { 
+            passwordIsCorrect = bcrypt.compareSync(password, userToLogin.password);
+        } else {
+            res.redirect("/user/login");
         }
 
-        
-    
-    
-        console.log(req.body)
+        if(passwordIsCorrect){
+            req.session.userLog = userToLogin;
+            return res.redirect("/user/profile");
+        } else {
+            res.redirect("/user/login");
+        }
     
     },
     

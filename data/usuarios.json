@@ -22,5 +22,21 @@
   "email": "1234@gmail.com",
   "password": "$2a$05$lohArGjpEB8ICEZnLG/PzO4U5G6BuP1XZ/.MgyH5WWRoviGlTsH2i",
   "image": "user1674357643565.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "Abril",
+  "apellido": "Alvarez",
+  "email": "abrill@gmail.com",
+  "password": "$2a$05$A.bPpILrC4SAYOo/SVJTXuAGspnWOFOVVcIem9SrVMfOHnPfiB6Wq",
+  "image": "user1674608869228.jpg"
+ },
+ {
+  "id": 5,
+  "nombre": "abril ",
+  "apellido": "alvarez",
+  "email": "abrila@gmail.com",
+  "password": "$2a$05$Bju64/yBxVhzwbfOBqZk0.Rwkq6SZuPuz1trgCokiXpOf1gWsh6eC",
+  "image": "user1674609545042.jpg"
  }
 ]
