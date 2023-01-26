@@ -120,10 +120,10 @@ REGISTRO DE WEEKLY
             a. Campos mínimos mencionados
             b. Subida de una imagen de perfil
             c. Guardado en JSON con encriptación de contraseña
-        5. Formulario de login                                                  PENDIENTE
+        5. Formulario de login                                                  LISTO
             a. Campos de email y password
             b. Función de recordar al usuario (opcional)
-        6. Rutas de huéspedes y usuarios                                        PENDIENTE
+        6. Rutas de huéspedes y usuarios                                        LISTO
             a. Huéspedes: redireccionan al perfil si el usuario está logueado
             b. Usuarios: redireccionan al login si el usuario no está logueado
 
@@ -145,6 +145,7 @@ REGISTRO DE WEEKLY
             - /user/detail/:id (GET) - Detalle de un usuario en particular 
             - /user (POST) - Proceso de registro
             - /user/profile (POST) - Proceso de login  
+            - /user/profile/:id (GET) - Perfil del usuario logueado
             - /user/:id/edit (GET) - Formulario de edición de usuarios 
             - /user/:id (PUT) - Acción de edición de usuarios
             - /user/:id (DELETE) - Acción de borrado de usuarios

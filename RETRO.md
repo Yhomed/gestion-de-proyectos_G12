@@ -134,8 +134,6 @@ RETROALIMENTACIÓN "Starfish"
 - Reuniones para planteart soliciones a los diferentes retos presentados en el proyecto integrador 
 - investigaciones paralelas que aporten a el adecuado desarrollo del proyecto 
 
-
-
 2. LESS OF:
 
 - Frustracion al no poder realizar las actividades en el tiempo propuesto 
@@ -151,4 +149,3 @@ RETROALIMENTACIÓN "Starfish"
     
 5. START DOING:
     -  Meet del equipo en horarios mas flexibles que permitan un mejor desarrollo de las actividades 
-    

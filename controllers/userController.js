@@ -81,11 +81,24 @@ const userController = {
 
         if(passwordIsCorrect){
             req.session.userLog = userToLogin;
-            return res.redirect("/user/profile");
+            return res.redirect("/user/profile/"+userToLogin.id);
         } else {
             res.redirect("/user/login");
         }
     
+    },
+
+    profile: (req, res) => {
+        let users = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
+        let user = users.filter(p => p.id == req.params.id);
+        console.log(user);
+        res.render('./users/detail.ejs', 
+        {
+            nombre: user[0].nombre,
+            apellido: user[0].apellido,
+            email: user[0].email,
+            image: user[0].image,
+        })
     },
     
     //EDIT FORM

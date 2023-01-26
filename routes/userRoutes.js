@@ -35,6 +35,8 @@ router.post('/', uploadFile.single("image"), userController.registerProcess); //
 
 router.post('/profile', userController.loginProcess); //loginProcess
 
+router.get('/profile/:id', userController.profile) //vista del perfil de usuario
+
 router.get('/:id/edit', userController.editUsers); //editUsers (form)
 
 router.put('/:id', uploadFile.single('image'), userController.editUser); //editUser
