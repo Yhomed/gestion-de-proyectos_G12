@@ -154,23 +154,27 @@ RETROALIMENTACIÓN "Starfish"
 
 1. KEEP DOING:
 
--
--
--
+- Trabajar en equipo
+- Asesorarnos mutuamente y/o buscar informacion externa por nuestra cuenta propia
+- Retroalimentacion constante
+- Reuniones semanales constantes
 
 2. LESS OF:
 
--
+- Trabas constantes
 
 3. MORE OF:
 
--
--
+- Disposicion a escuchar al compañero
+- Compromiso con las tareas
 
 4. STOP DOING:
 
--
+- Perder el tiempo en cosas que no son relevantes al sprint
+- Distraernos con facilidad
 
 5. START DOING:
 
--
+- Juntarnos mas seguido
+- Profundizar conceptos
+- Herramientas para poder realizar el proyecto
