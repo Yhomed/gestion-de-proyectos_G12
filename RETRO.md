@@ -149,3 +149,28 @@ RETROALIMENTACIÓN "Starfish"
     
 5. START DOING:
     -  Meet del equipo en horarios mas flexibles que permitan un mejor desarrollo de las actividades 
+
+2023/1/26 RETRO SPRINT 6:
+
+1. KEEP DOING:
+
+-
+-
+-
+
+2. LESS OF:
+
+-
+
+3. MORE OF:
+
+-
+-
+
+4. STOP DOING:
+
+-
+
+5. START DOING:
+
+-
