@@ -150,5 +150,30 @@ REGISTRO DE WEEKLY
             - /user/:id (PUT) - Acción de edición de usuarios
             - /user/:id (DELETE) - Acción de borrado de usuarios
 
+4. 2023/1/26 REGISTRO WEEKLY:
+
+    - Vamos en el 6to Sprint.
+    - Fecha de entrega 6to Sprint: Martes 2023/01/31
+    - Entregables:
+        1. Archivo retro.md con el resultado de la retrospectiva.                           PENDIENTE
+        2. (Opcional) Archivo daily.md con sus opiniones sobre las dailys/weeklys.          PENDIENTE
+        3. Tablero de trabajo actualizado.                                                  PENDIENTE
+        4. Diagrama de base de datos.                                                       PENDIENTE
+        5. Script de creación de estructura de base de datos con:                           PENDIENTE
+            a. Creación de la base de datos y de todas sus tablas.
+            b. Tipos de datos de los campos y sus restricciones.
+            c. Relaciones entre las diferentes tablas.
+        6. (Opcional) Script de datos de base de datos para:                                PENDIENTE
+            a. Tabla de usuarios.
+            b. Tabla de productos.
+            c. Tablas secundarias (categorías, marcas, colores, talles, etc).
+            d. (Opcional) Tabla de carrito de compras y productos de carritos de compras.
+        7. Creación de carpeta Sequelize con:                                               PENDIENTE
+            a. Archivos de configuración.
+            b. Modelos con sus relaciones.
+        8. CRUD:                                                                            PENDIENTE
+            a. De productos.
+            b. De usuarios.
+            c. (Opcional) De tablas secundarias.
 
 
