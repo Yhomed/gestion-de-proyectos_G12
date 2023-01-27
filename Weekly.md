@@ -155,7 +155,7 @@ REGISTRO DE WEEKLY
     - Vamos en el 6to Sprint.
     - Fecha de entrega 6to Sprint: Martes 2023/01/31
     - Entregables:
-        1. Archivo retro.md con el resultado de la retrospectiva.                           PENDIENTE
+        1. Archivo retro.md con el resultado de la retrospectiva.                           LISTO
         2. (Opcional) Archivo daily.md con sus opiniones sobre las dailys/weeklys.          PENDIENTE
         3. Tablero de trabajo actualizado.                                                  PENDIENTE
         4. Diagrama de base de datos.                                                       PENDIENTE
