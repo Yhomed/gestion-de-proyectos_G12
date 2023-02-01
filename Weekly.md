@@ -153,7 +153,7 @@ REGISTRO DE WEEKLY
 4. 2023/1/26 REGISTRO WEEKLY:
 
     - Vamos en el 6to Sprint.
-    - Fecha de entrega 6to Sprint: Martes 2023/01/31
+    - Fecha de entrega 6to Sprint: Martes 2023/02/10
     - Entregables:
         1. Archivo retro.md con el resultado de la retrospectiva.                           LISTO
         2. (Opcional) Archivo daily.md con sus opiniones sobre las dailys/weeklys.          PENDIENTE
