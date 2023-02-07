@@ -13,26 +13,39 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING
         },
         desription: {
+            allowNull: false,
             type: dataTypes.STRING
         },
         price: {
-            type: dataTypes.STRING
+            allowNull: false,
+            type: dataTypes.INTEGER
         }, 
         number:{
+            allowNull: false,
             type: dataTypes.INTEGER
         },
         image: {
+            allowNull: false,
             type: dataTypes.STRING
         }
 
     };
 
     let config = {
-        timestamps: false
-        /*underscored: true*/
+        tableName: 'courses',
+        timestamps: false,
+        underscored: true
     }
 
     const Curso = sequelize.define(alias, cols, config);
-
+    Curso.associate = function(models){
+        Curso.belongsToMany(models.Usuario, {
+            as: 'users',
+            through: 'users_courses',
+            foreignKey: 'course_id',
+            otherKey: 'user_id',
+            timestamps: false
+        })
+    }
     return Curso;
 }

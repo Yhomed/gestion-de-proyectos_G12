@@ -5,13 +5,18 @@ const fs = require('fs');
 
 const productsFilePath = path.resolve(__dirname, '../data/productos.json');
 
+//requerir modelos
+const db = require ('../database/models');
+
 const productosController =  {
 
     //listado
     productList: (req, res) => {
-        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-        res.render('../views/products/productList.ejs', {products, longitud: products.length});
-
+        db.Curso.findAll()
+        .then(curso => {
+            return res.render('../views/products/productList.ejs', {curso})
+        })
+        .catch(error => res.send(error));
     },
 
     //formulario de creación
