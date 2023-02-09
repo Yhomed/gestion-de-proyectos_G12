@@ -32,7 +32,7 @@ module.exports = (sequelize, dataTypes) => {
     };
 
     let config = {
-        tableName: 'users',
+        tableName: 'usuarios',
         timestamps: false,
         underscored: true
     }
@@ -41,9 +41,9 @@ module.exports = (sequelize, dataTypes) => {
     Usuario.associate = function(models){
         Usuario.belongsToMany(models.Curso, {
             as: 'courses',
-            through: 'users_courses',
-            foreignKey: 'user_id',
-            otherKey: 'course_id',
+            through: 'usuarios_courses',
+            foreignKey: 'usuario_id',
+            otherKey: 'courses_id',
             timestamps: false
         })
     }

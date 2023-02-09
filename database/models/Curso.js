@@ -40,10 +40,10 @@ module.exports = (sequelize, dataTypes) => {
     const Curso = sequelize.define(alias, cols, config);
     Curso.associate = function(models){
         Curso.belongsToMany(models.Usuario, {
-            as: 'users',
-            through: 'users_courses',
-            foreignKey: 'course_id',
-            otherKey: 'user_id',
+            as: 'usuarios',
+            through: 'usuarios_courses',
+            foreignKey: 'courses_id',
+            otherKey: 'usuario_id',
             timestamps: false
         })
     }
