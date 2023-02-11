@@ -1,4 +1,5 @@
 //const express = require('express');
+const Sequelize = require('sequelize')
 const path = require ('path');
 const fs = require('fs');
 //const { receiveMessageOnPort } = require('worker_threads');
@@ -10,13 +11,18 @@ const db = require ('../database/models');
 
 const productosController =  {
 
-    //listado
+    //listado   
     productList: (req, res) => {
+        /*
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        res.render('./products/productList.ejs', {products, longitud: products.length});
+        */ 
+         
         db.Curso.findAll()
-        .then(curso => {
-            return res.render('../views/products/productList.ejs', {curso})
+        .then(products => {
+            return res.render('../views/products/productList.ejs', {products, longitud: products.length})
         })
-        .catch(error => res.send(error));
+        .catch(error => res.send(error))
     },
 
     //formulario de creación
@@ -28,6 +34,7 @@ const productosController =  {
 
     //detalle de un producto
     productDetail: (req, res) => {
+        /*
         let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         let product = products.filter(p => p.id==req.params.id)
 
@@ -39,11 +46,20 @@ const productosController =  {
             price: product[0].price,
             image: product[0].image,
         })
+        */
+
+        db.Curso.findByPk(req.params.id)
+            .then(function(curso){
+
+                res.render('./products/productDetail.ejs',{curso:curso});
+            })
 
     },
 
     //formulario de edición
     editProducts: (req, res) => {
+
+        /*
         let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         let product = products.filter(p => p.id==req.params.id)
         //console.log(product);
@@ -55,8 +71,16 @@ const productosController =  {
             parrafo: product[0].parrafo,
             price: product[0].price,
             image: product[0].image,
-
         })
+
+        */
+
+        db.Curso.findByPk(req.params.id)
+            .then(function(curso){
+
+                res.render('./products/edit.ejs',{curso:curso});
+            })
+
     },
 
     //acción de creación (post)

@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-    let alias = "Usuarios";
+    let alias = "Usuario";
 
     let cols = {
 
@@ -32,20 +32,22 @@ module.exports = (sequelize, dataTypes) => {
     };
 
     let config = {
-        tableName: 'users',
+        tableName: 'usuarios',
         timestamps: false,
         underscored: true
     }
 
     const Usuario = sequelize.define(alias, cols, config);
+
     Usuario.associate = function(models){
         Usuario.belongsToMany(models.Curso, {
             as: 'courses',
-            through: 'users_courses',
-            foreignKey: 'user_id',
-            otherKey: 'course_id',
+            through: 'usuarios_courses',
+            foreignKey: 'usuario_id',
+            otherKey: 'courses_id',
             timestamps: false
         })
     }
+    
     return Usuario;
 }
