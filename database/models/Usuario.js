@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-    let alias = "Usuarios";
+    let alias = "Usuario";
 
     let cols = {
 
@@ -38,6 +38,7 @@ module.exports = (sequelize, dataTypes) => {
     }
 
     const Usuario = sequelize.define(alias, cols, config);
+
     Usuario.associate = function(models){
         Usuario.belongsToMany(models.Curso, {
             as: 'courses',
@@ -47,5 +48,6 @@ module.exports = (sequelize, dataTypes) => {
             timestamps: false
         })
     }
+    
     return Usuario;
 }
