@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-    let alias = "Cursos_usuarios";
+    let alias = "Cursos_Usuarios";
 
     let cols = {
 
@@ -22,6 +22,6 @@ module.exports = (sequelize, dataTypes) => {
         underscored: true
     }
 
-    const CursoUsuario = sequelize.define(alias, cols, config);
-    return CursoUsuario;
+    const Curso_Usuario = sequelize.define(alias, cols, config);
+    return Curso_Usuario;
 }
