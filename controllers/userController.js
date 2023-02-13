@@ -9,9 +9,17 @@ const userController = {
 
     //USERS LIST
     list: (req, res) => {
-    
+
+        /*
             let users = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
             res.render('./users/userList.ejs', {users, longitud: users.length});
+        */
+
+        db.Usuario.findAll()
+        .then(usuarios => {
+            return res.render('../views/users/userList.ejs', {usuarios, longitud: usuarios.length})
+        })
+        .catch(error => res.send(error))
     },
     
     //REGISTER FORM
@@ -20,7 +28,7 @@ const userController = {
     },
     //USER DETAIL
     detail: (req, res) => {
-
+        /*
         let users = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
         let user = users.filter(p => p.id == req.params.id);
         //console.log(user);
@@ -31,6 +39,11 @@ const userController = {
             email: user[0].email,
             password: user[0].password,
             image: user[0].image,
+        })
+        */
+        db.Usuario.findByPk(req.params.id)
+        .then(function(usuarios){
+            res.render('./users/detail.ejs',{usuarios});
         })
     },
 
@@ -43,6 +56,7 @@ const userController = {
 
     //PROCESO DE REGISTRO (POST)
     registerProcess: (req, res) => {
+        /*
         let users = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
         console.log(req.body.password);
         console.log(req.body);
@@ -56,6 +70,20 @@ const userController = {
             users.push(newUser);
             fs.writeFileSync(userFilePath, JSON.stringify(users, null, " "));
             res.redirect('/user/detail/'+ newUser.id);
+            */
+
+            const _body = { 
+                name : req.body.name,
+                surname : req.body.surname,
+                email : req.body.email,
+                image : req.file.filename,
+                password : bcrypt.hashSync(req.body.password, 10),
+            }    
+            db.Usuario.create(_body)
+            .then(usuario =>{
+                res.redirect('/user/');
+            })
+            .catch(error => res.send(error))
         },
     
     //PROCESO DE LOGIN (POST)

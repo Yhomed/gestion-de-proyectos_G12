@@ -1,0 +1,61 @@
+<!-- CREAR PRODUCTOS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <%- include('../partials/head.ejs') %>
+  <link href="css/formularios.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <header>
+
+      <!-- atomización de la vista del header -->
+
+      <%- include('../partials/header.ejs') %> <!-- recibe la ruta del archivo a incluir -->
+
+    </header>
+
+    <main>
+
+      <h2>Crear curso</h2>
+
+      <!-- FORMULARIO DEL CREATE -->
+
+      <form action="/products/" method="POST" enctype="multipart/form-data">
+
+        <label>Nombre del curso:</label>
+        <input type = "text" name="title">
+
+        <label>Descripcion:</label>
+        <input type="text" name="parrafo">
+
+        <label>Imagen:</label>
+        <input type="file" name="image">
+
+        <label>Numero:</label>
+        <input type="text" name="number">
+
+        <label>Precio:</label>
+        <input type="text" name="price">
+
+        <button type="submit">Crear</button>
+
+      </form>
+    </main>
+
+  <footer>
+
+     <!-- atomización de la vista del footer -->
+
+    <%- include('../partials/footer.ejs') %> <!-- recibe la ruta del archivo a incluir -->
+    
+  </footer>
+</body>
+</html>
+        
+        

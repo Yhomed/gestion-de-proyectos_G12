@@ -1,0 +1,89 @@
+<!-- FORMULARIO DE DELETE DEL REGISTRO -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <%- include('../partials/head.ejs') %>
+
+    <link href="/css/formularios.css" rel="stylesheet">
+    
+</head>
+
+
+<body>
+
+    <header>
+
+        <%- include('../partials/header.ejs') %>
+
+    </header>
+
+
+
+    <main>
+
+        <!-- FORMULARIO DE REGISTRO -->
+        <form action="/user/<%= id %>?_method=DELETE" method="DELETE" enctype="multipart/form-data">
+            <!-- <form action="/" method="GET"> -->
+
+            <h2>Editar cuenta</h2>
+
+            <!-- IMAGEN -->
+            <div>
+                <label class="etiqueta">Imagen: </label>
+                <input type = "file" name="image" value="<%= image %>" required class="campo-de-texto">
+                <span class="feedback"></span> <!-- para alertar errores -->
+            </div>
+
+            <!-- NOMBRE -->
+            <div>
+                <label class="etiqueta">Nombre: </label>
+                <input type = "text" name="nombre" value="<%= nombre %>" placeholder="Ingresa tu nombre" value="<%= nombre %>" required class="campo-de-texto">
+                <span class="feedback"></span> <!-- para alertar errores -->
+            </div>
+
+             <!-- APELLIDOS -->
+             <div>
+                <label class="etiqueta">Apellidos: </label>
+                <input type = "text" name="apellido" placeholder="Ingresa tus apellidos" value="<%= apellido %>"required class="campo-de-texto">
+                <span class="feedback"></span> <!-- para alertar errores -->
+            </div>
+
+            <!-- EMAIL -->
+            <div>
+                <label class="etiqueta">Email: </label>
+                <input type = "email" name="email"  placeholder="usuario@abc.com" value="<%= email %>" required class="campo-de-texto">
+                <span class="feedback"></span> <!-- para alertar errores -->
+            </div>
+
+            <!-- CONTRASEÑA -->
+            <div>
+                <label class="password"> Contraseña: </label>
+                <input type = "password" name = "password" value="<%= password %>" required class="campo-de-texto">
+                <span class="feedback"></span> 
+            </div>
+
+            <!-- CONFIRMAR CONTRASEÑA -->
+            <div>
+                <label class="password">Confirmar Contraseña: </label>
+                <input type = "password" name = "password" value="<%= password %>" required class="campo-de-texto">
+                <span class="feedback"></span> 
+            </div>
+
+            <!-- BOTON BORRAR -->
+            <button type="reset">Borrar</button>
+            
+            <!-- <button type="submit" value="Enviar" name="submit">Enviar</button> -->
+        
+        </form>
+
+    </main>
+
+    <footer>
+
+        <%- include('../partials/footer.ejs') %>     
+   
+    </footer>
+</body>
+</html>

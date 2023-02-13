@@ -1,0 +1,55 @@
+<!-- ELIMINAR PRODUCTOS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <%- include('../partials/head.ejs') %>
+  <link href="css/formularios.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <header>
+
+      <%- include('../partials/header.ejs') %>
+
+    </header>
+
+    <main>
+
+      <h2>Borrar curso</h2>
+
+      <!-- FORMULARIO DEL DELETE -->
+
+      <form action="/products/<%= curso.id %>?_method=DELETE" method="POST">
+ 
+        <label>Nombre del curso:</label>
+        <input type="text" name="title" value="<%= curso.title %>"> 
+
+        <label>Descripcion:</label>
+        <input type="text" name="parrafo" value="<%= curso.parrafo %>">
+        
+        <label>Imagen:</label>
+        <input type="file" name="image">
+
+        <label>Precio:</label>
+        <input type="text" name="price" value="<%= curso.price %>">
+
+        <button type="submit">Borrar</button>
+          
+      </form>
+
+
+      
+    </main>
+
+  <footer>
+
+    <%- include('../partials/footer.ejs') %>
+    
+  </footer>
+</body>
+</html>-->

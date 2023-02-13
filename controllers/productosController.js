@@ -85,6 +85,7 @@ const productosController =  {
 
     //acción de creación (post)
     createNewProduct: (req, res) => {
+        /*
         let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         let newProduct = {
             id: products[products.length-1].id+1,
@@ -94,12 +95,27 @@ const productosController =  {
     };
     products.push(newProduct)
     fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
-            res.redirect('/products/'+ newProduct.id);
+            res.redirect('/products/'+ newProduct.id);*/
+
+            const _body = { 
+                //return res.send(_body);
+                title : req.body.title,
+                parrafo: req.body.parrafo,
+                price: req.body.price,
+                image : req.file.filename,
+                number : req.body.number,
+            }    
+            //return res.send(_body);
+            db.Curso.create(_body)
+            .then(curso =>{
+                res.redirect('/products');
+            })
+            .catch(error => res.send(error))
         },
     
     //acción de edición (put)
     editProduct: (req, res) => {
-        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        /*let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         req.body.id = Number(req.params.id);
 
         let newProducts = products.map((product) => {
@@ -114,11 +130,26 @@ const productosController =  {
         });
         let updatedProduct = JSON.stringify(newProducts, null, 2);
         fs.writeFileSync(path.resolve(__dirname, '../data/productos.json'), updatedProduct);
-        res.redirect('/products/');
+        res.redirect('/products/');*/
+
+        db.Curso.update ({
+            title: req.body.title,
+            price: req.body.price,
+            parrafo: req.body.parrafo,
+            image: req.file ? req.file.filename : product.image,
+            //categoryId : req.body.categoria
+        }, {
+            where: {  
+                id: req.params.id
+           }
+        })
+        .then(()=> res.redirect('/products'))
+        .catch(error =>res.send(error))
     },
          
     //acción de borrado (delete)
     deleteProduct: (req, res) => {
+        /*
         let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         let productId = req.params.id;
         //trae todos los registros distintos al productId
@@ -126,10 +157,20 @@ const productosController =  {
         let productsToSave = JSON.stringify(finalProducts, null, 2);
         fs.writeFileSync(path.resolve(__dirname, '../data/productos.json'), productsToSave);
     res.redirect('/products/');
+    */
+
+    db.Curso.destroy({
+        where: {
+            id : req.params.id
+        }
+    })
+    .then(()=>  res.redirect('/products'))
+    .catch(error => res.send(error))
     },
 
     //formulario del delete
     deleteProducts: (req, res) => {
+        /*
         let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         let product = products.filter(p => p.id==req.params.id)
         //console.log(product);
@@ -140,6 +181,13 @@ const productosController =  {
             number: product[0].number,
             parrafo: product[0].parrafo,
             price: product[0].price,
+        })
+        */
+
+        db.Curso.findByPk(req.params.id)
+        .then(function(curso){
+
+            res.render('./products/delete.ejs',{curso});
         })
     }
 }
