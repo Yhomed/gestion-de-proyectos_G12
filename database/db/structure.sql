@@ -1,3 +1,4 @@
+-- Active: 1675971511388@@127.0.0.1@3306
 -- MySQL dump 10.13  Distrib 8.0.19, for Win64 (x86_64)
 --
 -- Host: localhost    Database: courses
@@ -18,6 +19,10 @@
 --
 -- Table structure for table `courses`
 --
+
+create database if not exists courses;
+
+use courses;
 
 DROP TABLE IF EXISTS `courses`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -82,6 +87,8 @@ CREATE TABLE `usuarios_courses` (
   `user_id` int NOT NULL,
   `course_id` int NOT NULL,
   PRIMARY KEY (`id`)
+  foreign key(course_id) REFERENCES courses(id)
+  foreign key(user_id) REFERENCES usuarios(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 

@@ -82,7 +82,12 @@
             padding: 10px;
         }
 
-
-       
-
+        .text-danger{
+            color: red;
+            width: 200px;
+            font-size: 1.7 rem;
+            padding: 3 rem;
+            position: relative;       
+        }
+        
     /* /main */

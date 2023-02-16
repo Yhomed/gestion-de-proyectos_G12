@@ -38,6 +38,13 @@
               <label class="etiqueta"> Contraseña: </label>
               <input type = "password" name = "password" placeholder="Ingresa tu contraseña" required class="campo-de-texto">
               <span class="feedback"></span> 
+              <% if(typeof(errors) != 'undefined' ){%>               
+                <div class=text-danger>
+                  <span>
+                    <%= errors[0].msg %>
+                  </span>
+                </div>               
+             <%}%>
           </div>
 
           <!-- BOTON ENVIAR -->
