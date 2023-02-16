@@ -24,7 +24,7 @@
     <main>
 
         <!-- FORMULARIO DE REGISTRO -->
-        <form action="/user/<%= id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+        <form action="/user/<%= usuario.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
             <!-- <form action="/" method="GET"> -->
 
             <h2>Editar cuenta</h2>
@@ -39,38 +39,39 @@
             <!-- NOMBRE -->
             <div>
                 <label class="etiqueta">Nombre: </label>
-                <input type = "text" name="nombre" placeholder="Ingresa tu nombre" value="<%= nombre %>" required class="campo-de-texto">
+                <input type = "text" name="name" placeholder="Ingresa tu nombre" value="<%= usuario.name %>" required class="campo-de-texto">
                 <span class="feedback"></span> <!-- para alertar errores -->
             </div>
 
              <!-- APELLIDOS -->
              <div>
                 <label class="etiqueta">Apellidos: </label>
-                <input type = "text" name="apellido" placeholder="Ingresa tus apellidos" value="<%= apellido %>"required class="campo-de-texto">
+                <input type = "text" name="surname" placeholder="Ingresa tus apellidos" value="<%= usuario.surname %>"required class="campo-de-texto">
                 <span class="feedback"></span> <!-- para alertar errores -->
             </div>
 
             <!-- EMAIL -->
             <div>
                 <label class="etiqueta">Email: </label>
-                <input type = "email" name="email"  placeholder="usuario@abc.com" value="<%= email %>" required class="campo-de-texto">
+                <input type = "email" name="email"  placeholder="usuario@abc.com" value="<%= usuario.email %>" required class="campo-de-texto">
                 <span class="feedback"></span> <!-- para alertar errores -->
             </div>
 
             <!-- CONTRASEÑA -->
             <div>
                 <label class="password"> Contraseña: </label>
-                <input type = "password" name = "password" value="<%= password %>" required class="campo-de-texto">
+                <input type = "password" name = "password" value="<%= usuario.password %>" required class="campo-de-texto">
                 <span class="feedback"></span> 
             </div>
 
-            <!-- CONFIRMAR CONTRASEÑA -->
+            <!-- CONFIRMAR CONTRASEÑA, da error
             <div>
                 <label class="password">Confirmar Contraseña: </label>
-                <input type = "password" name = "password" value="<%= password %>" required class="campo-de-texto">
+                <input type = "password" name = "password" value="<%= usuario.password %>" required class="campo-de-texto">
                 <span class="feedback"></span> 
             </div>
-
+            -->
+            
             <!-- BOTON EDITAR -->
             <button type="submit">Editar</button>
         
