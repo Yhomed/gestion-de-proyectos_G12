@@ -156,22 +156,22 @@ REGISTRO DE WEEKLY
     - Fecha de entrega 6to Sprint: Martes 2023/02/10
     - Entregables:
         1. Archivo retro.md con el resultado de la retrospectiva.                           LISTO
-        2. (Opcional) Archivo daily.md con sus opiniones sobre las dailys/weeklys.          PENDIENTE
-        3. Tablero de trabajo actualizado.                                                  PENDIENTE
-        4. Diagrama de base de datos.                                                       PENDIENTE
-        5. Script de creación de estructura de base de datos con:                           PENDIENTE
+        2. (Opcional) Archivo daily.md con sus opiniones sobre las dailys/weeklys.          LISTO
+        3. Tablero de trabajo actualizado.                                                  LISTO
+        4. Diagrama de base de datos.                                                       LISTO
+        5. Script de creación de estructura de base de datos con:                           LISTO
             a. Creación de la base de datos y de todas sus tablas.
             b. Tipos de datos de los campos y sus restricciones.
             c. Relaciones entre las diferentes tablas.
-        6. (Opcional) Script de datos de base de datos para:                                PENDIENTE
+        6. (Opcional) Script de datos de base de datos para:                                LISTO
             a. Tabla de usuarios.
             b. Tabla de productos.
             c. Tablas secundarias (categorías, marcas, colores, talles, etc).
             d. (Opcional) Tabla de carrito de compras y productos de carritos de compras.
-        7. Creación de carpeta Sequelize con:                                               PENDIENTE
+        7. Creación de carpeta Sequelize con:                                               LISTO
             a. Archivos de configuración.
             b. Modelos con sus relaciones.
-        8. CRUD:                                                                            PENDIENTE
+        8. CRUD:                                                                            LISTO
             a. De productos.
             b. De usuarios.
             c. (Opcional) De tablas secundarias.
