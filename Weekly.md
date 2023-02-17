@@ -176,4 +176,75 @@ REGISTRO DE WEEKLY
             b. De usuarios.
             c. (Opcional) De tablas secundarias.
 
-
+5. 2023/2/16 REGISTRO WEEKLY:
+    - Vamos en el 7mo Sprint.
+    - Fecha de entrega 6to Sprint: Jueves 2023/02/16
+    - Entregables:
+        1. Archivo retro.md con el resultado de la retrospectiva.
+        2. (Opcional) Archivo daily.md con sus opiniones sobre las dailys/weeklys
+        3. Tablero de trabajo actualizado.
+        4. Validaciones del back-end con Express Validator:
+            I. Registro de usuarios.
+                Nombre y apellido
+                    ■ Obligatorio.
+                    ■ Deberá tener al menos 2 caracteres.
+                Email
+                    ■ Obligatorio.
+                    ■ Deberá ser un formato de e-mail válido.
+                    ■ No puede repetirse con los e-mails ya registrados.
+                Contraseña
+                    ■ Obligatoria.
+                    ■ Deberá tener al menos 8 caracteres.
+                    ■ (Opcional) → Deberá tener letras mayúsculas, minúsculas, un número y un carácter especial.
+                Imagen
+                    ■ Deberá ser un archivo válido (JPG, JPEG, PNG, GIF).
+            II. Login de usuarios.
+                Email
+                    ■ Obligatorio.
+                    ■ Deberá ser válido.
+                    ■ Deberá existir en base.
+                Contraseña
+                    ■ Obligatoria.
+                    ■ Deberá coincidir con la existente en base.
+            III. Creación y modificación de productos.
+                Nombre
+                    ■ Obligatorio.
+                    ■ Deberá tener al menos 5 caracteres.
+                Descripción
+                    ■ Deberá tener al menos 20 caracteres.
+                Imagen
+                    ■ Deberá ser un archivo válido (JPG, JPEG, PNG, GIF).
+                (Opcional) Tablas secundarias
+                    ■ Verificar que los valores existan en base. Es decir, que los valores de talles, colores, etc. que lleguen sean válidos en la base.
+            IV. (Opcional) Resto de los formularios del sitio.
+        5. Validaciones del front-end con JavaScript:
+            I. Registro de usuarios.
+                Nombre y apellido
+                    ■ Obligatorio.
+                    ■ Deberá tener al menos 2 caracteres.
+                Email
+                    ■ Obligatorio.
+                    ■ Deberá ser válido.
+                    ■ (Opcional) → No puede repetirse con los e-mails ya registrados.
+                Contraseña
+                    ■ Obligatoria.
+                    ■ Deberá tener al menos 8 caracteres.
+                    ■ (Opcional) → Deberá tener letras mayúsculas, minúsculas, un número y un carácter especial.
+                Imagen
+                    ■ Deberá ser un archivo válido (JPG, JPEG, PNG, GIF).
+            II. Login de usuarios.
+                Email
+                    ■ Obligatorio.
+                    ■ Deberá ser válido.
+                    ■ (Opcional) → Debe existir en la base.
+                Contraseña
+                    ■ Obligatoria.
+            III. Creación y modificación de productos.
+                Nombre
+                    ■ Obligatorio.
+                    ■ Deberá tener al menos 5 caracteres.
+                Descripción
+                    ■ Deberá tener al menos 20 caracteres.
+                Imagen
+                    ■ Deberá ser un archivo válido (JPG, JPEG, PNG, GIF
+            IV. (Opcional) Resto de los formularios del sitio.
