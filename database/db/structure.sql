@@ -86,8 +86,8 @@ CREATE TABLE `usuarios_courses` (
   `id` int NOT NULL AUTO_INCREMENT,
   `user_id` int NOT NULL,
   `course_id` int NOT NULL,
-  PRIMARY KEY (`id`)
-  foreign key(course_id) REFERENCES courses(id)
+  PRIMARY KEY (`id`),
+  foreign key(course_id) REFERENCES courses(id),
   foreign key(user_id) REFERENCES usuarios(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
