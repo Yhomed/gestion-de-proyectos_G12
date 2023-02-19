@@ -67,34 +67,34 @@ const userController = {
         
         db.Usuario.findAll()
         .then((users) => {		
-            //Aquí guardo los errores que vienen desde la ruta, valiendome del validationResult
+            //Guarda los errores que vienen desde la ruta
             let errors = validationResult(req);
             
-            let usuarioLogueado = []; //variable que aloja el usuario q se intento loguear
+            let usuarioLogueado = []; //usuario q se intento loguear
             
             if(req.body.email != '' && req.body.password != ''){ //si la pass e email no son vacios
             usuarioLogueado = users.filter(function (user) {     //filtra y guarda
                 return user.email === req.body.email  
             });
-            //Aquí verifico si la clave que está colocando es la misma que está hasheada en la Base de datos - El compareSync retorna un true ó un false
+            //Verifica si la clave que está colocando es la misma que está hasheada en la Base de datos - El compareSync retorna true o false
             if(bcrypt.compareSync(req.body.password,usuarioLogueado[0].password) === false){
-                usuarioLogueado = []; //si no es la clave correcta deja en nulo la variable del usuario
+                usuarioLogueado = []; //si no es la clave correcta deja en nulo
             }
 
             }
 
-            //Aquí determino si el usuario fue encontrado ó no en la Base de Datos
+            //Determina si el usuario fue encontrado o no en la Base de Datos
             if (usuarioLogueado.length === 0) {
                 return res.render(path.resolve(__dirname, '../views/users/login'),{ errors: [{ msg: "Credenciales invalidas" }] });
             } else {
-            //Aquí guardo en SESSION al usuario logueado
+            //Guarda en session al usuario logueado
             req.session.usuario = usuarioLogueado[0];
             }
-            //Aquí verifico si el usuario le dio click en el check box para recordar al usuario 
+            //Verifica si el usuario le dio click en el check box para recordar al usuario 
             if(req.body.recordarme){
             res.cookie('email',usuarioLogueado[0].email,{maxAge: 1000 * 60 * 60 * 24})
             }
-            return res.redirect('/');   //Aquí ustedes mandan al usuario para donde quieran (Perfil- home)
+            return res.redirect('/');
 
         })
     
