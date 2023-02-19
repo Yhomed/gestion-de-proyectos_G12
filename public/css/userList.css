@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.contenedor {
+    border-bottom: 1px solid #2E5EAF;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    
+}
+
+.nombre.apellido.email {
+    display: flex;
+    position: relative;
+
+}
+
+h3 {
+    text-align: center;
+}
+
+.imagen-cursos {
+    width: 15rem;
+    align-self: center;
+    margin-left: 8rem;
+}
