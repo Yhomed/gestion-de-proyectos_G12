@@ -6,6 +6,12 @@ const multer = require('multer');
 
 const path = require('path');
 
+const {
+  check,
+  validationResult,
+  body
+} = require('express-validator');
+
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
       cb(null, './public/img/users')
@@ -33,7 +39,10 @@ router.get('/inscripcion', userController.inscripcion); // Inscripción
 
 router.post('/', uploadFile.single("image"), userController.registerProcess); //registerProcess
 
-router.post('/profile', userController.loginProcess); //loginProcess
+router.post('/profile',[
+  check('email').isEmail().withMessage('Email invalido'),
+  check('password').isLength({ min: 8 }).withMessage('La contraseña debe tener al menos 8 caracteres'),
+] ,userController.loginProcess); //loginProcess
 
 router.get('/profile/:id', userController.profile) //vista del perfil de usuario
 
