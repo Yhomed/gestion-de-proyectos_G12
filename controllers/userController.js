@@ -7,7 +7,7 @@ const {
     check,
     validationResult,
     body
-} = require('../node_modules/express-validator');
+} = require('express-validator');
 
 //const userFilePath = path.resolve(__dirname, '../data/usuarios.json');
 const db = require ('../database/models');
