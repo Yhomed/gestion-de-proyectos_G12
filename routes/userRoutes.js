@@ -46,9 +46,9 @@ Usuario.findAll()
 router.post('/', uploadFile.single("image"),[
   
   check('name').isLength({
-        min: 1
+        min: 2
       }).withMessage('El campo nombre no puede estar vacío'),
-  check('surname').isLength({min: 1   
+  check('surname').isLength({min: 2   
       }).withMessage('El campo apellido no puede estar vacío'),
   check('email').isEmail().withMessage('Agregar un email válido'),
 
