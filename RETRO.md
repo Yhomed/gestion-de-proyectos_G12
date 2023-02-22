@@ -178,3 +178,34 @@ RETROALIMENTACIÓN "Starfish"
 - Juntarnos mas seguido
 - Profundizar conceptos
 - Herramientas para poder realizar el proyecto
+
+
+2023/2/23 RETRO SPRINT 7:
+
+1. KEEP DOING:
+
+- Trabajar en equipo
+- resolver nuestras inquietudes en grupo
+- apoyarnos entre todos al tener un error
+- plantear puntos de vistas distintos
+
+2. LESS OF:
+
+- dejar problemas sin resolver
+
+3. MORE OF:
+
+- dar una mano cuando se necesita
+- comunicacion mas asertiva
+
+4. STOP DOING:
+
+- retrasar las reuniones
+- hacer poco en mucho tiempo de reunion
+
+5. START DOING:
+
+- tener mas tiempo para reunirnos
+- reuniones extras
+
+
