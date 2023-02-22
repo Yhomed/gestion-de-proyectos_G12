@@ -2,11 +2,13 @@ window.addEventListener('load',function(){
     
     
     let formulario = document.querySelector('.form');
-    let title = document.querySelector('.title');
-    let parrafo = document.querySelector('.parrafo');
-    let image = document.querySelector('.image');
-    let number = document.querySelector('.number');
-    let price = document.querySelector('.price');
+
+
+    //let title = document.querySelector('.title');
+    //let parrafo = document.querySelector('.parrafo');
+    //let image = document.querySelector('.image');
+    
+    
     formulario.addEventListener('submit',function(evento){
         
         if(!validaciones(evento)){
@@ -18,18 +20,18 @@ window.addEventListener('load',function(){
         function validaciones(evento){
         
           
-          let {title,parrafo,image,number,price} = formulario.elements;
+          let {title,parrafo,image} = formulario.elements;
           let errores = [];
         
     
         if(title.value.length < 5){
-            errores.title = "Este campo debe tener al menos 5 caracteres"}
+            errores.name = "Este campo debe tener al menos 5 caracteres"}
 
         if(parrafo.value.length < 20){
-                errores.parrafo = "Este campo debe tener al menos 20 caracteres"}
+            errores.name = "Este campo debe tener al menos 20 caracteres"}
 
         if(image.value.length < 2){
-                    errores.image = "Este campo debe tener al menos 2 caracteres"}
+            errores.name = "Este campo debe tener al menos 2 caracteres"}
         
     
 
