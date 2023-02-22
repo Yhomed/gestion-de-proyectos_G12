@@ -30,7 +30,7 @@ window.addEventListener('load',function(){
         
         let rePassword = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
         if(!rePassword.test(password.value)){
-            errores.push('La contraseña como mínimo debe tener seis caracteres, al menos una letra y un número');
+            errores.push('La contraseña como mínimo debe tener ocho caracteres, al menos una letra y un número');
             password.classList.add('is-invalid');   
           
         }else{
