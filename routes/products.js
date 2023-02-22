@@ -8,6 +8,14 @@ const multer = require('multer');
 
 const productosController = require('../controllers/productosController');
 
+const {
+  check,
+  validationResult,
+  body
+} = require('express-validator');
+
+
+
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
       cb(null, './public/img/courses')
@@ -30,8 +38,37 @@ router.get('/create', productosController.createProducts);//listo
 //ruta 3 para el detalle de un producto particular
 router.get('/:id',productosController.productDetail); //listo
 
-//ruta 4 para la acción de creación (POST) --> alta
-router.post('/', uploadFile.single('image'), productosController.createNewProduct); //listo
+//ruta 4 para la acción de creación (POST) --> alta  
+router.post('/', uploadFile.single("image"),[
+
+  //check('title').not().isEmpty().withMessage('El campo titulo debe ser obligatorio'),
+  
+  check('title').isLength({
+        min: 5
+      }).withMessage('El campo titulo debe de ser minimo 5 caracteres'),
+
+  check('parrafo').isLength({
+        min: 20
+      }).withMessage('El campo descripcion debe de ser minimo 20 caracteres'),
+
+
+  body('image').custom(function (value, { req }) {
+        let extension
+        if(req.file != undefined ){
+            return true
+        }else{
+            extension = ""+path.extname(req.files[0].filename).toLowerCase();
+        }
+        if (
+            extension == ".jpg" ||
+            extension == ".jpeg" ||
+            extension == ".png" ||
+            extension == ".gif"){
+                return true;
+            }
+            return false;
+      }).withMessage('Solo debe seleccionar archivos con extensión JPG, JPEG, PNG o GIF')
+    ], productosController.createNewProduct);
 
 //ruta 5 para el formulario del edit
 router.get('/:id/edit', productosController.editProducts); //listo
@@ -44,5 +81,9 @@ router.delete('/:id', productosController.deleteProduct); //listo
 
 //ruta 8 para el formulario del delete
 router.get('/:id/delete', productosController.deleteProducts); //listo
+
+
+
+
 
 module.exports = router;

@@ -45,6 +45,14 @@
 
         <button type="submit">Crear</button>
 
+        <% if(typeof(errors) != 'undefined'){%>
+          <ul class="text-danger">
+             <% errors.forEach(error => { %>
+                <li><%= error.msg%></li>
+             <%});%>
+           </ul>
+       <%}%>  
+
       </form>
     </main>
 

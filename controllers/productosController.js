@@ -6,6 +6,14 @@ const fs = require('fs');
 
 const productsFilePath = path.resolve(__dirname, '../data/productos.json');
 
+
+const {
+    check,
+    validationResult,
+    body
+} = require('express-validator');
+
+
 //requerir modelos
 const db = require ('../database/models');
 
@@ -96,6 +104,15 @@ const productosController =  {
     products.push(newProduct)
     fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
             res.redirect('/products/'+ newProduct.id);*/
+
+
+            let errors = validationResult(req);
+            if(!errors.isEmpty()) {
+            return res.render(path.resolve(__dirname, '../views/products/create'), {
+              errors: errors.errors,  old: req.body
+            });
+          } 
+
 
             const _body = { 
                 //return res.send(_body);
