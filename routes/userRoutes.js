@@ -6,6 +6,10 @@ const multer = require('multer');
 
 const path = require('path');
 
+const db = require('../database/models/');
+
+const Usuario = db.Usuario;
+
 const {
   check,
   validationResult,
@@ -37,7 +41,7 @@ router.get('/login', userController.login); // Login
 
 router.get('/inscripcion', userController.inscripcion); // Inscripción
 
-User.findAll()
+Usuario.findAll()
     .then((users) => {
 router.post('/', uploadFile.single("image"),[
   //Aquí incoporé otras validaciones, para que las tengan de guía para sus proyectos  
