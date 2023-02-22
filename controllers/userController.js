@@ -48,6 +48,12 @@ const userController = {
     //PROCESO DE REGISTRO (POST)
     registerProcess: (req, res) => {
 
+        let errors = validationResult(req);
+        if(!errors.isEmpty()) {
+        return res.render(path.resolve(__dirname, '../views/users/register'), {
+          errors: errors.errors,  old: req.body
+        });
+      } 
         const _body = { 
             name : req.body.name,
             surname : req.body.surname,
@@ -67,27 +73,27 @@ const userController = {
         
         db.Usuario.findAll()
         .then((users) => {		
-            //Guarda los errores que vienen desde la ruta
+         
             let errors = validationResult(req);
             
-            let usuarioLogueado = []; //usuario q se intento loguear
+            let usuarioLogueado = []; 
             
             if(req.body.email != '' && req.body.password != ''){ //si la pass e email no son vacios
             usuarioLogueado = users.filter(function (user) {     //filtra y guarda
                 return user.email === req.body.email  
             });
-            //Verifica si la clave que está colocando es la misma que está hasheada en la Base de datos - El compareSync retorna true o false
+            
             if(bcrypt.compareSync(req.body.password,usuarioLogueado[0].password) === false){
                 usuarioLogueado = []; //si no es la clave correcta deja en nulo
             }
 
             }
 
-            //Determina si el usuario fue encontrado o no en la Base de Datos
+            //Determina si el usuario fue encontrado o no 
             if (usuarioLogueado.length === 0) {
                 return res.render(path.resolve(__dirname, '../views/users/login'),{ errors: [{ msg: "Credenciales invalidas" }] });
             } else {
-            //Guarda en session al usuario logueado
+            //Guarda en session 
             req.session.usuario = usuarioLogueado[0];
             }
             //Verifica si el usuario le dio click en el check box para recordar al usuario 
