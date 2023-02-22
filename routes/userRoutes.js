@@ -44,7 +44,7 @@ router.get('/inscripcion', userController.inscripcion); // Inscripción
 Usuario.findAll()
     .then((users) => {
 router.post('/', uploadFile.single("image"),[
-  //Aquí incoporé otras validaciones, para que las tengan de guía para sus proyectos  
+  
   check('name').isLength({
         min: 1
       }).withMessage('El campo nombre no puede estar vacío'),
@@ -52,17 +52,17 @@ router.post('/', uploadFile.single("image"),[
       }).withMessage('El campo apellido no puede estar vacío'),
   check('email').isEmail().withMessage('Agregar un email válido'),
 
-  //Aquí valido el Password   
+    
   check('password').isLength({min: 8 }).withMessage('La contraseña debe tener un mínimo de 8 caractéres al menos una letra y un número'),
-  //Aquí valido si usuario existe o no en la tabla de usuarios Por el campo email)
+
   body('email').custom(function (value) {
-    let contador = 0;
+    let cont = 0;
     for (let i = 0; i < users.length; i++) {
         if (users[i].email == value) {
-            contador++;
+            cont++;
         }
     }
-    if (contador > 0) {
+    if (cont > 0) {
         return false;   
     } else {
         return true;    
@@ -70,17 +70,17 @@ router.post('/', uploadFile.single("image"),[
   }).withMessage('Usuario ya se encuentra registrado'),
 
 body('image').custom(function (value, { req }) {
-  let ext
+  let extension
   if(req.file != undefined ){
       return true
   }else{
-      ext = ""+path.extname(req.files[0].filename).toLowerCase();
+      extension = ""+path.extname(req.files[0].filename).toLowerCase();
   }
   if (
-      ext == ".jpg" ||
-      ext == ".jpeg" ||
-      ext == ".png" ||
-      ext == ".gif"){
+      extension == ".jpg" ||
+      extension == ".jpeg" ||
+      extension == ".png" ||
+      extension == ".gif"){
           return true;
       }
       return false;
