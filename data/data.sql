@@ -18,7 +18,7 @@ values
     (
         "Herramientas para la Priorización y Clasificación de Alternativas y Proyectos",
         "Los líderes y equipos de los proyectos están limitados por las restricciones del proyecto y es necesario realizar un uso racional de los recursos. Esto será posible gracias a las técnicas de clasificación, priorización y análisis desarrolladas con la ayuda de EXCEL",
-        "30000",4,"default-image.png"
+        30000,4,"default-image.png"
     ),
     (
         "Elaboración de Tableros de Seguimiento 'Dashboards' y Control del Proyecto con POWER BI",
