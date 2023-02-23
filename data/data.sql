@@ -31,14 +31,18 @@ values
     (
         1,"Fernando","Sanchez","alala@gmail","$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS","user1674353485630.jpg"
     ),
-
-    (
-        2,"Abril","alvarez","abrilalvarez@gmail.com","$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzD","user1674353485630.jpg"
+      
+    (    2,"Abril","alvarez","abrilalvarez@gmail.com","$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzD","user1674353485630.jpg"
     ),
-    (   3,"Yhomed","Durango","Yhomed@gmail.com","$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS","user1674353485630.jpg"
+    (  
+         3,"Yhomed","Durango","Yhomed@gmail.com","$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS","user1674353485630.jpg"
     ),
-     (  4,"Miguel","Zapata","Agalle27@eafit.edu.co","$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS","user1674353485630.jpg"
+     ( 
+         4,"Miguel","Zapata","Agalle27@eafit.edu.co","$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS","user1674353485630.jpg"
     ),
-    (   5,"Samuel","Henao","shenaocastro29@gmail.com","$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS","user1674353485630.jpg"
+    (  
+         5,"Samuel","Henao","shenaocastro29@gmail.com","$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS","user1674353485630.jpg"
     );
-
+    (  
+         6,"Nicolas","Paniagua","nicolaspaniagua33@gmail.com","$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS","user1674353485630.jpg"
+    )
