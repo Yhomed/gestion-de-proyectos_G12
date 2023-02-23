@@ -220,3 +220,14 @@ const userController = {
 };
 
 module.exports = userController;
+
+
+module.exports = {
+    list: (req, res) => {
+        DB.Usuarios 
+        .findAll()
+        .then(usuarios =>{
+            return res.JSON(usuarios)
+        })
+    }
+}
