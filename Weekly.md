@@ -180,10 +180,10 @@ REGISTRO DE WEEKLY
     - Vamos en el 7mo Sprint.
     - Fecha de entrega 6to Sprint: Jueves 2023/02/16
     - Entregables:
-        1. Archivo retro.md con el resultado de la retrospectiva.
-        2. (Opcional) Archivo daily.md con sus opiniones sobre las dailys/weeklys
-        3. Tablero de trabajo actualizado.
-        4. Validaciones del back-end con Express Validator:
+        1. Archivo retro.md con el resultado de la retrospectiva.                          LISTO
+        2. (Opcional) Archivo daily.md con sus opiniones sobre las dailys/weeklys          LISTO 
+        3. Tablero de trabajo actualizado.                                                 LISTO
+        4. Validaciones del back-end con Express Validator:                                EN PROCESO 
             I. Registro de usuarios.
                 Nombre y apellido
                     ■ Obligatorio.
@@ -217,7 +217,7 @@ REGISTRO DE WEEKLY
                 (Opcional) Tablas secundarias
                     ■ Verificar que los valores existan en base. Es decir, que los valores de talles, colores, etc. que lleguen sean válidos en la base.
             IV. (Opcional) Resto de los formularios del sitio.
-        5. Validaciones del front-end con JavaScript:
+        5. Validaciones del front-end con JavaScript:                 EN PROCESO 
             I. Registro de usuarios.
                 Nombre y apellido
                     ■ Obligatorio.
