@@ -30,4 +30,8 @@ insert into usuarios(id, name, surname, email, password,image)
 values
     (
         1,"Fernando","Sanchez","alala@gmail","$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS","user1674353485630.jpg"
-    );
+    ),
+
+    (
+        2,"Abril","alvarez","abrilalvarez@gmail.com","$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzD","user1674353485630.jpg"
+    )
