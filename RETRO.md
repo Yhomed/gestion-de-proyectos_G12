@@ -1,4 +1,3 @@
-
 RETROALIMENTACIÓN "Starfish"
 
 
@@ -188,10 +187,12 @@ RETROALIMENTACIÓN "Starfish"
 - resolver nuestras inquietudes en grupo
 - apoyarnos entre todos al tener un error
 - plantear puntos de vistas distintos
+- adquirir informacion adicional relacionada a los temas a trabajar 
 
 2. LESS OF:
 
 - dejar problemas sin resolver
+- 
 
 3. MORE OF:
 
@@ -202,10 +203,14 @@ RETROALIMENTACIÓN "Starfish"
 
 - retrasar las reuniones
 - hacer poco en mucho tiempo de reunion
+-
 
 5. START DOING:
 
 - tener mas tiempo para reunirnos
 - reuniones extras
+- delegrar funciones 
+
+
 
 
