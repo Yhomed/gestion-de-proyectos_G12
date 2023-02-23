@@ -12,10 +12,19 @@
     "nombre": "Abril",
     "apellido": "Alvarez",
     "email": "abrilalvarez@gmail.com",
-    "password": "$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzD",
+    "password": "$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS",
+    "image": "user1674353485630.jpg"
+   },
+   {
+    "id": 2,
+    "nombre": "Yhomed",
+    "apellido": "Durango",
+    "email": "Yhomed@gmail.com",
+    "password": "$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS",
     "image": "user1674353485630.jpg"
    }
-   
+
+
 ]
 
  
