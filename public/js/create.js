@@ -1,6 +1,6 @@
 window.addEventListener('load',function(){
     
-    
+    console.log("Entre");
     let formulario = document.querySelector('.form');
 
 
@@ -10,7 +10,7 @@ window.addEventListener('load',function(){
     
     
     formulario.addEventListener('submit',function(evento){
-        
+        evento.preventDefault();
         if(!validaciones(evento)){
             evento.preventDefault();
         }else{
@@ -30,15 +30,14 @@ window.addEventListener('load',function(){
         if(parrafo.value.length < 20){
             errores.name = "Este campo debe tener al menos 20 caracteres"}
 
-            let imagen = document.getElementById("imagen"); //imagen es el id que le dan al input de imagen
-            let isValid = /[/.](gif|jpeg|tiff|png)$/i.test(imagen.value);
+        let imagen = document.getElementById("image");
+            let isValid = /[/.](gif|jpg|jpeg|tiff|png)$/i.test(imagen.value);
+            console.log(isValid);
                 if(!isValid) {
                   alert("Deberá ser un archivo válido (JPG, JPEG, PNG, GIF)");
-                }; 
+                };
             
-        
     
-
           let ulErrores = document.getElementById('errores');
           ulErrores.classList.add('text-danger')
           if(errores.length > 0){

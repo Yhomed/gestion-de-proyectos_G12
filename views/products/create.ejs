@@ -35,7 +35,7 @@
         <input type="text" name="parrafo" class="parrafo">
 
         <label>Imagen:</label>
-        <input type="file" name="image" class="image">
+        <input type="file" name="image" class="image" id="image">
 
         <label>Numero:</label>
         <input type="text" name="number" class="number">
@@ -46,7 +46,7 @@
         <button type="submit">Crear</button>
 
         <% if(typeof(errors) != 'undefined'){%>
-          <ul class="text-danger">
+          <ul id="errores" class="text-danger">
              <% errors.forEach(error => { %>
                 <li><%= error.msg%></li>
              <%});%>
@@ -63,6 +63,7 @@
     <%- include('../partials/footer.ejs') %> <!-- recibe la ruta del archivo a incluir -->
     
   </footer>
+  <script src="/js/create.js"> </script>
 </body>
 </html>
         
