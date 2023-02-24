@@ -30,8 +30,12 @@ window.addEventListener('load',function(){
         if(parrafo.value.length < 20){
             errores.name = "Este campo debe tener al menos 20 caracteres"}
 
-        if(image.value.length < 2){
-            errores.name = "Este campo debe tener al menos 2 caracteres"}
+            let imagen = document.getElementById("imagen"); //imagen es el id que le dan al input de imagen
+            let isValid = /[/.](gif|jpeg|tiff|png)$/i.test(imagen.value);
+                if(!isValid) {
+                  alert("Deberá ser un archivo válido (JPG, JPEG, PNG, GIF)");
+                }; 
+            
         
     
 
