@@ -1,23 +1,22 @@
-window.addEventListener('load',function(){
+window.addEventListener('load',function() {
     
-    console.log("Entre");
     let formulario = document.querySelector('.form');
 
-
-    //let title = document.querySelector('.title');
-    //let parrafo = document.querySelector('.parrafo');
-    //let image = document.querySelector('.image');
-    
-    
     formulario.addEventListener('submit',function(evento){
+
         evento.preventDefault();
-        if(!validaciones(evento)){
+
+        if(validaciones()) {
+
             evento.preventDefault();
-        }else{
+
+        } else {
+
             formulario.submit();
+
         }    
 
-        function validaciones(evento){
+        function validaciones(){
         
           
           let {title,parrafo,image} = formulario.elements;
@@ -25,36 +24,52 @@ window.addEventListener('load',function(){
         
     
         if(title.value.length < 5){
-            errores.name = "Este campo debe tener al menos 5 caracteres"}
+
+            errores.push("El campo titulo: debe tener al menos 5 caracteres")
+
+        }
 
         if(parrafo.value.length < 20){
-            errores.name = "Este campo debe tener al menos 20 caracteres"}
 
-        let imagen = document.getElementById("image");
-            let isValid = /[/.](gif|jpg|jpeg|tiff|png)$/i.test(imagen.value);
-            console.log(isValid);
-                if(!isValid) {
-                  alert("Deberá ser un archivo válido (JPG, JPEG, PNG, GIF)");
-                };
+            errores.push("El campo parrafo: debe tener al menos 20 caracteres")
+
+        }
+
+        let isValid = /[/.](gif|jpg|jpeg|tiff|png)$/i.test(image.value);
+        if(!isValid) {
+
+            errores.push("La imagen deberá ser un archivo válido (JPG, JPEG, PNG, GIF)")
+
+        };
             
     
           let ulErrores = document.getElementById('errores');
           ulErrores.classList.add('text-danger')
-          if(errores.length > 0){
+          if(errores.length > 0) {
               
-              evento.preventDefault();
               ulErrores.innerHTML = "";
+
               for (let i = 0 ; i < errores.length; i++){
+
                 ulErrores.innerHTML += `<li> ${errores[i]} </li> `
+
               }
+
               errores = [];
-          }else{
-              return true;
+
+              return true
+
+          } else {
+
+              return false;
+
           } 
+
         }
 
     })
 
-
-
 })
+
+
+
