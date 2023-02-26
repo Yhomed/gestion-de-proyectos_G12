@@ -39,14 +39,7 @@
     "password": "$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS",
     "image": "user1674353485630.jpg"
    },
-   {
-    "id": 6,
-    "nombre": "Nicolas",
-    "apellido": "Paniagua",
-    "email": "nicolaspaniagua33@gmail.com",
-    "password": "$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS",
-    "image": "user1674353485630.jpg"
-   }
+   
    
 
    ]
