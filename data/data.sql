@@ -37,8 +37,6 @@ values
     (  
          3,"Yhomed","Durango","Yhomed@gmail.com","$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS","user1674353485630.jpg"
     ),
-     ( 
-         4,"Miguel","Zapata","Agalle27@eafit.edu.co","$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS","user1674353485630.jpg"
-    ),
+    
     
     
