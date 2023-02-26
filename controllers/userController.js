@@ -216,6 +216,8 @@ const userController = {
             res.render('./users/delete.ejs',{usuario});
         })
     },
+
+    // json
     list: (req, res) => {
         db.Usuario.findAll()
       
@@ -229,8 +231,26 @@ const userController = {
         
      });
    })
+   .catch(err => { console.log('Errores al buscar el usuario: ' + err)}) 
+},
+
+
+
+show: (req, res) => {
+    db.Usuario.findByPk(req. params.id)
+  
+    .then(user =>{
+   return res.status(200).json({
+   // total: usuarios.length,
+    data: user,
+    status: 200,
+    
+ });
+})
+.catch(err => { console.log('Errores al buscar el usuario: ' + err)}) 
+},
 }
-}
+
 
 module.exports = userController;
 
