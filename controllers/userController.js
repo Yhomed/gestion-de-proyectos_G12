@@ -222,14 +222,17 @@ const userController = {
        // DB.Usuarios 
         //.findAll()
         .then(usuarios =>{
-       return res.json(usuarios)
-     })
-   }
-
-};
+       return res.status(200).json({
+        total: usuarios.length,
+        data: usuarios,
+        status: 200,
+        
+     });
+   })
+}
+}
 
 module.exports = userController;
 
 
 
-   
