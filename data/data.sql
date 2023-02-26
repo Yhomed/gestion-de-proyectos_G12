@@ -43,6 +43,4 @@ values
     (  
          5,"Samuel","Henao","shenaocastro29@gmail.com","$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS","user1674353485630.jpg"
     );
-    (  
-         6,"Nicolas","Paniagua","nicolaspaniagua33@gmail.com","$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS","user1674353485630.jpg"
-    )
+    
