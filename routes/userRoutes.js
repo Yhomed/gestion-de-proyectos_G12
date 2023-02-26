@@ -39,6 +39,9 @@ const userController = require('../controllers/userController');
 
 router.get('/', userController.list); // listado
 
+router.get('/list',userController.list); // json api 
+
+
 router.get('/detail/:id', userController.detail); //detalle
 
 router.get('/register', userController.register); // Registro

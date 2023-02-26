@@ -215,19 +215,21 @@ const userController = {
 
             res.render('./users/delete.ejs',{usuario});
         })
-    }
+    },
+    list: (req, res) => {
+        db.Usuario.findAll()
+      
+       // DB.Usuarios 
+        //.findAll()
+        .then(usuarios =>{
+       return res.json(usuarios)
+     })
+   }
 
 };
 
 module.exports = userController;
 
 
-//module.exports = {
-    //list: (req, res) => {
-       // DB.Usuarios 
-        //.findAll()
-        //.then(usuarios =>{
-      //      return res.JSON(usuarios)
-    //    })
- //   }
-//}
+
+   
