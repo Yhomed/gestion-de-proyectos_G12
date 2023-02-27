@@ -216,7 +216,7 @@ const userController = {
             res.render('./users/delete.ejs',{usuario});
         })
     },
-
+/*
     // json
     list: (req, res) => {
         db.Usuario.findAll()
@@ -248,8 +248,8 @@ show: (req, res) => {
  });
 })
 .catch(err => { console.log('Errores al buscar el usuario: ' + err)}) 
-},
-}
+}, */
+} 
 
 
 module.exports = userController;

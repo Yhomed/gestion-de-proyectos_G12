@@ -23,9 +23,6 @@
 
     <main>
 
-        <div><ul id="errores"></ul></div>
-
-        
         <!-- FORMULARIO DE REGISTRO -->
         <form action="/user/" method="POST" enctype="multipart/form-data" class="form">
             <!-- <form action="/" method="GET"> -->
@@ -67,13 +64,15 @@
                 <span class="feedback"></span> 
             </div>
 
+            <div>
+                <ul id="errores" class="text-danger">
             <% if(typeof(errors) != 'undefined'){%>
-                <ul class="text-danger">
                    <% errors.forEach(error => { %>
                       <li><%= error.msg%></li>
                    <%});%>
-                 </ul>
-             <%}%>  
+             <%}%>
+                </ul>
+            </div> 
 
             <!--  CONFIRMAR CONTRASEÑA
             <div>
