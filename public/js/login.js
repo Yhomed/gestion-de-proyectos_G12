@@ -39,19 +39,28 @@ window.addEventListener('load',function(){
         }
 
     
-          let ulErrores = document.getElementById('errores');
-          ulErrores.classList.add('text-danger')
-          if(errores.length > 0){
-              
-              evento.preventDefault();
-              ulErrores.innerHTML = "";
-              for (let i = 0 ; i < errores.length; i++){
-                ulErrores.innerHTML += `<li> ${errores[i]} </li> `
-              }
-              errores = [];
-          }else{
-              return true;
-          } 
+        let ulErrores = document.getElementById('errores');
+        ulErrores.classList.add('text-danger')
+        if(errores.length > 0) {
+            
+            ulErrores.innerHTML = "";
+
+            for (let i = 0 ; i < errores.length; i++){
+
+              ulErrores.innerHTML += `<li> ${errores[i]} </li> `
+
+            }
+
+            errores = [];
+
+            return true
+
+        } else {
+
+            return false;
+
+        } 
+
         }
 
     })
