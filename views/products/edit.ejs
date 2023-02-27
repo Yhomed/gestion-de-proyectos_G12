@@ -40,6 +40,14 @@
         <input type="text" name="price" value="<%= curso.price %>" required>
 
         <button type="submit">Editar</button>
+
+        <ul id="errores" class="text-danger">
+          <% if(typeof(errors) != 'undefined'){%>
+               <% errors.forEach(error => { %>
+                  <li><%= error.msg%></li>
+               <%});%>
+          <%}%>  
+         </ul>
           
       </form>
       
