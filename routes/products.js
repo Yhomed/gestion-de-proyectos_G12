@@ -14,20 +14,18 @@ const {
   body
 } = require('express-validator');
 
-
-
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
       cb(null, './public/img/courses')
     },
     filename: function (req, file, cb) {
       cb(null,'curso' + Date.now() + path.extname(file.originalname))
-      const allowedExtensions = ['.jpg', '.jpeg', '.png', '.gif'];
+      /*const allowedExtensions = ['.jpg', '.jpeg', '.png', '.gif'];
       const extension = path.extname(file.originalname).toLowerCase();
 
       if (!allowedExtensions.includes(extension)) {
         return res.status(400).send('Por favor sube una imagen en formato JPG, JPEG, PNG o GIF.');
-      } 
+      }*/
     }
   })
   
@@ -80,7 +78,35 @@ router.post('/', uploadFile.single("image"),[
 router.get('/:id/edit', productosController.editProducts); //listo
 
 //ruta 6 para la acción de edición (PUT) --> modificación
-router.put('/:id', uploadFile.single('image'), productosController.editProduct); //listo
+router.put('/:id', uploadFile.single('image'), [
+
+  //check('title').not().isEmpty().withMessage('El campo titulo debe ser obligatorio'),
+  
+  check('title').isLength({
+        min: 5
+      }).withMessage('El campo titulo debe de ser minimo 5 caracteres'),
+
+  check('parrafo').isLength({
+        min: 20
+      }).withMessage('El campo descripcion debe de ser minimo 20 caracteres'),
+
+  body('image').custom(function (value, { req }) {
+        let extension
+        if(req.file != undefined ){
+            return true
+        }else{
+            extension = ""+path.extname(req.files[0].filename).toLowerCase();
+        }
+        if (
+            extension == ".jpg" ||
+            extension == ".jpeg" ||
+            extension == ".png" ||
+            extension == ".gif"){
+                return true;
+            }
+            return false;
+      }).withMessage('Solo debe seleccionar archivos con extensión JPG, JPEG, PNG o GIF')
+    ],productosController.editProduct); //listo
 
 //ruta 7 para la acción de borrado (DELETE) --> baja
 router.delete('/:id', productosController.deleteProduct); //listo

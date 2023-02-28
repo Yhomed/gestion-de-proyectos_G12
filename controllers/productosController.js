@@ -112,8 +112,6 @@ const productosController =  {
               errors: errors.errors,  old: req.body
             });
           } 
-
-
             const _body = { 
                 //return res.send(_body);
                 title : req.body.title,
@@ -153,7 +151,7 @@ const productosController =  {
             title: req.body.title,
             price: req.body.price,
             parrafo: req.body.parrafo,
-            image: req.file ? req.file.filename : product.image,
+            image: req.file ? req.file.filename : req.body.oldImage,
             //categoryId : req.body.categoria
         }, {
             where: {  
