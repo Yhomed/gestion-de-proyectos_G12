@@ -36,7 +36,7 @@ const productosController =  {
     //formulario de creación
     createProducts: (req, res) => {
         
-        res.render('../views/products/create');
+        res.render('../views/admin/create');
 
     },
 
@@ -59,7 +59,7 @@ const productosController =  {
         db.Curso.findByPk(req.params.id)
             .then(function(curso){
 
-                res.render('./products/productDetail.ejs',{curso:curso});
+                res.render('./admin/productDetail.ejs',{curso:curso});
             })
 
     },
@@ -86,7 +86,7 @@ const productosController =  {
         db.Curso.findByPk(req.params.id)
             .then(function(curso){
 
-                res.render('./products/edit.ejs',{curso:curso});
+                res.render('./admin/edit.ejs',{curso:curso});
             })
 
     },
@@ -108,7 +108,7 @@ const productosController =  {
 
             let errors = validationResult(req);
             if(!errors.isEmpty()) {
-            return res.render(path.resolve(__dirname, '../views/products/create'), {
+            return res.render(path.resolve(__dirname, '../views/admin/create'), {
               errors: errors.errors,  old: req.body
             });
           } 
@@ -123,7 +123,7 @@ const productosController =  {
             //return res.send(_body);
             db.Curso.create(_body)
             .then(curso =>{
-                res.redirect('/products');
+                res.redirect('/products'); //tener en cuenta por si las moscas 
             })
             .catch(error => res.send(error))
         },
@@ -202,7 +202,7 @@ const productosController =  {
         db.Curso.findByPk(req.params.id)
         .then(function(curso){
 
-            res.render('./products/delete.ejs',{curso});
+            res.render('./admin/delete.ejs',{curso});
         })
     }
 }

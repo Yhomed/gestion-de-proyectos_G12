@@ -23,4 +23,6 @@ app.use('/', mainRoutes);
 app.use('/user',userRoutes);
 app.use('/products',productsRoutes);
 
+//app.use('/admin', mainRoutes);
+
 app.listen(process.env.PORT || 3050, () => console.log('Servidor activo-3050'));
