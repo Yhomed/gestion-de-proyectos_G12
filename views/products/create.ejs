@@ -5,7 +5,9 @@
 <head>
 
   <%- include('../partials/head.ejs') %>
-  <link href="css/formularios.css" rel="stylesheet">
+
+  <link href="/css/formularios.css" rel="stylesheet">
+  
 
 </head>
 
@@ -26,22 +28,47 @@
 
       <!-- FORMULARIO DEL CREATE -->
 
-      <form action="/products/" method="POST" enctype="multipart/form-data" class="form">
+      <form action="/products/" method="POST" enctype="multipart/form-data" required class="form">
 
-        <label>Nombre del curso:</label>
-        <input type = "text" name="title" class="title">
 
-        <label>Descripcion:</label>
-        <input type="text" name="parrafo" class="parrafo">
+        <!-- NOMBRE DEL CURSO -->
 
-        <label>Imagen:</label>
-        <input type="file" name="image" class="image" id="image">
+        <div>
+            <label class="etiqueta">Nombre del curso:</label>
+            <input type = "text" name="title" class="campo-de-texto" class="title" required >
+        </div>
 
-        <label>Numero:</label>
-        <input type="text" name="number" class="number">
 
-        <label>Precio:</label>
-        <input type="text" name="price" class="price">
+        <!-- DESCRIPCION -->
+
+        <div>
+            <label class="etiqueta">Descripcion:</label>
+          <input type="text" name="parrafo" class="campo-de-texto" class="parrafo" required >
+        </div>
+
+
+        <!-- NUMERO -->
+
+        <div>
+             <label class="etiqueta">Numero:</label>
+             <input type="text" name="number" class="campo-de-texto" class="number" required >
+        </div>
+
+
+        <!-- PRECIO -->
+
+        <div>
+            <label class="etiqueta">Precio:</label>
+            <input type="text" name="price" class="campo-de-texto" class="price" required>
+        </div>
+
+
+        <!-- IMAGEN -->
+
+        <div>
+            <label class="etiqueta">Imagen:</label>
+            <input type="file" name="image" class="campo-de-texto" class="image" id="image" required >
+        </div>
 
         <button type="submit">Crear</button>
 
@@ -52,6 +79,7 @@
              <%});%>
         <%}%>  
        </ul>
+       
 
       </form>
     </main>
