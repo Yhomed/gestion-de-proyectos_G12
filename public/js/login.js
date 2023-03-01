@@ -5,13 +5,13 @@ window.addEventListener('load',function(){
     
     formulario.addEventListener('submit',function(evento){
         
-        if(!validaciones(evento)){
+        if(validaciones()){
             evento.preventDefault();
         }else{
             formulario.submit();
         }    
 
-        function validaciones(evento){
+        function validaciones(){
         
           
           let {email, password } = formulario.elements;

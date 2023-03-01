@@ -36,7 +36,7 @@ const productosController =  {
     //formulario de creación
     createProducts: (req, res) => {
         
-        res.render('../views/products/create');
+        res.render('../views/admin/create');
 
     },
 
@@ -59,7 +59,7 @@ const productosController =  {
         db.Curso.findByPk(req.params.id)
             .then(function(curso){
 
-                res.render('./products/productDetail.ejs',{curso:curso});
+                res.render('./admin/productDetail.ejs',{curso:curso});
             })
 
     },
@@ -86,7 +86,7 @@ const productosController =  {
         db.Curso.findByPk(req.params.id)
             .then(function(curso){
 
-                res.render('./products/edit.ejs',{curso:curso});
+                res.render('./admin/edit.ejs',{curso:curso});
             })
 
     },
@@ -108,12 +108,10 @@ const productosController =  {
 
             let errors = validationResult(req);
             if(!errors.isEmpty()) {
-            return res.render(path.resolve(__dirname, '../views/products/create'), {
+            return res.render(path.resolve(__dirname, '../views/admin/create'), {
               errors: errors.errors,  old: req.body
             });
           } 
-
-
             const _body = { 
                 //return res.send(_body);
                 title : req.body.title,
@@ -125,7 +123,7 @@ const productosController =  {
             //return res.send(_body);
             db.Curso.create(_body)
             .then(curso =>{
-                res.redirect('/products');
+                res.redirect('/products'); //tener en cuenta por si las moscas 
             })
             .catch(error => res.send(error))
         },
@@ -153,7 +151,7 @@ const productosController =  {
             title: req.body.title,
             price: req.body.price,
             parrafo: req.body.parrafo,
-            image: req.file ? req.file.filename : product.image,
+            image: req.file ? req.file.filename : req.body.oldImage,
             //categoryId : req.body.categoria
         }, {
             where: {  
@@ -204,7 +202,7 @@ const productosController =  {
         db.Curso.findByPk(req.params.id)
         .then(function(curso){
 
-            res.render('./products/delete.ejs',{curso});
+            res.render('./admin/delete.ejs',{curso});
         })
     }
 }
