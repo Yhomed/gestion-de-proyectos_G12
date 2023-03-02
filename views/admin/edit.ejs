@@ -28,11 +28,17 @@
       <form action="/products/<%= curso.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
 
 
+
+      <!-- NOMBRE DEL CURSO -->
+
       <div>
           <label class="etiqueta">Nombre del curso:</label>
           <input type="text" name="title" value="<%= curso.title %>" required class="campo-de-texto">
       </div>
 
+
+
+      <!-- DESCRIPCION -->
 
       <div>
         <label class="etiqueta">Descripcion:</label>
@@ -40,13 +46,16 @@
       </div>
 
 
+
+      <!-- PRECIO -->
+
       <div>
         <label class="etiqueta">Precio:</label>
         <input type="text" name="price" value="<%= curso.price %> " required class="campo-de-texto">
       </div>
 
 
-
+      <!-- IMAGEN -->  
       <div>
         <label class="etiqueta">Imagen:</label>
         <input type="hidden"  name="oldImage"  value="<%= curso.image%> "class="campo-de-texto">
