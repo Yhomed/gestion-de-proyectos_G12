@@ -29,6 +29,7 @@ const userController = {
         res.render('./users/register')
     },
     //USER DETAIL
+    
     detail: (req, res) => {
 
         db.Usuario.findByPk(req.params.id)

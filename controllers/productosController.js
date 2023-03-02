@@ -59,7 +59,7 @@ const productosController =  {
         db.Curso.findByPk(req.params.id)
             .then(function(curso){
 
-                res.render('./admin/productDetail.ejs',{curso:curso});
+                res.render('./admin/productDetail.ejs',{curso});
             })
 
     },

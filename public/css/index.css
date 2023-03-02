@@ -114,6 +114,11 @@ ul li {
 
 /* MAIN */
 
+
+.texto-botones {
+    padding-top: 9rem;
+}
+
 .aprende-sin-limites {
     margin:10px;
     text-align: center;
@@ -170,7 +175,7 @@ article {
 
 .foto-articulo {
     width: 100%;
-    margin-top: 30px;
+    padding-top: 30px;
 
 }
 .ruta-de-cursos {
