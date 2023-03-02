@@ -5,7 +5,7 @@
 <head>
 
   <%- include('../partials/head.ejs') %>
-  <link href="css/formularios.css" rel="stylesheet">
+  <link href="/css/formularios.css" rel="stylesheet">
 
 </head>
 
@@ -26,17 +26,37 @@
 
       <form action="/products/<%= curso.id %>?_method=DELETE" method="POST">
  
-        <label>Nombre del curso:</label>
-        <input type="text" name="title" value="<%= curso.title %>"> 
 
-        <label>Descripcion:</label>
-        <input type="text" name="parrafo" value="<%= curso.parrafo %>">
+        <!-- NOMBRE DEL CURSO -->
+
+        <div>
+            <label>Nombre del curso:</label>
+            <input type="text" name="title" value="<%= curso.title %>">
+       </div>
+
+
+        <!-- DESCRIPCION -->
+
+      <div>
+          <label>Descripcion:</label>
+          <input type="text" name="parrafo" value="<%= curso.parrafo %>">
+      </div>  
+
+
+        <!-- PRECIO -->
         
-        <label>Imagen:</label>
-        <input type="file" name="image">
+      <div>
+          <label>Precio:</label>
+          <input type="text" name="price" value="<%= curso.price %>">
+      </div>
 
-        <label>Precio:</label>
-        <input type="text" name="price" value="<%= curso.price %>">
+
+        <!-- IMAGEN -->
+
+       <div>
+            <label>Imagen:</label>
+            <input type="file" name="image">
+        </div>
 
         <button type="submit">Borrar</button>
           
