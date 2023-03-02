@@ -1,0 +1,99 @@
+<!-- CREAR PRODUCTOS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <%- include('../partials/head.ejs') %>
+
+  <link href="/css/formularios.css" rel="stylesheet">
+  
+
+</head>
+
+
+<body>
+
+    <header>
+
+      <!-- atomización de la vista del header -->
+
+      <%- include('../partials/header.ejs') %> <!-- recibe la ruta del archivo a incluir -->
+
+    </header>
+
+    <main>
+
+      <h2>Crear curso</h2>
+
+      <!-- FORMULARIO DEL CREATE -->
+
+      <form action="/products/" method="POST" enctype="multipart/form-data" required class="form">
+
+
+        <!-- NOMBRE DEL CURSO -->
+
+        <div>
+            <label class="etiqueta">Nombre del curso:</label>
+            <input type = "text" name="title" class="campo-de-texto" class="title" required >
+        </div>
+
+
+        <!-- DESCRIPCION -->
+
+        <div>
+            <label class="etiqueta">Descripcion:</label>
+          <input type="text" name="parrafo" class="campo-de-texto" class="parrafo" required >
+        </div>
+
+
+        <!-- NUMERO -->
+
+        <div>
+             <label class="etiqueta">Numero:</label>
+             <input type="text" name="number" class="campo-de-texto" class="number" required >
+        </div>
+
+
+        <!-- PRECIO -->
+
+        <div>
+            <label class="etiqueta">Precio:</label>
+            <input type="text" name="price" class="campo-de-texto" class="price" required>
+        </div>
+
+
+        <!-- IMAGEN -->
+
+        <div>
+            <label class="etiqueta">Imagen:</label>
+            <input type="file" name="image" class="campo-de-texto" class="image" id="image" required >
+        </div>
+
+        <button type="submit">Crear</button>
+
+        <ul id="errores" class="text-danger">
+        <% if(typeof(errors) != 'undefined'){%>
+             <% errors.forEach(error => { %>
+                <li><%= error.msg%></li>
+             <%});%>
+        <%}%>  
+       </ul>
+       
+
+      </form>
+    </main>
+
+  <footer>
+
+     <!-- atomización de la vista del footer -->
+
+    <%- include('../partials/footer.ejs') %> <!-- recibe la ruta del archivo a incluir -->
+    
+  </footer>
+
+  <script src="/js/create.js"> </script>
+</body>
+</html>
+        
+        

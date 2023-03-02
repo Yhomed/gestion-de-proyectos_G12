@@ -1,0 +1,111 @@
+<!-- DETALLE DEL PRODUCTO -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <%- include('../partials/head.ejs') %>
+
+    <link href="/css/productDetail.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+
+        <%- include('../partials/header.ejs') %>
+    
+    </header>
+
+
+<!-- MAIN -->
+
+    <main>
+
+        <h2>RUTA DE APRENDIZAJE</h2> <!-- RUTA -->
+
+            <h3 class = "h3-de-la-ruta">Gestión de Proyectos Ágiles y Prescripctivos, potencializada con Funciones Avanzadas de EXCEL</h3>
+                <p>Esta Ruta muestra los cursos asociados que te permitirán perfeccionarte en herramientas avanzadas para la gestión de proyectos ágiles</p>
+            
+            <section>
+
+                <div class = "contenedor-ruta-del-curso">
+
+                <article class = "ruta-del-curso">
+
+                    <img src="./img/Ruta.jpg" alt="" width="100%">
+                    <div class = "parrafo-de-la-ruta">
+                    <p>Podrás tomar cualquiera de los cursos de la ruta, o, si deseas sacar el mayor provecho, podrás tomarlos en orden. De esta manera, garantizarás una cobertura más amplia en los conocimientos de las herramientas claves para la gestión de proyectos ágiles.</p>
+                    </div>
+                </article>
+
+                </div>
+
+            <section class = "contenedor-cursos-de-la-ruta">
+
+                <article class = "cursos-de-la-ruta">
+                    <img src="/img/Slide03 (Large).PNG" alt="" width="100%"> <!-- IMAGEN CON LOS CURSOS QUE OFRECE EL SITIO -->
+                </article>
+
+            </section>
+
+            <section>
+
+                <!-- DESCRIPCIÓN DETALLADA DE LOS CURSOS -->
+
+                <h2>CURSOS DE LA RUTA</h2> <!-- CURSOS QUE OFRECE EL SITIO -->
+
+                <div class = cursos>
+
+                <article class = "curso">
+                    <div class="numero-y-titulo">
+                        <h3 class = "numero"><%= curso.number %></h3> <!-- curso0.html (/curso0) -->
+                        <!-- <a href="/curso0"> --><h3 class = "titulo"><%= curso.title %></h3><!-- </a> -->
+                    </div>
+                    <div class = "llevar-al-carrito"><a href="/productCar"><i class="fa-solid fa-cart-shopping carrito"></i></a></div>
+                    <div class = "descripcion">
+                        <p><%= curso.parrafo %></p> 
+                    </div>
+                </article>
+
+                
+            </div>
+            </section>
+
+            <div class = "botones-del-form">
+
+            <!-- REDIRIGUE A CONTACTO -->
+            <form action="/" method="POST">
+                <label for="Estoy interesado">
+                    <a href="/inscription"><input type="submit" value="Estoy interesado"></a>
+                </label>
+            </form>
+
+            <!-- REDIRIGUE A LLENAR FORMULARIO PARA CONOCIMIENTO DEL EXCEL -->
+
+            <!--
+            <form action="" method="POST">
+                <label for="Quiero saber si estos cursos son para mi">
+                    <input type="submit" value="Quiero saber si estos cursos son para mi">
+                </label>
+            </form>
+            -->
+
+            <!-- REDIRIGUE A LLENAR FORMULARIO PARA INSCRIBIRSE A LOS CURSOS (INSCRIPCION) -->
+            <form action="/Inscripcion" method="POST">
+                <label for="Inscripción">
+                    <a href="/inscription"><input type="submit" value="Inscripción"></a>
+                </label>
+            </form> 
+            
+            </div>
+    </main>
+    
+    <!-- /MAIN -->
+    
+    <footer>
+
+        <%- include('../partials/footer.ejs') %>
+    
+    </footer>
+</body>
+</html>

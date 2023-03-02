@@ -1,0 +1,89 @@
+<!-- EDITAR PRODUCTOS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <%- include('../partials/head.ejs') %>
+
+  <link href="/css/formularios.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <header>
+
+      <%- include('../partials/header.ejs') %>
+
+    </header>
+
+    <main>
+
+      <h2>Editar curso</h2>
+
+      <!-- FORMULARIO DEL EDIT -->
+
+      <form action="/products/<%= curso.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+
+
+
+      <!-- NOMBRE DEL CURSO -->
+
+      <div>
+          <label class="etiqueta">Nombre del curso:</label>
+          <input type="text" name="title" value="<%= curso.title %>" required class="campo-de-texto">
+      </div>
+
+
+
+      <!-- DESCRIPCION -->
+
+      <div>
+        <label class="etiqueta">Descripcion:</label>
+        <input type="text" name="parrafo" value="<%= curso.parrafo %>" required class="campo-de-texto">
+      </div>
+
+
+
+      <!-- PRECIO -->
+
+      <div>
+        <label class="etiqueta">Precio:</label>
+        <input type="text" name="price" value="<%= curso.price %> " required class="campo-de-texto">
+      </div>
+
+
+      <!-- IMAGEN -->  
+      <div>
+        <label class="etiqueta">Imagen:</label>
+        <input type="hidden"  name="oldImage"  value="<%= curso.image%> "class="campo-de-texto">
+        <input type="file" name="image">
+      </div>
+
+        <button type="submit">Editar</button>
+
+        <ul id="errores" class="text-danger">
+          <% if(typeof(errors) != 'undefined'){%>
+               <% errors.forEach(error => { %>
+                  <li><%= error.msg%></li>
+               <%});%>
+          <%}%>  
+         </ul>
+          
+      </form>
+      
+    </main>
+
+  <footer>
+
+    <%- include('../partials/footer.ejs') %>
+    
+  </footer>
+
+  <script src="/js/edit.js"> </script>
+</body>
+</html>
+        
+        

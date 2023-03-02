@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Herramientas para análisis de datos con EXCEL",
+    "parrafo": "Obtendrá los conocimientos básicos de las principales herramientas de análisis de datos, necesarios para continuar con la Ruta de Gestión de Proyectos potencializada con Herramientas Avanzadas de EXCEL",
+    "price": "30000",
+    "id": 1,
+    "number": "00",
+    "image": "curso1672804380245.png"
+  },
+  {
+    "title": "Herramientas avanzadas de EXCEL para la elaboración de cronogramas en Proyectos Ágiles y Prescriptivos",
+    "parrafo": "Aprenderás las herramientas que permitirán optimizar el cronograma de los proyectos para que tu equipo se convierta en uno de alto desempeño",
+    "price": "30000",
+    "id": 2,
+    "number": "01",
+    "image": "curso1672870800899.png"
+  },
+  {
+    "id": 3,
+    "title": "Elaboración y Gestión de presupuestos con Herramientas Avanzadas de EXCEL",
+    "parrafo": "Una estimación más precisa del presupuesto del proyecto te permitirá disminuir la desviación futura y asegurar el beneficio económico del proyecto y de tu compañía. Esto será posible gracias al uso de Power Query y Power Pivot de EXCEL",
+    "image": "default-image.png",
+    "price": "30000",
+    "number": "02"
+  },
+  {
+    "id": 4,
+    "title": "Herramientas para la Priorización y Clasificación de Alternativas y Proyectos",
+    "parrafo": "Los líderes y equipos de los proyectos están limitados por las restricciones del proyecto y es necesario realizar un uso racional de los recursos. Esto será posible gracias a las técnicas de clasificación, priorización y análisis desarrolladas con la ayuda de EXCEL",
+    "image": "default-image.png",
+    "price": "30000",
+    "number": "03"
+  },
+  {
+    "id": 5,
+    "title": "Elaboración de Tableros de Seguimiento 'Dashboards' y Control del Proyecto con POWER BI",
+    "parrafo": "Los dashboards y tableros de control te permitirán visualizar los indicadores claves que están conectados con el mapa estratégico del proyecto y tomar decisiones acertadas a tiempo para ordenar y controlar la gestión del proyecto",
+    "image": "default-image.png",
+    "price": "30000",
+    "number": "04"
+  }
+]

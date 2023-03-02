@@ -1,0 +1,75 @@
+<!-- ELIMINAR PRODUCTOS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <%- include('../partials/head.ejs') %>
+  <link href="/css/formularios.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <header>
+
+      <%- include('../partials/header.ejs') %>
+
+    </header>
+
+    <main>
+
+      <h2>Borrar curso</h2>
+
+      <!-- FORMULARIO DEL DELETE -->
+
+      <form action="/products/<%= curso.id %>?_method=DELETE" method="POST">
+ 
+
+        <!-- NOMBRE DEL CURSO -->
+
+        <div>
+            <label class="etiqueta"></label>>Nombre del curso:</label>
+            <input type="text" name="title" value="<%= curso.title %>" class="campo-de-texto">
+       </div>
+
+
+        <!-- DESCRIPCION -->
+
+      <div>
+          <label class="etiqueta"></label>>Descripcion:</label>
+          <input type="text" name="parrafo" value="<%= curso.parrafo %>" class="campo-de-texto">
+      </div>  
+
+
+        <!-- PRECIO -->
+
+      <div>
+          <label class="etiqueta"></label>>Precio:</label>
+          <input type="text" name="price" value="<%= curso.price %>" class="campo-de-texto">
+      </div>
+
+
+        <!-- IMAGEN -->
+
+       <div>
+            <label class="etiqueta"></label>>Imagen:</label>
+            <input type="file" name="image" class="campo-de-texto">
+        </div>
+
+        <button type="submit">Borrar</button>
+          
+      </form>
+
+
+      
+    </main>
+
+  <footer>
+
+    <%- include('../partials/footer.ejs') %>
+    
+  </footer>
+</body>
+</html>-->

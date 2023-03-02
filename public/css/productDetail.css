@@ -1,0 +1,300 @@
+/*  DETALLE DEL PRODUCTO */
+
+* {
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo {
+    margin-left: 15px;
+    margin-top: 5px;
+    /* width: 850px; */
+}
+
+.flex-centrado-rutas {
+    display: none;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    /* margin: 80px;
+    margin-top: -30px;
+    margin-bottom: 30px; */
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-size: 1rem;
+}
+
+ul li {
+    max-width: max-content;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    flex-wrap: nowrap;
+}
+
+ul li i {
+    margin: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+article {
+    justify-content: center;
+}
+
+section {
+    justify-content: center;
+}
+
+article div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.numero {
+    padding: 20px;
+    font-size: 50px;
+}
+
+.titulo {
+    font-size: 30px;
+    align-self: center;
+
+}
+
+.numero, .titulo, h2 {
+    color: #193669;
+}
+
+.botones-del-form {
+    display: flex;
+    justify-content: space-around;
+}
+
+input {
+    color: white;
+    background-color: #193669;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin: 20px;
+}
+
+.descripcion, article p, .parrafo-de-la-ruta {
+    padding: 1px;
+    display: block;
+    flex-wrap: wrap;
+    font-size: 22px;
+}
+
+.numero-y-titulo {
+    display: flex;
+}
+
+.llevar-al-carrito {
+    display: block;
+    text-align: center;
+}
+
+.curso {
+    border-bottom: 1px solid #2E5EAF;
+    display:block;
+    margin: 50px;
+}
+
+.cursos {
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cursos-de-la-ruta {
+    display: block;
+    padding: 10px;
+    width: 90vw;
+    justify-content: center;
+}
+
+.contenedor-ruta-del-curso {
+    flex-direction: column;
+    align-items: center;
+}
+
+.ruta-del-curso {
+    display: block;
+    padding: 10px;
+    width: 90vw;
+    justify-content: center;
+}
+
+
+h2, h3, main p {
+    text-align: center;
+    
+}
+
+h2 {
+    font-size: 2em;
+}
+
+
+/* armado de transición para los botones */
+
+input:hover {
+    background-color: #b458c7;
+}
+
+input {
+    transition: background-color 450ms;
+}
+
+/**/
+
+.titulo:hover {
+    color: #1b131d;
+}
+
+.titulo {
+    transition: color 450ms;
+}
+
+/*
+
+h2 {
+    text-align: center;
+    margin: 20px;
+    margin-top: 10vw;
+}
+
+.tres-alumnos {
+    display: flex;
+    justify-content: space-around;
+    padding: 3vw;
+    position: relative;
+}
+*/
+
+/*
+
+@keyframes alternando-color {
+    0% {
+        color:#193669;
+        font-size: 20px;
+    }
+    100% {
+        color:#2E5EAF;
+        font-size: 40px;
+    }
+}
+
+.llevar-al-carrito {
+    animation-name: alternando-color;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+*/
+
+.frase-alumno {
+    /* height: 40vw; */
+    margin: 10px;
+    width: 25vw;
+    padding: 3vw;
+    position: relative;
+}
+
+.alumnos {
+    display: flex;
+    flex-direction: row;
+}
+
+.carrito {
+    font-size: 30px;
+    border: 1px solid #193669;
+    border-style: inset;
+    border-radius: 50%;
+    padding: 9px;
+    box-shadow: 2px 2px 2px 1px #191919;
+}
+
+.encabezado {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-menu-item {
+    padding: 0.5em;
+    align-items: center;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-menu-link {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*.burger-menu {  
+    font-size: 16;
+    color: white;
+    background-color: #1259c3;
+    border-radius: 3px;
+    padding: 9px;
+}*/
+
+@media(min-width: 415px) { 
+
+    .descripcion {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .flex-centrado-rutas {
+        display: none;
+    }
+
+    .burger-menu{
+        display: block;
+        align-items: center;
+    }
+
+    .contenedor-ruta-del-curso {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (min-width: 769px){
+
+    .burger-menu {
+        display: none;
+        position: sticky;
+    }
+
+    .navegacion {
+        font-size: 15px;
+    }
+
+    .flex-centrado-rutas {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header-nav {
+        display: flex;
+    }
+}

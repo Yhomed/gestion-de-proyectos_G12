@@ -1,0 +1,75 @@
+<!-- FORMULARIO DE CONTACTO -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <%- include('../partials/head.ejs') %>
+    <link href="/css/formularios.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <header>
+
+        <%- include('../partials/header.ejs') %>
+
+    </header>
+
+
+
+    <main>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <form action="/register" method="POST">
+            <!-- <form action="/" method="GET"> -->
+
+            <h2>Hablemos</h2>
+
+            <!-- NOMBRE -->
+            <div>
+                <label for="nombre" class="etiqueta">Nombre: </label>
+                <input type = "text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required class="campo-de-texto">
+                <span class="feedback"></span> <!-- para alertar errores -->
+            </div>
+
+            <!-- EMAIL -->
+            <div>
+                <label for="email" class="etiqueta">Email: </label>
+                <input type = "email" name="email" id="email" placeholder="usuario@abc.com" required class="campo-de-texto">
+                <span class="feedback"></span> <!-- para alertar errores -->
+            </div>
+
+            <!-- ASUNTO -->
+            <div>
+                <label for="asunto" class="etiqueta">Asunto: </label>
+                <input type = "text" name="asunto" id="asunto" placeholder="Escribe el asunto" required class="campo-de-texto">
+                <span class="feedback"></span> <!-- para alertar errores -->
+            </div>
+
+            <!-- MENSAJE -->
+            <div>
+                <label for="mensaje" class="etiqueta">Asunto: </label>
+                <textarea name="mensaje" id="mensaje" placeholder="Escribe aquí tu mensaje" required class="campo-de-texto"></textarea>
+                <span class="feedback"></span> <!-- para alertar errores -->
+            </div>
+
+            <!-- BOTON BORRAR -->
+            <button type="reset">Borrar</button>
+
+            <!-- BOTON ENVIAR -->
+            <button type="submit">Enviar</button>
+        
+        </form>
+
+    </main>
+
+    <footer>
+
+        <%- include('../partials/footer.ejs') %>
+  
+    </footer>
+</body>
+</html>
+
