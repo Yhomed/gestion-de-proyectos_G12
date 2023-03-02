@@ -40,18 +40,17 @@
       </div>
 
 
-
-        <div>
-        <label class="etiqueta">Imagen:</label>
-        <input type="hidden"  name="oldImage"  value="<%= curso.image%> "class="campo-de-texto">
-        <input type="file" name="image">
+      <div>
+        <label class="etiqueta">Precio:</label>
+        <input type="text" name="price" value="<%= curso.price %> " required class="campo-de-texto">
       </div>
 
 
 
       <div>
-        <label class="etiqueta">Precio:</label>
-        <input type="text" name="price" value="<%= curso.price %> " required class="campo-de-texto">
+        <label class="etiqueta">Imagen:</label>
+        <input type="hidden"  name="oldImage"  value="<%= curso.image%> "class="campo-de-texto">
+        <input type="file" name="image">
       </div>
 
         <button type="submit">Editar</button>
