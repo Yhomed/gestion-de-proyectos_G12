@@ -115,7 +115,4 @@ router.delete('/:id', productosController.deleteProduct); //listo
 router.get('/:id/delete', productosController.deleteProducts); //listo
 
 
-
-
-
 module.exports = router;
