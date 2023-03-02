@@ -25,7 +25,7 @@ function userLoggedMiddleware(req, res, next) {
     }*/
     
     // Preguntar si el usuario está logueado. Si está, se le permite continuar. Si no, se lo manda al login.
-    if (!req.session.userLogged) {
+    if (!(req.session.userLogged)) {
         return res.redirect('/user/login');
     }
     else {

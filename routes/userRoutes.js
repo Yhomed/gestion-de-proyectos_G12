@@ -35,23 +35,24 @@ const storage = multer.diskStorage({
 
 const userController = require('../controllers/userController');
 
+const userIsLogged = require('../middlewares/userIsLogged');
+
 // 11 RUTAS
 
-router.get('/', userController.list); // listado
+router.get('/', userIsLogged, userController.list); // listado
 
 router.get('/list',userController.list); // json api 
 router.get('/:id/show',userController.list); // json api 
 
+router.get('/detail/:id', userIsLogged, userController.detail); //detalle
 
-router.get('/detail/:id', userController.detail); //detalle
+router.get('/register', userIsLogged, userController.register); // Registro
 
-router.get('/register', userController.register); // Registro
-
-router.get('/login', userController.login); // Login
+router.get('/login',userIsLogged, userController.login); // Login
 
 router.post('/logout',  userController.logOut) // Accion Logout
 
-router.get('/inscripcion', userController.inscripcion); // Inscripción
+router.get('/inscripcion', userIsLogged, userController.inscripcion); // Inscripción
 
 Usuario.findAll()
     .then((users) => {
