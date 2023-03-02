@@ -96,6 +96,16 @@ const userController = {
             } else {
             //Guarda en session 
             req.session.usuario = usuarioLogueado[0];
+            req.session.isLogged = true;
+            //Guarda la propiedad isAdmin del usuario
+            req.session.isAdmin = db.Usuario.findOne( {
+                attributes: [
+                    'is_admin'
+                ],
+                where: {
+                    email: req.body.email
+                }
+            })
             }
             //Verifica si el usuario le dio click en el check box para recordar al usuario 
             if(req.body.recordarme){
@@ -105,6 +115,12 @@ const userController = {
 
         })
     
+    },
+
+    logOut: (req, res) => {
+        res.clearCookie('Email del usuario');
+        req.session.destroy();
+        return res.redirect('/');
     },
 
     profile: (req, res) => {

@@ -49,6 +49,8 @@ router.get('/register', userController.register); // Registro
 
 router.get('/login', userController.login); // Login
 
+router.post('/logout',  userController.logOut) // Accion Logout
+
 router.get('/inscripcion', userController.inscripcion); // Inscripción
 
 Usuario.findAll()

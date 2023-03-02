@@ -14,6 +14,10 @@ const {
   body
 } = require('express-validator');
 
+const userAdminMiddleware = require('../middlewares/userAdmin');
+//const userisLoggedMiddleware = require('../middlewares/userIsLogged');
+const userLoggedMiddleware = require('../middlewares/userLogged');
+
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
       cb(null, './public/img/courses')
@@ -75,7 +79,7 @@ router.post('/', uploadFile.single("image"),[
     ], productosController.createNewProduct);
 
 //ruta 5 para el formulario del edit
-router.get('/:id/edit', productosController.editProducts); //listo
+router.get('/:id/edit', userAdminMiddleware, productosController.editProducts); //listo
 
 //ruta 6 para la acción de edición (PUT) --> modificación
 router.put('/:id', uploadFile.single('image'), [
