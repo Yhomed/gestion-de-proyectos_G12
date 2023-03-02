@@ -217,6 +217,8 @@ const userController = {
             res.render('./users/delete.ejs',{usuario});
         })
     },
+
+    
 /*
     // json
     list: (req, res) => {
