@@ -36,6 +36,7 @@ const storage = multer.diskStorage({
 const userController = require('../controllers/userController');
 
 const userIsLogged = require('../middlewares/userIsLogged');
+const userAdmin = require('../middlewares/userAdmin');
 
 // 11 RUTAS
 
@@ -46,11 +47,11 @@ router.get('/:id/show',userController.list); // json api
 
 router.get('/detail/:id', userIsLogged, userController.detail); //detalle
 
-router.get('/register', userIsLogged, userController.register); // Registro
+router.get('/register', userController.register); // Registro
 
-router.get('/login',userIsLogged, userController.login); // Login
+router.get('/login', userController.login); // Login
 
-router.post('/logout',  userController.logOut) // Accion Logout
+router.post('/logout',  userIsLogged, userController.logOut) // Accion Logout
 
 router.get('/inscripcion', userIsLogged, userController.inscripcion); // Inscripción
 
@@ -112,12 +113,12 @@ router.post('/profile',[
 
 router.get('/profile/:id', userController.profile) //vista del perfil de usuario
 
-router.get('/:id/edit', userController.editUsers); //editUsers (form)
+router.get('/:id/edit', userIsLogged, userAdmin, userController.editUsers); //editUsers (form)
 
 router.put('/:id', uploadFile.single('image'), userController.editUser); //editUser
 
 router.delete('/:id', userController.deleteUser); //deleteUser
 
-router.get('/:id/delete', userController.deleteUsers); //deleteUsers (form)
+router.get('/:id/delete', userIsLogged, userAdmin, userController.deleteUsers); //deleteUsers (form)
 
 module.exports= router;

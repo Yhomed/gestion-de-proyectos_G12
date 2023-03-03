@@ -98,23 +98,6 @@ const userController = {
             req.session.usuario = usuarioLogueado[0];
             req.session.isLogged = true;
             req.session.isAdmin = usuarioLogueado[0].is_admin;
-            //Guarda la propiedad isAdmin del usuario
-            /*
-            db.Usuario.findOne( {
-                attributes: [
-                    'is_admin'
-                ],
-                where: {
-                    email: req.body.email
-                }
-            }).then(user => {
-                req.session.isAdmin = user.is_admin.dataValues;
-            })
-            .catch(error => res.send(error))*/
-            console.log("user is logged: "); //true
-            console.log(req.session.isLogged); 
-            console.log("user is admin: "); //false
-            console.log(req.session.isAdmin);
             }
             //Verifica si el usuario le dio click en el check box para recordar al usuario 
             if(req.body.recordarme){

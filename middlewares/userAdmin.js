@@ -9,8 +9,10 @@ function userAdminMiddleware(req, res, next){
             console.log('Es administrador');
             next();
             return;
+        } else {
+            console.log('Faltan privilegios');
         }
-    }
+    } 
 
     //Si no está logueado y es admin
     return res.redirect('/');

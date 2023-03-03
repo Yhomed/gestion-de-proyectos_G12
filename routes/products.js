@@ -14,9 +14,8 @@ const {
   body
 } = require('express-validator');
 
-const userAdminMiddleware = require('../middlewares/userAdmin');
-//const userisLoggedMiddleware = require('../middlewares/userIsLogged');
-const userLoggedMiddleware = require('../middlewares/userLogged');
+const userAdmin = require('../middlewares/userAdmin');
+const userIsLogged = require('../middlewares/userIsLogged');
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -41,10 +40,10 @@ const storage = multer.diskStorage({
 router.get('/', productosController.productList); //listo
 
 //ruta 2 para el formulario del create
-router.get('/create', productosController.createProducts);//listo
+router.get('/create', userIsLogged, userAdmin, productosController.createProducts);//listo
 
 //ruta 3 para el detalle de un producto particular
-router.get('/:id',productosController.productDetail); //listo
+router.get('/:id', productosController.productDetail); //listo
 
 //ruta 4 para la acción de creación (POST) --> alta  
 router.post('/', uploadFile.single("image"),[
@@ -79,7 +78,7 @@ router.post('/', uploadFile.single("image"),[
     ], productosController.createNewProduct);
 
 //ruta 5 para el formulario del edit
-router.get('/:id/edit', userAdminMiddleware, productosController.editProducts); //listo
+router.get('/:id/edit', userIsLogged, userAdmin, productosController.editProducts); //listo
 
 //ruta 6 para la acción de edición (PUT) --> modificación
 router.put('/:id', uploadFile.single('image'), [
@@ -116,7 +115,7 @@ router.put('/:id', uploadFile.single('image'), [
 router.delete('/:id', productosController.deleteProduct); //listo
 
 //ruta 8 para el formulario del delete
-router.get('/:id/delete', productosController.deleteProducts); //listo
+router.get('/:id/delete', userIsLogged, userAdmin, productosController.deleteProducts); //listo
 
 
 module.exports = router;
