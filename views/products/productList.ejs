@@ -34,7 +34,7 @@
                     <h3 class = "numero"><%= products[i].number %></h3> 
                     <h3 class = "titulo"><%= products[i].title %></h3>
                 </div>
-                <div class = "llevar-al-carrito"><a href="/productCar"><i class="fa-solid fa-cart-shopping carrito"></i></a></div>
+                <div class = "llevar-al-carrito"><a href="/products/<%= products[i].id %>/edit"><i class="fa-solid fa-cart-shopping carrito"></i></a></div>
                 <div class = "descripcion">
                     <p><%= products[i].parrafo %></p> 
                 </div>

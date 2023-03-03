@@ -95,6 +95,11 @@ ul li {
     text-decoration: none;
 }
 
+.fa-solid fa-user {
+    font-weight: normal;
+    background-color: red;
+}
+
 .header-menu--show {
     transform: translateY(0);
 }

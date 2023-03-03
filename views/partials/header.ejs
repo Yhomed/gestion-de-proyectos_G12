@@ -5,43 +5,31 @@
     <a href='/'><img src="/img/22-06-30 Logo No PMI.png" alt="logo" width="100%" class="logo"></a>
     
 
-<nav class="header-nav">
-    <ul id="header-menu " class="flex-centrado-rutas">
-        <!-- si el usuario esta logueado y es administrador -->
-        <% if(locals.userLogged && locals.isAdmin) { %>
+    <nav class="header-nav">
+        <ul id="header-menu " class="flex-centrado-rutas">
+     
             <li class="header-menu-item"><a href="/products/" class="header-menu-link"><i class="fa-solid fa-route"></i> Ruta y Cursos</a></li>
-            <li class="header-menu-item"><a href="/sobreMi" class="header-menu-link"><i class="fa-solid fa-book"></i> Sobre Mi</a></li>
-            <li class="header-menu-item"><a href="/contacto" class="header-menu-link"><i class="fa-solid fa-phone-volume"></i> Contacto </a></li>
-            <li class="header-menu-item"><a href="/inscripcion" class="header-menu-link"><i class="fa-solid fa-pencil"></i> inscripción</a></li>
-            <li class="header-menu-item"><a href="/productCar" class="header-menu-link"><i class="fa-solid fa-basket-shopping"></i> Mis Compras</a></li>
-            <li class="header-menu-item"><a href="/productCar" class="header-menu-link"><i class="fa-solid fa-basket-shopping"></i> Administrador: <%= locals.username %></a></li>
-            <li>
-                <form action="/user/logout" method="POST">
-                    <button class="header-menu-item" type="submit">Cerrar Sesión</button>
-                </form>
-            </li>
-
-            <!-- si el usuario esta logueado y no es administrador -->
-        <% } else if(locals.userLogged && !(locals.isAdmin)){ %>
-            <li class="header-menu-item"><a href="/products/" class="header-menu-link"><i class="fa-solid fa-route"></i> Ruta y Cursos</a></li>
-            <li class="header-menu-item"><a href="/sobreMi" class="header-menu-link"><i class="fa-solid fa-book"></i> Sobre Mi</a></li>
-            <li class="header-menu-item"><a href="/contacto" class="header-menu-link"><i class="fa-solid fa-phone-volume"></i> Contacto </a></li>
-            <li class="header-menu-item"><a href="/inscripcion" class="header-menu-link"><i class="fa-solid fa-pencil"></i> inscripción</a></li>
-            <li class="header-menu-item"><a href="/productCar" class="header-menu-link"><i class="fa-solid fa-basket-shopping"></i> Mis Compras</a></li>
-            <li class="header-menu-item"><a href="/productCar" class="header-menu-link"><i class="fa-solid fa-basket-shopping"></i> Usuario: <%= locals.username %></a></li>
-            <li>
-                <form action="/user/logout" method="POST">
-                    <button class="header-menu-item" type="submit">Cerrar Sesión</button>
-                </form>
-            </li>
-        <!-- si el usuario no esta logueado -->
-        <% } else { %>
-            <li class="header-menu-item"><a href="/contacto" class="header-menu-link"><i class="fa-solid fa-phone-volume"></i> Contacto </a></li>
-            <li class="header-menu-item"><a href="/user/register" class="header-menu-link"><i class="fa-solid fa-user"></i> Crea Tu Cuenta</a></li>
-            <li class="header-menu-item"><a href="/user/login" class="header-menu-link"><i class="fa-solid fa-arrow-right-to-bracket"></i> Ingresa</a></li>
-        <% } %> 
-    </ul>
-</nav>
+     
+            <!-- si el usuario esta logueado y es administrador -->
+            <% if(locals.userLogged && locals.isAdmin) { %>
+                <li class="header-menu-item"><a href="/inscripcion" class="header-menu-link"><i class="fa-solid fa-pencil"></i> inscripción</a></li>
+                <li class="header-menu-item"><a href="/productCar" class="header-menu-link"><i class="fa-solid fa-basket-shopping"></i> Mis Compras</a></li>
+                <li class="header-menu-item"><i class="fa-solid fa-user">Administrador: <%= locals.username %></i></li>
+                <li><form action="/user/logout" method="POST"><button class="header-menu-item" type="submit">Cerrar Sesión</button></form></li>
+     
+                <!-- si el usuario esta logueado y no es administrador -->
+            <% } else if(locals.userLogged && !(locals.isAdmin)){ %>
+                <li class="header-menu-item"><a href="/inscripcion" class="header-menu-link"><i class="fa-solid fa-pencil"></i> inscripción</a></li>
+                <li class="header-menu-item"><a href="/productCar" class="header-menu-link"><i class="fa-solid fa-basket-shopping"></i> Mis Compras</a></li>
+                <li class="header-menu-item"><a href="/inscripcion" class="header-menu-link"><i class="fa-solid fa-user"> Administrador: <%= locals.username %></i></a></li>
+                <li><form action="/user/logout" method="POST"><button class="header-menu-item" type="submit">Cerrar Sesión</button></form></li>
+            <!-- si el usuario no esta logueado -->
+            <% } else { %>
+                <li class="header-menu-item"><a href="/user/register" class="header-menu-link"><i class="fa-solid fa-user"></i> Crea Tu Cuenta</a></li>
+                <li class="header-menu-item"><a href="/user/login" class="header-menu-link"><i class="fa-solid fa-arrow-right-to-bracket"></i> Ingresa</a></li>
+            <% } %> 
+        </ul>
+    </nav>
 </div>
 
 <div id="toggle-menu" class="toggle-menu">    
