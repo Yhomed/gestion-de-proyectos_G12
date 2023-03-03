@@ -26,10 +26,10 @@ values
         30000,5,"default-image.png"
     );
 
-insert into usuarios(id, name, surname, email, password,image)
+insert into usuarios(id, name, surname, email, password,image, is_admin)
 values
     (
-        1,"Fernando","Sanchez","alala@gmail","$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS","user1674353485630.jpg"
+        1,"Fernando","Sanchez","alala@gmail","$2a$10$1igH.lNTDpK7CYYKFTX8MeUAtfIePCoO.XsiTbjmY0tJXRrDJyZzS","user1674353485630.jpg",0
     ),
       
    
