@@ -37,24 +37,25 @@ const userController = require('../controllers/userController');
 
 const userIsLogged = require('../middlewares/userIsLogged');
 const userAdmin = require('../middlewares/userAdmin');
+const menucheck = require('../middlewares/menucheck');
 
 // 11 RUTAS
 
-router.get('/', userIsLogged, userController.list); // listado
+router.get('/', menucheck,userIsLogged, userController.list); // listado
 /*
 router.get('/list',userController.list); // json api 
 router.get('/:id/show',userController.list); // json api 
 */
 
-router.get('/detail/:id', userIsLogged, userController.detail); //detalle
+router.get('/detail/:id', menucheck, userIsLogged, userController.detail); //detalle
 
-router.get('/register', userController.register); // Registro
+router.get('/register', menucheck, userController.register); // Registro
 
-router.get('/login', userController.login); // Login
+router.get('/login', menucheck,userController.login); // Login
 
-router.post('/logout',  userIsLogged, userController.logOut) // Accion Logout
+router.post('/logout', menucheck, userIsLogged, userController.logOut) // Accion Logout
 
-router.get('/inscripcion', userIsLogged, userController.inscripcion); // Inscripción
+router.get('/inscripcion', menucheck, userIsLogged, userController.inscripcion); // Inscripción
 
 Usuario.findAll()
     .then((users) => {
@@ -112,14 +113,14 @@ router.post('/profile',[
   check('password').isLength({ min: 8 }).withMessage('La contraseña debe tener al menos 8 caracteres'),
 ] ,userController.loginProcess); //loginProcess
 
-router.get('/profile/:id', userController.profile) //vista del perfil de usuario
+router.get('/profile/:id', menucheck, userController.profile) //vista del perfil de usuario
 
-router.get('/:id/edit', userIsLogged, userAdmin, userController.editUsers); //editUsers (form)
+router.get('/:id/edit', menucheck, userIsLogged, userAdmin, userController.editUsers); //editUsers (form)
 
 router.put('/:id', uploadFile.single('image'), userController.editUser); //editUser
 
 router.delete('/:id', userController.deleteUser); //deleteUser
 
-router.get('/:id/delete', userIsLogged, userAdmin, userController.deleteUsers); //deleteUsers (form)
+router.get('/:id/delete', menucheck, userIsLogged, userAdmin, userController.deleteUsers); //deleteUsers (form)
 
 module.exports= router;
