@@ -41,9 +41,10 @@ const userAdmin = require('../middlewares/userAdmin');
 // 11 RUTAS
 
 router.get('/', userIsLogged, userController.list); // listado
-
+/*
 router.get('/list',userController.list); // json api 
 router.get('/:id/show',userController.list); // json api 
+*/
 
 router.get('/detail/:id', userIsLogged, userController.detail); //detalle
 

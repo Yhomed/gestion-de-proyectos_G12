@@ -40,7 +40,7 @@ const storage = multer.diskStorage({
 router.get('/', productosController.productList); //listo
 
 //ruta 2 para el formulario del create
-router.get('/create', userIsLogged, userAdmin, productosController.createProducts);//listo
+router.get('/create', userAdmin, productosController.createProducts);//listo
 
 //ruta 3 para el detalle de un producto particular
 router.get('/:id', productosController.productDetail); //listo
