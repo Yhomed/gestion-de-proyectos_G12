@@ -5,7 +5,7 @@ function userIsLoggedMiddleware(req, res, next) {
         //console.log('Esta logueado')
         res.locals.userLogged = req.session.isLogged;
         res.locals.isAdmin = req.session.isAdmin;
-        res.locals.username = req.session.usuario.name;
+        res.locals.username = req.session.username;
         /*console.log("User logged: "+res.locals.userLogged);
         console.log("User admin: "+res.locals.isAdmin);*/
     } else {

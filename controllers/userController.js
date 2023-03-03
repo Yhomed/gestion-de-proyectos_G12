@@ -70,18 +70,18 @@ const userController = {
     },
         
     //PROCESO DE LOGIN (POST)
-    loginProcess: (req, res) => {
-        
+    loginProcess: async function (req, res) {
+
         const resultValidation = validationResult(req);
         
         if(resultValidation.errors.length > 0){
-            return res.render('login', {
+            return res.render('/views/users/login', {
                 errors: resultValidation.mapped(),
                 oldData: req.body,
             })
         }
 
-        let userToLogin = Usuario.findOne({
+        let userToLogin = db.Usuario.findOne({
             where: {
                 email: req.body.email,
             }
@@ -89,25 +89,36 @@ const userController = {
 
         .then((user) => {
             if(user){
-                let isOkThePassword = bcryptjs.compareSync(
+                let isOkThePassword = bcrypt.compareSync(
                     req.body.password,
                     user.password
                 )
             
                 if(isOkThePassword){
-                    req.session.userLogged = user;
-
+                    
+                    /*
                     if(req.body.recordarme){
                         res.cookies('userEmail', req.body.email, {
                         maxAge: 1000 * 60 * 60,
                     })}
-                return res.redirect('/user/profile')
+                    */
+                    req.session.userLogged = user;
+                    req.session.isLogged = isOkThePassword
+                    req.session.isAdmin = user.is_admin
+                    req.session.username = user.name
+
+                    return res.redirect('/')
+                }else{
+                    return res.render(path.resolve(__dirname, '../views/users/login'),{
+                        errors: [{ msg: "Credenciales invalidas" }] 
+                    });
                 }
             }
         })
         .catch((error)=>{
             console.log(error);
         })
+
     },
 
     logOut: (req, res) => {
@@ -132,20 +143,6 @@ const userController = {
     
     //EDIT FORM
     editUsers: (req, res) => {
-
-        /*
-        let users = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
-        let user = users.filter(p => p.id==req.params.id)
-        res.render('./users/edit.ejs', 
-        {
-            id: user[0].id,
-            nombre: user[0].nombre,
-            apellido: user[0].apellido,
-            email: user[0].email,
-            password: user[0].password,
-            image: user[0].image,
-        })
-        */
 
         db.Usuario.findByPk(req.params.id)
         .then(function(usuario){
@@ -245,9 +242,6 @@ const userController = {
    })
    .catch(err => { console.log('Errores al buscar el usuario: ' + err)}) 
 },
-
-
-
 show: (req, res) => {
     db.Usuario.findByPk(req. params.id)
   
@@ -265,6 +259,3 @@ show: (req, res) => {
 
 
 module.exports = userController;
-
-
-
