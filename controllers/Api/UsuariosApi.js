@@ -6,7 +6,7 @@ const Op = db.Sequelize.Op;
 const usuariosAPIController = {
 
     list: (req, res) => {
-        db.User.findAll(
+        db.Usuario.findAll(
             {
                 // include: [{ association: 'roles' }],
                 where:{
@@ -24,7 +24,7 @@ const usuariosAPIController = {
     },
 
     show: (req, res) => {
-        db.User.findByPk(req.params.id)
+        db.Usuario.findByPk(req.params.id)
         .then(user => {
             return res.status(200).json({
                 data: user,

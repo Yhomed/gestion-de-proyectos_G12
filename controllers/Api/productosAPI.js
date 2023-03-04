@@ -6,7 +6,7 @@ const Op = db.Sequelize.Op;
 const productosAPIController = {
 
     list: (req, res) => {
-        db.Product.findAll(
+        db.Curso.findAll(
             {
                 // include: [{ association: 'roles' }],
                 where:{
@@ -24,7 +24,7 @@ const productosAPIController = {
     },
 
     show: (req, res) => {
-        db.Product.findByPk(req.params.id)
+        db.Curso.findByPk(req.params.id)
         .then(product => {
             return res.status(200).json({
                 data: product,
