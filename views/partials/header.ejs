@@ -16,14 +16,20 @@
                 <li class="header-menu-item"><a href="/productCar" class="header-menu-link"><i class="fa-solid fa-basket-shopping"></i> Mis Compras</a></li>
                 <li class="header-menu-item"><a href="/user/" class="header-menu-link"><i class="fa-solid fa-basket-shopping"></i> Listado usuarios</a></li>
                 <li class="header-menu-item"><i class="fa-solid fa-user">Administrador: <%= locals.username %></i></li>
-                <li><form action="/user/logout" method="POST"><button class="header-menu-item" type="submit">Cerrar Sesión</button></form></li>
+                <li class="header-menu-item">
+                    <form action="/user/logout" method="POST">
+                        <button type="submit"><p class="cerrar-sesion">Cerrar Sesión</p></button>
+                </li>
      
                 <!-- si el usuario esta logueado y no es administrador -->
             <% } else if(locals.userLogged && !(locals.isAdmin)){ %>
                 <li class="header-menu-item"><a href="/inscripcion" class="header-menu-link"><i class="fa-solid fa-pencil"></i> inscripción</a></li>
                 <li class="header-menu-item"><a href="/productCar" class="header-menu-link"><i class="fa-solid fa-basket-shopping"></i> Mis Compras</a></li>
                 <li class="header-menu-item"><a href="/inscripcion" class="header-menu-link"><i class="fa-solid fa-user"> Usuario: <%= locals.username %></i></a></li>
-                <li><form action="/user/logout" method="POST"><button class="header-menu-item" type="submit">Cerrar Sesión</button></form></li>
+                <li class="header-menu-item">
+                    <form action="/user/logout" method="POST">
+                        <button type="submit"><p class="cerrar-sesion">Cerrar Sesión</p></button>
+                </li>
             <!-- si el usuario no esta logueado -->
             <% } else { %>
                 <li class="header-menu-item"><a href="/user/register" class="header-menu-link"><i class="fa-solid fa-user"></i> Crea Tu Cuenta</a></li>

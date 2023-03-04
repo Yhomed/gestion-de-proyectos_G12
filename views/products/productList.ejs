@@ -8,6 +8,7 @@
 
     
     <link href="/css/productDetail.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
 
 </head>
 
@@ -43,14 +44,6 @@
                     <h3 class = "titulo"><%= products[i].title %></h3>
                 </div>
 
-                <% if(locals.userLogged && locals.isAdmin) { %>
-                <div class = "llevar-al-carrito"><a href="/products/<%= products[i].id %>/edit">
-                    
-                    <div = class="edit"><i class="fa-solid fa-user-pen"></i>Editar</div>
-                    
-                </a></div>
-                <% } %>
-                
                 <div class = "descripcion">
                     <p><%= products[i].parrafo %></p> 
                 </div>
@@ -61,13 +54,21 @@
                     <img src="/img/courses/<%= products[i].image %>" alt="cursos-img" width="50%">
                 </div>
 
+                <% if(locals.userLogged && locals.isAdmin) { %>
+                <div class = "llevar-al-carrito"><a href="/products/<%= products[i].id %>/edit">
+                    
+                    <div class="edit"><p class="descuentos">Editar</p></div>
+                    
+                </a></div>
+                <% } %>
+
                 <div class = "llevar-al-carrito"><a href="/products/<%= products[i].id %>">                   
-                    <div = class="edit"><i></i>Detalle de Curso</div>  
+                    <div class="edit"><p class="descuentos">Detalle de Curso</p></div>  
                 </a></div>
                 
                 <% if(locals.userLogged && locals.isAdmin) { %>
                     <div class = "llevar-al-carrito"><a href="/products/<%= products[i].id %>/delete">      
-                        <div = class="edit"><i></i>¡Borrar Curso!</div>     
+                        <div class="edit"><p class="descuentos">Borrar Curso</p></div>     
                     </a></div>
                 <% } %>
 

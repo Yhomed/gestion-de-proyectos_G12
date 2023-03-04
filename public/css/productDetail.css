@@ -258,6 +258,18 @@ h2 {
     padding: 9px;
 }*/
 
+.detalle-del-curso {
+    color: rgb(19, 7, 3);
+    background-color:#116606;
+    border-radius: 3px;
+    padding: 9px;
+}
+
+.detalle-del-curso:hover {
+    transition: background-color 450ms;
+}
+
+
 @media(min-width: 415px) { 
 
     .descripcion {

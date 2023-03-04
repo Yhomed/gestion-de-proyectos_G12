@@ -85,6 +85,10 @@ ul li {
 
 }
 
+.cerrar-sesion:hover {
+    background-color: #b458c7;
+}
+
 .header-menu-item {
     margin-top: 10px;
 
@@ -95,13 +99,21 @@ ul li {
     text-decoration: none;
 }
 
-.fa-solid fa-user {
+.header-menu-item .fa-user {
     font-weight: normal;
-    background-color: red;
+}
+
+.cerrar-sesion {
+    color: white;
+    background-color:#193669;
+    border-radius: 3px;
+    padding: 9px;
+    transition: background-color 450ms;
 }
 
 .edit {
-    font-size: 25px;
+    font-size: 20px;
+    padding: 25px;
 }
 
 .header-menu--show {
