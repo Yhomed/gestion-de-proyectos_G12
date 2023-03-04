@@ -211,6 +211,33 @@ RETROALIMENTACIÓN "Starfish"
 - reuniones extras
 - delegrar funciones 
 
+2023/3/4 RETRO SPRINT 8:
+
+1. KEEP DOING:
+
+- Acudir a nuestra profesora o a los profes ayudantes para resolver inquietudes
+- Acudir a nuestros compañeros de equipo para resolver inquietudes semejantes
+- Acudir a las clases grabadas en el playground para determinar cual puede ser la raíz de los problemas que se nos presentan y para desarrollar mejor la idea de lo que debe hacerse en el sprint
+- Acudir a las ejercitaciones del playground para guiarnos en el transcurso de las tareas
+
+2. LESS OF:
+
+- Estancarnos en una tarea (si así lo fuere, verificamos con el playground y se acude automáticamente a los profes)
+- Testear las funcionalidades a último momento
+- Colaborar en la resolución de las tareas sin distracciones
+
+3. MORE OF:
+
+- Delegacion de tareas que resulten beneficiosas para el equipo
+- Delegacion del tiempo que permita que la realización del sprint esté terminada antes del tiempo estimado de entrega
+
+4. STOP DOING:
+
+- Tareas que no son de mayor importancia (destinar las tareas a aquello necesario debido al tiempo límite que se nos presenta)
+
+5. START DOING:
+
+- Utilizar las herramientas aprendidas con los demás sprint para acelerar la realización de éste último
 
 
 

@@ -183,7 +183,7 @@ REGISTRO DE WEEKLY
         1. Archivo retro.md con el resultado de la retrospectiva.                          LISTO
         2. (Opcional) Archivo daily.md con sus opiniones sobre las dailys/weeklys          LISTO 
         3. Tablero de trabajo actualizado.                                                 LISTO
-        4. Validaciones del back-end con Express Validator:                                EN PROCESO 
+        4. Validaciones del back-end con Express Validator:                                LISTO
             I. Registro de usuarios.
                 Nombre y apellido
                     ■ Obligatorio.
@@ -217,7 +217,7 @@ REGISTRO DE WEEKLY
                 (Opcional) Tablas secundarias
                     ■ Verificar que los valores existan en base. Es decir, que los valores de talles, colores, etc. que lleguen sean válidos en la base.
             IV. (Opcional) Resto de los formularios del sitio.
-        5. Validaciones del front-end con JavaScript:                 EN PROCESO 
+        5. Validaciones del front-end con JavaScript:                                       LISTO
             I. Registro de usuarios.
                 Nombre y apellido
                     ■ Obligatorio.
@@ -246,5 +246,27 @@ REGISTRO DE WEEKLY
                 Descripción
                     ■ Deberá tener al menos 20 caracteres.
                 Imagen
-                    ■ Deberá ser un archivo válido (JPG, JPEG, PNG, GIF
+                    ■ Deberá ser un archivo válido (JPG, JPEG, PNG, GIF)
             IV. (Opcional) Resto de los formularios del sitio.
+
+6. 2023/4/3 REGISTRO WEEKLY:
+    - Vamos en el 8vo (y último) Sprint.                                                    
+    - Fecha de entrega 8vo Sprint: hasta el fin de semana
+    - Entregables:
+    ★ Archivo retro.md con el resultado de la retrospectiva.                                LISTO
+    ★ (Opcional) Archivo daily.md con sus opiniones sobre las dailies/weeklies.
+    ★ Tablero de trabajo actualizado.                                                       LISTO
+    ★ Endpoints de usuarios:                                                                LISTO
+        ○ Listado de usuarios.
+            ■ (Opcional) Paginado.
+        ○ Detalle de usuario.
+    ★ Endpoints de productos:                                                               LISTO
+        ○ Listado de productos.
+            ■ (Opcional) Paginado.
+        ○ Detalle de producto.
+    ★ Dashboard del sitio hecho en React:                                                   EN PROCESO
+        ○ 3 a 6 paneles simples con totales.
+        ○ Panel de detalle de último producto o usuario creado.
+        ○ Panel de categorías con el total de productos de cada una.
+        ○ Panel con el listado de productos.
+        ○ (Opcional) Funcionalidades adicionales.
