@@ -33,6 +33,7 @@ const usuariosAPIController = {
             return res.status(200).json({
                 meta: {
                     status: 200,
+                    total: user.length,
                     url: '/api/usuarios/'+user.id
                 },
                 data: user
