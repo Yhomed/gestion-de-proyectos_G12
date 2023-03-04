@@ -1,35 +1,31 @@
 <header>
-
+ 
     <div class="encabezado">
-    
+ 
     <a href='/'><img src="/img/22-06-30 Logo No PMI.png" alt="logo" width="100%" class="logo"></a>
-    
-
+ 
+ 
     <nav class="header-nav">
         <ul id="header-menu " class="flex-centrado-rutas">
-     
+ 
             <li class="header-menu-item"><a href="/products/" class="header-menu-link"><i class="fa-solid fa-route"></i> Ruta y Cursos</a></li>
-     
+ 
             <!-- si el usuario esta logueado y es administrador -->
             <% if(locals.userLogged && locals.isAdmin) { %>
                 <li class="header-menu-item"><a href="/inscripcion" class="header-menu-link"><i class="fa-solid fa-pencil"></i> inscripción</a></li>
                 <li class="header-menu-item"><a href="/productCar" class="header-menu-link"><i class="fa-solid fa-basket-shopping"></i> Mis Compras</a></li>
-                <li class="header-menu-item"><a href="/user/" class="header-menu-link"><i class="fa-solid fa-users"></i> Listado usuarios</a></li>
-                <li class="header-menu-item"><a class="header-menu-link"><i>Administrador: <%= locals.username %></i></a></li>
-                <li class="header-menu-item">
-                    <form action="/user/logout" method="POST">
-                        <button type="submit"><p class="cerrar-sesion">Cerrar Sesión</p></button>
-                </li>
-     
+                <li class="header-menu-item"><a href="/user/" class="header-menu-link"><i class="fa-solid fa-basket-shopping"></i> Listado usuarios</a></li>
+                <li class="header-menu-item"><i class="fa-solid fa-user">Administrador: <%= locals.username %></i></li>
+                <li><form action="/user/logout" method="POST"><button class="header-menu-item" type="submit">Cerrar Sesión</button></form></li>
+ 
+ 
+ 
                 <!-- si el usuario esta logueado y no es administrador -->
             <% } else if(locals.userLogged && !(locals.isAdmin)){ %>
                 <li class="header-menu-item"><a href="/inscripcion" class="header-menu-link"><i class="fa-solid fa-pencil"></i> inscripción</a></li>
                 <li class="header-menu-item"><a href="/productCar" class="header-menu-link"><i class="fa-solid fa-basket-shopping"></i> Mis Compras</a></li>
-                <li class="header-menu-item"><a href="/inscripcion" class="header-menu-link">Usuario: <%= locals.username %></a></li>
-                <li class="header-menu-item">
-                    <form action="/user/logout" method="POST">
-                        <button type="submit"><p class="cerrar-sesion">Cerrar Sesión</p></button>
-                </li>
+                <li class="header-menu-item"><a href="/inscripcion" class="header-menu-link"><i class="fa-solid fa-user"> Usuario: <%= locals.username %></i></a></li>
+                <li><form action="/user/logout" method="POST"><button class="header-menu-item" type="submit">Cerrar Sesión</button></form></li>
             <!-- si el usuario no esta logueado -->
             <% } else { %>
                 <li class="header-menu-item"><a href="/user/register" class="header-menu-link"><i class="fa-solid fa-user"></i> Crea Tu Cuenta</a></li>
@@ -38,13 +34,13 @@
         </ul>
     </nav>
 </div>
-
+ 
 <div id="toggle-menu" class="toggle-menu">    
     <i class="fas fa-bars burger-menu"></i>
 </div>        
-
+ 
 <div class="banner">
     <img src="/img/Imagen Banner.jpg" alt="banner" width="100%">
 </div>
-
+ 
 </header>
