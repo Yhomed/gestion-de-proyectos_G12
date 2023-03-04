@@ -5,7 +5,7 @@
 
     <%- include('../partials/head.ejs') %>
 
-    <link href="../css/productDetail.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
 
 </head>
 <body>
@@ -28,20 +28,21 @@
 
                 <h2> USUARIOS </h2> 
 
-                <div class = "">
+                <div class = "contenedor">
 
-                <article class = "">
-                    <div class="">
+                <article class = "campos-usuario">
+                    <div class="name-username">
                         <h3 class = ""><%= usuarios.name %></h3>
                         <h3 class = ""><%= usuarios.surname %></h3>
                     </div>
-                    <div class = "">
+                    <div class = "userEmail">
                         <p><%= usuarios.email %></p> 
                     </div>
                     
-                    <div class = "">
+                    <div class = "userImage">
                         <img src="/img/users/<%= usuarios.image %>">
-                    </div>
+
+                </div>
                 </article>
 
                 
@@ -53,7 +54,7 @@
             <!-- REDIRIGUE A CONTACTO -->
             <form action="/" method="POST">
                 <label for="Estoy interesado">
-                    <a href="/inscription"><input type="submit" value="Estoy interesado"></a>
+                    <a href="/inscription" class="descuentos"><input type="submit" value="Estoy interesado"></a>
                 </label>
             </form>
 
@@ -70,7 +71,9 @@
             <!-- REDIRIGUE A LLENAR FORMULARIO PARA INSCRIBIRSE A LOS CURSOS (INSCRIPCION) -->
             <form action="/Inscripcion" method="POST">
                 <label for="Inscripción">
-                    <a href="/inscription"><input type="submit" value="Inscripción"></a>
+                        <a href="/inscription" class="descuentos">
+                            <input type="submit" value="Inscripción">
+                        </a>
                 </label>
             </form> 
             

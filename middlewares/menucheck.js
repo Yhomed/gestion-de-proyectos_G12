@@ -7,7 +7,6 @@ function menucheckMiddleware(req, res, next) {
         res.locals.userLogged = req.session.isLogged;
         res.locals.isAdmin = req.session.isAdmin;
         res.locals.username = req.session.username;
-
     } else {
         res.locals.userLogged = false;
     }

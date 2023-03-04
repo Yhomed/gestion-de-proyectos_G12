@@ -12,6 +12,14 @@
     
 }
 
+article div .imagenCurso {
+    border-radius: 25px;
+}
+
+.campos {
+    padding: 30px;
+}
+
 .nombre.apellido.email {
     display: flex;
     position: relative;
@@ -31,4 +39,18 @@ h3 {
 .detalleUsuario {
 
     text-align: center;
+}
+
+.botonesUsuarios {
+    color: white;
+    background-color:#193669;
+    border-radius: 3px;
+    padding: 9px;
+    transition: background-color 450ms;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.botonesUsuarios:hover {
+    background-color: #b458c7;
 }

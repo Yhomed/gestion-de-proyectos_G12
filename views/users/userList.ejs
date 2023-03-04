@@ -28,9 +28,10 @@
             <article class = "contenedor">
                 
                 <div class = "imagen-cursos">
-                    <img src="/img/users/<%= usuarios[i].image %>" alt="usuarios-img" width="50%">
+                    <img class = "imagenCurso" src="/img/users/<%= usuarios[i].image %>" alt="usuarios-img" width="50%">
                 </div>
 
+                <div class = "campos">
                 <div class="nombre-apellido">
                     <div class="nombre">
                         <h3 class = "">Nombre: <%= usuarios[i].name %></h3><br>
@@ -44,22 +45,28 @@
                 <div class="email">
                     <h3 class = "">Correo: <%= usuarios[i].email %></h3><br>
                 </div>
-
+            </div>
                 <% if(locals.userLogged && locals.isAdmin) { %>
-                    <div class="detalleUsuario"><a href="/user/detail/<%= usuarios[i].id %>"><br>      
-                        Detalle de usuario     
+                    <div class="detalleUsuario"><a href="/user/detail/<%= usuarios[i].id %>"><br>
+                        <p class="botonesUsuarios">     
+                        Detalle de usuario 
+                        </p>     
                     </a></div>
                 <% } %>
 
                 <% if(locals.userLogged && locals.isAdmin) { %>
-                    <div class="detalleUsuario"><a href="/user/<%= usuarios[i].id %>/edit"><br>      
-                        Editar usuario     
+                    <div class="detalleUsuario"><a href="/user/<%= usuarios[i].id %>/edit"><br> 
+                        <p class="botonesUsuarios">     
+                            Editar usuario 
+                        </p>            
                     </a></div>
                 <% } %>
 
                 <% if(locals.userLogged && locals.isAdmin) { %>
-                    <div class="detalleUsuario"><a href="/user/<%= usuarios[i].id %>/delete"><br>      
-                        Borrar usuario    
+                    <div class="detalleUsuario"><a href="/user/<%= usuarios[i].id %>/delete"><br> 
+                        <p class="botonesUsuarios">       
+                        Borrar usuario  
+                        </p>  
                     </a></div>
                 <% } %>
 

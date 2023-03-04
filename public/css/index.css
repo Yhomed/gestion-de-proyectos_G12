@@ -104,8 +104,8 @@ ul li {
 }
 
 .cerrar-sesion {
-    color: white;
-    background-color:#193669;
+    color: rgb(255, 255, 255);
+    background-color:#11175e;
     border-radius: 3px;
     padding: 9px;
     transition: background-color 450ms;
