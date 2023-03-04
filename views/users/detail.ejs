@@ -5,7 +5,7 @@
 
     <%- include('../partials/head.ejs') %>
 
-    <link href="/css/index.css" rel="stylesheet">
+    <link href="/css/userDetail.css" rel="stylesheet">
 
 </head>
 <body>
@@ -20,10 +20,6 @@
 <!-- MAIN -->
 
     <main>
-
-        <h2>RUTA DE APRENDIZAJE</h2> <!-- RUTA -->
-
-
                 <!-- DESCRIPCIÓN DETALLADA DEL USUARIO -->
 
                 <h2> USUARIOS </h2> 
@@ -31,18 +27,20 @@
                 <div class = "contenedor">
 
                 <article class = "campos-usuario">
-                    <div class="name-username">
-                        <h3 class = ""><%= usuarios.name %></h3>
-                        <h3 class = ""><%= usuarios.surname %></h3>
-                    </div>
-                    <div class = "userEmail">
-                        <p><%= usuarios.email %></p> 
-                    </div>
-                    
-                    <div class = "userImage">
+                    <div class="campos">
+                        <div class="separador">
+                            <h3 class = ""><%= usuarios.name %></h3>
+                        </div>
+                        <div class="separador">
+                            <h3 class = ""><%= usuarios.surname %></h3>
+                        </div>
+                        <div class="separador">
+                            <p><%= usuarios.email %></p> 
+                        </div>
+                        <div class="separador">
                         <img src="/img/users/<%= usuarios.image %>">
-
-                </div>
+                        </div>
+                    </div>
                 </article>
 
                 
@@ -54,25 +52,17 @@
             <!-- REDIRIGUE A CONTACTO -->
             <form action="/" method="POST">
                 <label for="Estoy interesado">
-                    <a href="/inscription" class="descuentos"><input type="submit" value="Estoy interesado"></a>
+                    <a href="/inscription"><input type="submit" class="botonesForm" value="Estoy interesado"></a>
                 </label>
             </form>
 
             <!-- REDIRIGUE A LLENAR FORMULARIO PARA CONOCIMIENTO DEL EXCEL -->
 
-            <!--
-            <form action="" method="POST">
-                <label for="Quiero saber si estos cursos son para mi">
-                    <input type="submit" value="Quiero saber si estos cursos son para mi">
-                </label>
-            </form>
-            -->
-
             <!-- REDIRIGUE A LLENAR FORMULARIO PARA INSCRIBIRSE A LOS CURSOS (INSCRIPCION) -->
             <form action="/Inscripcion" method="POST">
                 <label for="Inscripción">
-                        <a href="/inscription" class="descuentos">
-                            <input type="submit" value="Inscripción">
+                        <a href="/inscription">
+                            <input type="submit" class="botonesForm" value="Inscripción">
                         </a>
                 </label>
             </form> 
