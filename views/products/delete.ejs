@@ -26,24 +26,18 @@
 
       <form action="/products/<%= curso.id %>?_method=DELETE" method="POST">
  
-        <label>Nombre del curso:</label>
-        <input type="text" name="title" value="<%= curso.title %>"> 
+        <label>Nombre del curso: <%= curso.title %> </label><br><br>
 
-        <label>Descripcion:</label>
-        <input type="text" name="parrafo" value="<%= curso.parrafo %>">
+        <label>Descripcion: <%= curso.parrafo %> </label><br><br>
+
+        <label>Precio:  <%= curso.price %></label><br><br>
         
-        <label>Imagen:</label>
-        <input type="file" name="image">
-
-        <label>Precio:</label>
-        <input type="text" name="price" value="<%= curso.price %>">
+        <img src="/img/courses/<%= curso.image %>" alt="cursos-img" width="50%"><br><br>
 
         <button type="submit">Borrar</button>
           
       </form>
 
-
-      
     </main>
 
   <footer>

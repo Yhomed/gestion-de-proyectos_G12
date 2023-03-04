@@ -127,7 +127,7 @@ const userController = {
         return res.redirect('/');
     },
 
-    profile: (req, res) => {
+    profile: (req, res) => { //no funciona actualmente
 
         let users = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
         let user = users.filter(p => p.id == req.params.id);

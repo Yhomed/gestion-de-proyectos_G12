@@ -38,13 +38,13 @@ const storage = multer.diskStorage({
 /* 8 RUTAS */
 
 //ruta 1 para el listado de productos 
-router.get('/', menucheck, productosController.productList); //listo
+router.get('/', menucheck, productosController.productList);
 
 //ruta 2 para el formulario del create
-router.get('/create', menucheck, userIsLogged, userAdmin, productosController.createProducts);//listo
+router.get('/create', menucheck, userIsLogged, userAdmin, productosController.createProducts);
 
 //ruta 3 para el detalle de un producto particular
-router.get('/:id', productosController.productDetail); //listo
+router.get('/:id', menucheck, productosController.productDetail);
 
 //ruta 4 para la acción de creación (POST) --> alta  
 router.post('/', uploadFile.single("image"),[
@@ -79,7 +79,7 @@ router.post('/', uploadFile.single("image"),[
     ], productosController.createNewProduct);
 
 //ruta 5 para el formulario del edit
-router.get('/:id/edit', menucheck, userIsLogged, userAdmin, productosController.editProducts); //listo
+router.get('/:id/edit', menucheck, userIsLogged, userAdmin, productosController.editProducts);
 
 //ruta 6 para la acción de edición (PUT) --> modificación
 router.put('/:id', uploadFile.single('image'), [
@@ -113,7 +113,7 @@ router.put('/:id', uploadFile.single('image'), [
     ],productosController.editProduct); //listo
 
 //ruta 7 para la acción de borrado (DELETE) --> baja
-router.delete('/:id', productosController.deleteProduct); //listo
+router.delete('/:id', productosController.deleteProduct);
 
 //ruta 8 para el formulario del delete
 router.get('/:id/delete', menucheck, userIsLogged, userAdmin, productosController.deleteProducts); //listo

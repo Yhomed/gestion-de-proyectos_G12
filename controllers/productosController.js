@@ -185,24 +185,11 @@ const productosController =  {
 
     //formulario del delete
     deleteProducts: (req, res) => {
-        /*
-        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-        let product = products.filter(p => p.id==req.params.id)
-        //console.log(product);
-        res.render('../views/products/delete.ejs', 
-        {
-            id: product[0].id,
-            title: product[0].title,
-            number: product[0].number,
-            parrafo: product[0].parrafo,
-            price: product[0].price,
-        })
-        */
 
         db.Curso.findByPk(req.params.id)
         .then(function(curso){
 
-            res.render('./admin/delete.ejs',{curso});
+            res.render('./products/delete.ejs',{curso});
         })
     }
 }

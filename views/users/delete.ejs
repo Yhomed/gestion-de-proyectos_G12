@@ -31,38 +31,28 @@
 
             <!-- IMAGEN -->
             <div>
-                <label class="etiqueta">Imagen: </label>
-                <input type = "file" name="image" value="<%= usuario.image %>" required class="campo-de-texto">
+                <img src="/img/users/<%= usuario.image %>" alt="usuarios-img" width="50%">
                 <span class="feedback"></span> <!-- para alertar errores -->
             </div>
 
             <!-- NOMBRE -->
             <div>
-                <label class="etiqueta">Nombre: </label>
-                <input type = "text" name="name" value="<%= usuario.name %>" placeholder="Ingresa tu nombre" required class="campo-de-texto">
+                <label class="etiqueta">Nombre: <%= usuario.name %></label>
                 <span class="feedback"></span> <!-- para alertar errores -->
             </div>
 
              <!-- APELLIDOS -->
              <div>
-                <label class="etiqueta">Apellidos: </label>
-                <input type = "text" name="surname" placeholder="Ingresa tus apellidos" value="<%= usuario.surname %>"required class="campo-de-texto">
+                <label class="etiqueta">Apellidos: <%= usuario.surname %></label>
                 <span class="feedback"></span> <!-- para alertar errores -->
             </div>
 
             <!-- EMAIL -->
             <div>
-                <label class="etiqueta">Email: </label>
-                <input type = "email" name="email"  placeholder="usuario@abc.com" value="<%= usuario.email %>" required class="campo-de-texto">
+                <label class="etiqueta">Email: <%= usuario.email %></label>
                 <span class="feedback"></span> <!-- para alertar errores -->
             </div>
 
-            <!-- CONTRASEÑA -->
-            <div>
-                <label class="password"> Contraseña: </label>
-                <input type = "password" name = "password" value="<%= usuario.password %>" required class="campo-de-texto">
-                <span class="feedback"></span> 
-            </div>
 
             <!-- BOTON BORRAR -->
             <button type="submit">Borrar</button>

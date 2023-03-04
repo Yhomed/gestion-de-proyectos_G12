@@ -14,6 +14,7 @@
             <% if(locals.userLogged && locals.isAdmin) { %>
                 <li class="header-menu-item"><a href="/inscripcion" class="header-menu-link"><i class="fa-solid fa-pencil"></i> inscripción</a></li>
                 <li class="header-menu-item"><a href="/productCar" class="header-menu-link"><i class="fa-solid fa-basket-shopping"></i> Mis Compras</a></li>
+                <li class="header-menu-item"><a href="/user/" class="header-menu-link"><i class="fa-solid fa-basket-shopping"></i> Listado usuarios</a></li>
                 <li class="header-menu-item"><i class="fa-solid fa-user">Administrador: <%= locals.username %></i></li>
                 <li><form action="/user/logout" method="POST"><button class="header-menu-item" type="submit">Cerrar Sesión</button></form></li>
      

@@ -21,35 +21,47 @@
 
     <main>
 
-        <h2>USUARIOS</h2>
+        <h2>USUARIOS REGISTRADOS ACTUALMENTE:</h2>
         
         <!--recorre el usuario con for(){}-->
         <% for (let i=0; i<longitud; i++){ %>
             <article class = "contenedor">
                 
-               <h3>Foto De Perfil</h3> 
                 <div class = "imagen-cursos">
                     <img src="/img/users/<%= usuarios[i].image %>" alt="usuarios-img" width="50%">
                 </div>
 
-
-            <div class="nombre-apellido">
-                <div class="nombre">
-                    <h3 class = ""><%= usuarios[i].name %></h3>
-                </div>
+                <div class="nombre-apellido">
+                    <div class="nombre">
+                        <h3 class = "">Nombre: <%= usuarios[i].name %></h3><br>
+                    </div>
                 
-                <div class = "apellido">
-                    <h3> <%= usuarios[i].surname %></h3> 
+                    <div class = "apellido">
+                        <h3> Apellido: <%= usuarios[i].surname %></h3><br> 
+                    </div>
                 </div>
-
-            </div>
-
 
                 <div class="email">
-                    <h3 class = ""><%= usuarios[i].email %></h3>
+                    <h3 class = "">Correo: <%= usuarios[i].email %></h3><br>
                 </div>
 
+                <% if(locals.userLogged && locals.isAdmin) { %>
+                    <div class="detalleUsuario"><a href="/user/detail/<%= usuarios[i].id %>"><br>      
+                        Detalle de usuario     
+                    </a></div>
+                <% } %>
 
+                <% if(locals.userLogged && locals.isAdmin) { %>
+                    <div class="detalleUsuario"><a href="/user/<%= usuarios[i].id %>/edit"><br>      
+                        Editar usuario     
+                    </a></div>
+                <% } %>
+
+                <% if(locals.userLogged && locals.isAdmin) { %>
+                    <div class="detalleUsuario"><a href="/user/<%= usuarios[i].id %>/delete"><br>      
+                        Borrar usuario    
+                    </a></div>
+                <% } %>
 
             </article>
 
@@ -60,9 +72,7 @@
     <!-- /MAIN -->
     
     <footer>
-
-        <%- include('../partials/footer.ejs') %>
-    
+        <%- include('../partials/footer.ejs') %>   
     </footer>
 </body>
 </html>

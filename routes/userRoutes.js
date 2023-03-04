@@ -42,10 +42,6 @@ const menucheck = require('../middlewares/menucheck');
 // 11 RUTAS
 
 router.get('/', menucheck,userIsLogged, userController.list); // listado
-/*
-router.get('/list',userController.list); // json api 
-router.get('/:id/show',userController.list); // json api 
-*/
 
 router.get('/detail/:id', menucheck, userIsLogged, userController.detail); //detalle
 
@@ -113,7 +109,7 @@ router.post('/profile',[
   check('password').isLength({ min: 8 }).withMessage('La contraseña debe tener al menos 8 caracteres'),
 ] ,userController.loginProcess); //loginProcess
 
-router.get('/profile/:id', menucheck, userController.profile) //vista del perfil de usuario
+router.get('/profile/:id', menucheck, userController.profile) //no se esta usando
 
 router.get('/:id/edit', menucheck, userIsLogged, userAdmin, userController.editUsers); //editUsers (form)
 
