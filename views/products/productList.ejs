@@ -27,6 +27,14 @@
 
         <h2>RUTA DE APRENDIZAJE</h2> <!-- RUTA -->
 
+        <% if(locals.userLogged && locals.isAdmin) { %>
+            <div class = "llevar-al-carrito"><a href="/products/create">
+                
+                <div class="edit"><p class="descuentos">Agregar Curso</p></div>
+                
+            </a></div>
+            <% } %>
+            
         <!--recorre el producto con for(){}-->
         <% for (let i=0; i<longitud; i++){ %>
 
@@ -47,14 +55,6 @@
                 </div>
 
                 <div class="contenedor-123">
-
-                <% if(locals.userLogged && locals.isAdmin) { %>
-                    <div class = "llevar-al-carrito"><a href="/products/create">
-                        
-                        <div class="edit"><p class="descuentos">Agregar Curso</p></div>
-                        
-                    </a></div>
-                    <% } %>
 
                 <% if(locals.userLogged && locals.isAdmin) { %>
                 <div class = "llevar-al-carrito"><a href="/products/<%= products[i].id %>/edit">
