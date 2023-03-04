@@ -26,7 +26,6 @@ const storage = multer.diskStorage({
       cb(null,'curso' + Date.now() + path.extname(file.originalname))
       /*const allowedExtensions = ['.jpg', '.jpeg', '.png', '.gif'];
       const extension = path.extname(file.originalname).toLowerCase();
-
       if (!allowedExtensions.includes(extension)) {
         return res.status(400).send('Por favor sube una imagen en formato JPG, JPEG, PNG o GIF.');
       }*/

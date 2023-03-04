@@ -265,6 +265,10 @@ h2 {
     padding: 9px;
 }
 
+.contenedor-123 {
+    display: flex;
+}
+
 .detalle-del-curso:hover {
     transition: background-color 450ms;
 }

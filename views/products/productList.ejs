@@ -25,14 +25,6 @@
 
     <main>
 
-        <% if(locals.userLogged && locals.isAdmin) { %>
-            <div class = "llevar-al-carrito"><a href="/products/create">
-                
-                <div class="edit"><i class="fa-solid fa-user-pen">Agregar Curso</i></div>
-                
-            </a></div>
-            <% } %>
-
         <h2>RUTA DE APRENDIZAJE</h2> <!-- RUTA -->
 
         <!--recorre el producto con for(){}-->
@@ -54,6 +46,16 @@
                     <img src="/img/courses/<%= products[i].image %>" alt="cursos-img" width="50%">
                 </div>
 
+                <div class="contenedor-123">
+
+                <% if(locals.userLogged && locals.isAdmin) { %>
+                    <div class = "llevar-al-carrito"><a href="/products/create">
+                        
+                        <div class="edit"><p class="descuentos">Agregar Curso</p></div>
+                        
+                    </a></div>
+                    <% } %>
+
                 <% if(locals.userLogged && locals.isAdmin) { %>
                 <div class = "llevar-al-carrito"><a href="/products/<%= products[i].id %>/edit">
                     
@@ -72,7 +74,7 @@
                     </a></div>
                 <% } %>
 
-                
+                </div>
 
             </article>
 
