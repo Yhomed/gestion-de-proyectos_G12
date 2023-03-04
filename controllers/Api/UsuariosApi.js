@@ -7,17 +7,21 @@ const usuariosAPIController = {
 
     list: (req, res) => {
         db.Usuario.findAll(
+            /*
             {
                 // include: [{ association: 'roles' }],
                 where:{
                     deleted_at: null,
                 }
-            }
+            }*/
         ).then(users => {
             return res.status(200).json({
-                total: users.length,
-                data: users,
-                status: 200,
+                meta: {
+                    total: users.length,
+                    status: 200,
+                    url: '/api/usuarios/'
+                },
+                data: users
             });
         })
         .catch(err => { console.log('Errores al buscar usuarios: ' + err)})
@@ -27,8 +31,11 @@ const usuariosAPIController = {
         db.Usuario.findByPk(req.params.id)
         .then(user => {
             return res.status(200).json({
-                data: user,
-                status: 200,
+                meta: {
+                    status: 200,
+                    url: '/api/usuarios/'+user.id
+                },
+                data: user
             });
         })
         .catch(err => { console.log('Errores al buscar el usuario: ' + err)})
